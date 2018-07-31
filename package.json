@@ -1,0 +1,19 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.0.0-rc.8",
+    "async": "^2.6.1",
+    "documentdb": "^1.14.5",
+    "graphql": "^0.13.2",
+    "mongoose": "^5.2.4"
+  }
+}

@@ -1,0 +1,52 @@
+type Assessment{
+	scope:						String
+	targetMRL:				Number
+	teamMembers:			[Person]!
+	levelSwitching:		Boolean
+	targetDate:				Date
+	Location:					String
+	DeskbookVersion:	String
+	questions:				[Question]
+}
+
+type Persion{
+	id:   String!
+	name: String!
+}
+
+type Question{
+	id:									String
+	questionId:         String
+	thread:							String
+	subThread:					String
+	mrlLevel:           Number
+	questionText:				String
+	answer:							String
+	objectiveEvidence:	String
+	assumptionsYes:			String
+	notesYes:						String
+	filesYes:						[File]
+	actionPeople:				[Person]
+	when:								Date
+	who:								String
+	risk:								String
+	whatDone:						String
+	reason:							String
+	assumptionsNo:			String
+	FilesNo:						[File]
+	documentation:			String
+	assumptionsNA:			String
+	notesNA:						String
+	FilesNA:						[File]
+}
+
+type File{
+	id: String
+	url: String
+}
+
+type Query {
+	question(id: id!):		Question
+	assessment(id: id!):	Assessment
+	assessments:					[Assessment]
+}
