@@ -20,6 +20,7 @@ type Assessment{
 	threads:          [String]
 	questions:        [Question]
 	files:            [File]
+	name:             String
 }
 
 type Person{
@@ -57,6 +58,9 @@ input QuestionUpdate {
 	reason:							String
 	assumptionsNo:			String
 	notesNo:            String
+	technical:          Boolean
+	schedule:           Boolean
+	cost:               Boolean
 
 	# NA variables ######################################
 	documentation:			String
@@ -97,6 +101,9 @@ type Question{
 	reason:							String
 	assumptionsNo:			String
 	notesNo:            String
+	technical:          Boolean
+	schedule:           Boolean
+	cost:               Boolean
 
 	# NA variables ######################################
 	documentation:			String
@@ -111,6 +118,7 @@ type File{
 	caption:	String
 	url:			String
 	name:     String
+	questionId: Int
 }
 
 type Query {
@@ -130,6 +138,8 @@ type Mutation {
 		targetDate: Date
 		location: String
 		deskbookVersion: String
+		name:            String
+		levelSwitching: Boolean
 	): Assessment
 
 	updateAssessment(

@@ -25,6 +25,7 @@ var sqlResolvers = {
 
 var resolvers = {
 	Query: {
+		allThreadNames: () => getQuestions.allThreadNames(),
 		assessment: async(root, args, context, info) => {
 			return Assessment.findById(args._id);
 		},
@@ -42,6 +43,7 @@ var resolvers = {
 	},
 	Mutation: {
 		createAssessment: async(roots, args, context, info) => {
+			args.currentMRL = args.targetMRL;
 			args.questions = getQuestions.getQuestions(args.threads, 0);
 			// TODO: test if this works without await <21-07-18, yourname> //
 		  return await Assessment.create(args);

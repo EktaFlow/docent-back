@@ -41,6 +41,9 @@ var questionSchema = new Schema({
 	what:               String,
 	when:								Date,
 	who:								String,
+	technical:          Boolean,
+	schedule:           Boolean,
+	cost:               Boolean,
 	risk:								String,
 	whatDone:						String,
 	reason:							String,
@@ -55,6 +58,7 @@ var questionSchema = new Schema({
 	
 var assessmentSchema = new Schema({		
 	scope:							String,
+	name:               String,
 	targetMRL:					Number,
 	currentMRL:					Number,
 	levelSwitching:     Boolean,
