@@ -48,6 +48,8 @@ input QuestionUpdate {
 	objectiveEvidence:	String
 	assumptionsYes:			String
 	notesYes:						String
+	assumptionsSkipped: String
+	notesSkipped:       String
 
 	# No variables ######################################
 #	actionPeople:				
@@ -91,6 +93,8 @@ type Question{
 	objectiveEvidence:	String
 	assumptionsYes:			String
 	notesYes:						String
+	assumptionsSkipped: String
+	notesSkipped:       String
 
 	# No variables ######################################
 	actionPeople:				[Person]

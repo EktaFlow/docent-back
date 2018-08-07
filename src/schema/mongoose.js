@@ -50,6 +50,8 @@ var questionSchema = new Schema({
 	assumptionsNo:			String,
 	documentation:			String,
 	assumptionsNA:			String,
+	assumptionsSkipped: String,
+	notesSkipped:       String,
 	notesNo:            String,
 	notesNA:						String,
 	actionPeople:       [personSchema],
