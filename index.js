@@ -159,6 +159,7 @@ type Mutation {
 		name:									String
 	): File
 
+	importAssessment(import: String): Assessment
 }
 `;
 

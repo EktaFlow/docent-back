@@ -42,10 +42,24 @@ var resolvers = {
 		}
 	},
 	Mutation: {
+		importAssessment: async(roots, args, context, info) => {
+			var stringy = args.import
+
+			var cool = JSON.parse(stringy);
+
+			console.log(cool);
+			cool = cool.assessment
+			//var threads = cool.assessment.threads;
+			//cool.questions = getQuestions.getQuestions(threads, 0)
+		  var ok  = await Assessment.create(cool);
+			console.log(ok);
+			return ok;
+	},
 		createAssessment: async(roots, args, context, info) => {
 			args.currentMRL = args.targetMRL;
 			args.questions = getQuestions.getQuestions(args.threads, 0);
 			// TODO: test if this works without await <21-07-18, yourname> //
+			console.log(args);
 		  return await Assessment.create(args);
 		},
 		addFile: async(root, args, context, info) => {
