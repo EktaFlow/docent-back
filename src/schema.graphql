@@ -1,4 +1,5 @@
 type Assessment{
+	name: String!
 	scope:						String
 	targetMRL:				Number
 	teamMembers:			[Person]!
@@ -9,7 +10,7 @@ type Assessment{
 	questions:				[Question]
 }
 
-type Persion{
+type Person{
 	id:   String!
 	name: String!
 }
