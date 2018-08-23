@@ -182,7 +182,7 @@
                     "questions": [
                       {
                         "questionId": "11",
-                        "questionText": "Have potential manufacturing sources been identified for technology needs (Understand state of the art)?",
+                        "questionText": "A.1 - Have potential manufacturing sources been identified for technology needs (Understand state of the art)?",
                         "order": "1"
                       }
                     ]
@@ -195,7 +195,7 @@
                     "questions": [
                       {
                         "questionId": "12",
-                        "questionText": "Have industrial base capabilities and gaps/risks been identified for key technologies, components, and/or key processes?",
+                        "questionText": "A.1 - Have industrial base capabilities and gaps/risks been identified for key technologies, components, and/or key processes?",
                         "order": "1"
                       }
                     ]
@@ -208,17 +208,17 @@
                     "questions": [
                       {
                         "questionId": "13",
-                        "questionText": "Has the industrial base capabilities assessment been initiated to identify potential manufacturing sources to produce the required capability?",
+                        "questionText": "A.1 - Has the industrial base capabilities assessment been initiated to identify potential manufacturing sources to produce the required capability?",
                         "order": "1"
                       },
                       {
                         "questionId": "14",
-                        "questionText": "Have sole/single/foreign source vendors and vendors of technologies with potential obsolescence issues been identified? ",
+                        "questionText": "A.1 - Have sole/single/foreign source vendors and vendors of technologies with potential obsolescence issues been identified? ",
                         "order": "2"
                       },
                       {
                         "questionId": "15",
-                        "questionText": "Has planning begun to minimize the risks associated with sole/single/foreign source vendors?",
+                        "questionText": "A.1 - Has planning begun to minimize the risks associated with sole/single/foreign source vendors?",
                         "order": "3"
                       }
                     ]
@@ -231,27 +231,27 @@
                     "questions": [
                       {
                         "questionId": "16",
-                        "questionText": "Has an industrial base capabilities assessment for MS B been completed?",
+                        "questionText": "A.1 - Has an industrial base capabilities assessment for MS B been completed?",
                         "order": "1"
                       },
                       {
                         "questionId": "17",
-                        "questionText": "Is the industrial capability in place to support the manufacturing of development articles?",
+                        "questionText": "A.1 - Is the industrial capability in place to support the manufacturing of development articles?",
                         "order": "2"
                       },
                       {
                         "questionId": "18",
-                        "questionText": "Are the plans to minimize sole/single/foreign sources and obsolescence issues complete?",
+                        "questionText": "A.1 - Are the plans to minimize sole/single/foreign sources and obsolescence issues complete?",
                         "order": "3"
                       },
                       {
                         "questionId": "19",
-                        "questionText": "Has the need for sole/single/foreign sources been justified?",
+                        "questionText": "A.1 - Has the need for sole/single/foreign sources been justified?",
                         "order": "4"
                       },
                       {
                         "questionId": "20",
-                        "questionText": "Have potential alternative sources been identified?",
+                        "questionText": "A.1 - Have potential alternative sources been identified?",
                         "order": "5"
                       }
                     ]
@@ -264,17 +264,17 @@
                     "questions": [
                       {
                         "questionId": "21",
-                        "questionText": "Has the industrial capability to support production been analyzed?",
+                        "questionText": "A.1 - Has the industrial capability to support production been analyzed?",
                         "order": "1"
                       },
                       {
                         "questionId": "22",
-                        "questionText": "Is the stability of all sole/single/foreign sources and obsolescence issues being assessed/monitored?",
+                        "questionText": "A.1 - Is the stability of all sole/single/foreign sources and obsolescence issues being assessed/monitored?",
                         "order": "2"
                       },
                       {
                         "questionId": "23",
-                        "questionText": "Are the necessary alternates to sole/single/foreign sources being developed?",
+                        "questionText": "A.1 - Are the necessary alternates to sole/single/foreign sources being developed?",
                         "order": "3"
                       }
                     ]
@@ -287,17 +287,17 @@
                     "questions": [
                       {
                         "questionId": "24",
-                        "questionText": "Has the industrial base capability assessment for Milestone C been completed?",
+                        "questionText": "A.1 - Has the industrial base capability assessment for Milestone C been completed?",
                         "order": "1"
                       },
                       {
                         "questionId": "25",
-                        "questionText": "Is the industrial capability in place to support Low Rate Initial Production (LRIP)?",
+                        "questionText": "A.1 - Is the industrial capability in place to support Low Rate Initial Production (LRIP)?",
                         "order": "2"
                       },
                       {
                         "questionId": "26",
-                        "questionText": "Are all necessary sources available including multi-sourcing where cost-effective or necessary to mitigate risk?",
+                        "questionText": "A.1 - Are all necessary sources available including multi-sourcing where cost-effective or necessary to mitigate risk?",
                         "order": "3"
                       }
                     ]
@@ -310,12 +310,12 @@
                     "questions": [
                       {
                         "questionId": "27",
-                        "questionText": "Is the industrial capability assessment for FRP complete?",
+                        "questionText": "A.1 - Is the industrial capability assessment for FRP complete?",
                         "order": "1"
                       },
                       {
                         "questionId": "28",
-                        "questionText": "Is the Industrial capability in place to support the start of FRP?",
+                        "questionText": "A.1 - Is the Industrial capability in place to support the start of FRP?",
                         "order": "2"
                       }
                     ]
@@ -328,12 +328,12 @@
                     "questions": [
                       {
                         "questionId": "29",
-                        "questionText": "Does the Industrial Capability support FRP",
+                        "questionText": "A.1 - Does the Industrial Capability support FRP",
                         "order": "1"
                       },
                       {
                         "questionId": "30",
-                        "questionText": "Has the industrial capability been assessed to support modifications, upgrades, surge, and other potential manufacturing requirements?",
+                        "questionText": "A.1 - Has the industrial capability been assessed to support modifications, upgrades, surge, and other potential manufacturing requirements?",
                         "order": "2"
                       }
                     ]
@@ -359,7 +359,7 @@
                     "questions": [
                       {
                         "questionId": "31",
-                        "questionText": "Have new manufacturing concepts and potential solutions been identified?",
+                        "questionText": "A.2 - Have new manufacturing concepts and potential solutions been identified?",
                         "order": "1"
                       }
                     ]
@@ -372,7 +372,7 @@
                     "questions": [
                       {
                         "questionId": "32",
-                        "questionText": "Have manufacturing technology concepts been identified through experiments/models?",
+                        "questionText": "A.2 - Have manufacturing technology concepts been identified through experiments/models?",
                         "order": "1"
                       }
                     ]
@@ -385,7 +385,7 @@
                     "questions": [
                       {
                         "questionId": "33",
-                        "questionText": "Have pertinent Manufacturing Science (MS) and Advanced Manufacturing Technology requirements been identified?",
+                        "questionText": "A.2 - Have pertinent Manufacturing Science (MS) and Advanced Manufacturing Technology requirements been identified?",
                         "order": "1"
                       }
                     ]
@@ -398,7 +398,7 @@
                     "questions": [
                       {
                         "questionId": "34",
-                        "questionText": "Have the required manufacturing technology development efforts been initiated as applicable?",
+                        "questionText": "A.2 - Have the required manufacturing technology development efforts been initiated as applicable?",
                         "order": "1"
                       }
                     ]
@@ -411,12 +411,12 @@
                     "questions": [
                       {
                         "questionId": "35",
-                        "questionText": "Are the necessary manufacturing technology development efforts continuing?",
+                        "questionText": "A.2 - Are the necessary manufacturing technology development efforts continuing?",
                         "order": "1"
                       },
                       {
                         "questionId": "36",
-                        "questionText": "Have the required manufacturing technology development solutions been demonstrated in a production relevant environment?",
+                        "questionText": "A.2 - Have the required manufacturing technology development solutions been demonstrated in a production relevant environment?",
                         "order": "2"
                       }
                     ]
@@ -429,12 +429,12 @@
                     "questions": [
                       {
                         "questionId": "37",
-                        "questionText": "Are the necessary manufacturing technology development efforts still continuing?",
+                        "questionText": "A.2 - Are the necessary manufacturing technology development efforts still continuing?",
                         "order": "1"
                       },
                       {
                         "questionId": "38",
-                        "questionText": "Have the required manufacturing science and manufacturing technology development solutions been demonstrated in a production representative environment?",
+                        "questionText": "A.2 - Have the required manufacturing science and manufacturing technology development solutions been demonstrated in a production representative environment?",
                         "order": "2"
                       }
                     ]
@@ -447,12 +447,12 @@
                     "questions": [
                       {
                         "questionId": "39",
-                        "questionText": "Are the primary manufacturing technology efforts concluding and some improvement efforts continuing?",
+                        "questionText": "A.2 - Are the primary manufacturing technology efforts concluding and some improvement efforts continuing?",
                         "order": "1"
                       },
                       {
                         "questionId": "40",
-                        "questionText": "Have the required manufacturing technology development solutions been validated on a pilot line?",
+                        "questionText": "A.2 - Have the required manufacturing technology development solutions been validated on a pilot line?",
                         "order": "2"
                       }
                     ]
@@ -465,7 +465,7 @@
                     "questions": [
                       {
                         "questionId": "41",
-                        "questionText": "Have the required manufacturing technology process improvement efforts been initiated for Full Rate Production (FRP)?",
+                        "questionText": "A.2 - Have the required manufacturing technology process improvement efforts been initiated for Full Rate Production (FRP)?",
                         "order": "1"
                       }
                     ]
@@ -478,7 +478,7 @@
                     "questions": [
                       {
                         "questionId": "42",
-                        "questionText": "Are manufacturing technology continuous process improvements ongoing?",
+                        "questionText": "A.2 - Are manufacturing technology continuous process improvements ongoing?",
                         "order": "1"
                       }
                     ]
@@ -519,7 +519,7 @@
                     "questions": [
                       {
                         "questionId": "43",
-                        "questionText": "Have relevant materials/processes been evaluated for manufacturability using experiments/models?",
+                        "questionText": "B.1 - Have relevant materials/processes been evaluated for manufacturability using experiments/models?",
                         "order": "1"
                       }
                     ]
@@ -532,17 +532,17 @@
                     "questions": [
                       {
                         "questionId": "44",
-                        "questionText": "Are initial producibility and manufacturability assessments of preferred systems concepts completed?",
+                        "questionText": "B.1 - Are initial producibility and manufacturability assessments of preferred systems concepts completed?",
                         "order": "1"
                       },
                       {
                         "questionId": "45",
-                        "questionText": "Are the results of the producibility and manufacturability assessment being considered in the selection of preferred design concepts?",
+                        "questionText": "B.1 - Are the results of the producibility and manufacturability assessment being considered in the selection of preferred design concepts?",
                         "order": "2"
                       },
                       {
                         "questionId": "46",
-                        "questionText": "Are the results of the producibility and manufacturability assessment being reflected in the Technology Development Strategy key components/technologies?",
+                        "questionText": "B.1 - Are the results of the producibility and manufacturability assessment being reflected in the Technology Development Strategy key components/technologies?",
                         "order": "3"
                       }
                     ]
@@ -555,17 +555,17 @@
                     "questions": [
                       {
                         "questionId": "47",
-                        "questionText": "Have producibility & manufacturability assessments of key technologies and components been initiated as appropriate?",
+                        "questionText": "B.1 - Have producibility & manufacturability assessments of key technologies and components been initiated as appropriate?",
                         "order": "1"
                       },
                       {
                         "questionId": "48",
-                        "questionText": "Do ongoing design trades consider manufacturing processes and industrial base capability constraints? ",
+                        "questionText": "B.1 - Do ongoing design trades consider manufacturing processes and industrial base capability constraints? ",
                         "order": "2"
                       },
                       {
                         "questionId": "49",
-                        "questionText": "Have the manufacturing processes been assessed for capability to test and verify in production and their influence on Operations and Support (O&S)?",
+                        "questionText": "B.1 - Have the manufacturing processes been assessed for capability to test and verify in production and their influence on Operations and Support (O&S)?",
                         "order": "3"
                       }
                     ]
@@ -578,22 +578,22 @@
                     "questions": [
                       {
                         "questionId": "50",
-                        "questionText": "Have producibility assessments and producibility trade studies (performance vs. producibility) of key technologies/components been completed?",
+                        "questionText": "B.1 - Have producibility assessments and producibility trade studies (performance vs. producibility) of key technologies/components been completed?",
                         "order": "1"
                       },
                       {
                         "questionId": "51",
-                        "questionText": "Are the results of the producibility assessments and trade studies being used to shape the Acquisition Strategy, Systems Engineering Plan (SEP), Manufacturing and Producibility plans, and Planning for Engineering and Manufacturing Development (EMD) or technology insertion programs?  ",
+                        "questionText": "B.1 - Are the results of the producibility assessments and trade studies being used to shape the Acquisition Strategy, Systems Engineering Plan (SEP), Manufacturing and Producibility plans, and Planning for Engineering and Manufacturing Development (EMD) or technology insertion programs?  ",
                         "order": "2"
                       },
                       {
                         "questionId": "52",
-                        "questionText": "Are the preliminary design choices assessed against manufacturing processes and industrial base capability constraints? ",
+                        "questionText": "B.1 - Are the preliminary design choices assessed against manufacturing processes and industrial base capability constraints? ",
                         "order": "3"
                       },
                       {
                         "questionId": "53",
-                        "questionText": "Are the producibility enhancement efforts (e.g., Design For Manufacturing and Design for Assembly) initiated?",
+                        "questionText": "B.1 - Are the producibility enhancement efforts (e.g., Design For Manufacturing and Design for Assembly) initiated?",
                         "order": "4"
                       }
                     ]
@@ -606,17 +606,17 @@
                     "questions": [
                       {
                         "questionId": "54",
-                        "questionText": "Are the detailed producibility trade studies using detailed knowledge of key design characteristics and related manufacturing process capabilities completed?",
+                        "questionText": "B.1 - Are the detailed producibility trade studies using detailed knowledge of key design characteristics and related manufacturing process capabilities completed?",
                         "order": "1"
                       },
                       {
                         "questionId": "55",
-                        "questionText": "Are the producibility enhancement efforts (e.g., Design For Manufacturing and Design for Assembly) ongoing for an optimized integrated system?",
+                        "questionText": "B.1 - Are the producibility enhancement efforts (e.g., Design For Manufacturing and Design for Assembly) ongoing for an optimized integrated system?",
                         "order": "2"
                       },
                       {
                         "questionId": "56",
-                        "questionText": "Are manufacturing processes re-assessed as needed for capability to test and verify potential influence on Operations & Support? ",
+                        "questionText": "B.1 - Are manufacturing processes re-assessed as needed for capability to test and verify potential influence on Operations & Support? ",
                         "order": "3"
                       }
                     ]
@@ -629,12 +629,12 @@
                     "questions": [
                       {
                         "questionId": "57",
-                        "questionText": "Have the producibility improvements been implemented on the system?",
+                        "questionText": "B.1 - Have the producibility improvements been implemented on the system?",
                         "order": "1"
                       },
                       {
                         "questionId": "58",
-                        "questionText": "Have the known producibility issues been resolved and pose no significant risk for Low Rate Initial Production (LRIP)?",
+                        "questionText": "B.1 - Have the known producibility issues been resolved and pose no significant risk for Low Rate Initial Production (LRIP)?",
                         "order": "2"
                       }
                     ]
@@ -647,12 +647,12 @@
                     "questions": [
                       {
                         "questionId": "59",
-                        "questionText": "Have prior producibility improvements been analyzed for effectiveness during Low Rate Initial Production (LRIP)?",
+                        "questionText": "B.1 - Have prior producibility improvements been analyzed for effectiveness during Low Rate Initial Production (LRIP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "60",
-                        "questionText": "Have the producibility issues/risks discovered in Low Rate Initial Production (LRIP) been mitigated and pose no significant risk for Full Rate Production (FRP)?",
+                        "questionText": "B.1 - Have the producibility issues/risks discovered in Low Rate Initial Production (LRIP) been mitigated and pose no significant risk for Full Rate Production (FRP)?",
                         "order": "2"
                       }
                     ]
@@ -665,17 +665,17 @@
                     "questions": [
                       {
                         "questionId": "61",
-                        "questionText": "Have design producibility improvements been demonstrated in Full Rate Production (FRP)?",
+                        "questionText": "B.1 - Have design producibility improvements been demonstrated in Full Rate Production (FRP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "62",
-                        "questionText": "Are process producibility improvements ongoing?",
+                        "questionText": "B.1 - Are process producibility improvements ongoing?",
                         "order": "2"
                       },
                       {
                         "questionId": "63",
-                        "questionText": "Are all modifications, upgrades, Diminishing Mfg Sources & Material Shortages (DMSMS), and other changes assessed for producibility?",
+                        "questionText": "B.1 - Are all modifications, upgrades, Diminishing Mfg Sources & Material Shortages (DMSMS), and other changes assessed for producibility?",
                         "order": "3"
                       }
                     ]
@@ -694,7 +694,7 @@
                     "questions": [
                       {
                         "questionId": "64",
-                        "questionText": "Have manufacturing research opportunities been identified?",
+                        "questionText": "B.2 - Have manufacturing research opportunities been identified?",
                         "order": "1"
                       }
                     ]
@@ -707,12 +707,12 @@
                     "questions": [
                       {
                         "questionId": "65",
-                        "questionText": "Have applications been defined?",
+                        "questionText": "B.2 - Have applications been defined?",
                         "order": "1"
                       },
                       {
                         "questionId": "66",
-                        "questionText": "Have broad performance goals been identified that may drive manufacturing options?",
+                        "questionText": "B.2 - Have broad performance goals been identified that may drive manufacturing options?",
                         "order": "2"
                       }
                     ]
@@ -725,17 +725,17 @@
                     "questions": [
                       {
                         "questionId": "67",
-                        "questionText": "Have top level performance requirements been defined?",
+                        "questionText": "B.2 - Have top level performance requirements been defined?",
                         "order": "1"
                       },
                       {
                         "questionId": "68",
-                        "questionText": "Have trade-offs in design options been assessed based on experiments?",
+                        "questionText": "B.2 - Have trade-offs in design options been assessed based on experiments?",
                         "order": "2"
                       },
                       {
                         "questionId": "69",
-                        "questionText": "Are product lifecycle requirements and technical requirements being evaluated?",
+                        "questionText": "B.2 - Are product lifecycle requirements and technical requirements being evaluated?",
                         "order": "3"
                       }
                     ]
@@ -748,22 +748,22 @@
                     "questions": [
                       {
                         "questionId": "70",
-                        "questionText": "Do the Systems Engineering Plan (SEP) and the Test and Evaluation Strategy recognize the need for the establishment/validation of manufacturing capability and management of manufacturing risk for the product lifecycle?",
+                        "questionText": "B.2 - Do the Systems Engineering Plan (SEP) and the Test and Evaluation Strategy recognize the need for the establishment/validation of manufacturing capability and management of manufacturing risk for the product lifecycle?",
                         "order": "1"
                       },
                       {
                         "questionId": "71",
-                        "questionText": "Have initial potential Key Performance Parameters (KPPs) been identified for the preferred systems concept?",
+                        "questionText": "B.2 - Have initial potential Key Performance Parameters (KPPs) been identified for the preferred systems concept?",
                         "order": "2"
                       },
                       {
                         "questionId": "72",
-                        "questionText": "Are system characteristics and measures to support required capabilities identified?",
+                        "questionText": "B.2 - Are system characteristics and measures to support required capabilities identified?",
                         "order": "3"
                       },
                       {
                         "questionId": "73",
-                        "questionText": "Are form, fit, and function constraints and manufacturing capabilities identified for the preferred systems concepts?",
+                        "questionText": "B.2 - Are form, fit, and function constraints and manufacturing capabilities identified for the preferred systems concepts?",
                         "order": "4"
                       }
                     ]
@@ -776,27 +776,27 @@
                     "questions": [
                       {
                         "questionId": "74",
-                        "questionText": "Are lower level performance requirements sufficient to proceed to the preliminary design?  ",
+                        "questionText": "B.2 - Are lower level performance requirements sufficient to proceed to the preliminary design?  ",
                         "order": "1"
                       },
                       {
                         "questionId": "75",
-                        "questionText": "Are all enabling/critical technologies and components identified? ",
+                        "questionText": "B.2 - Are all enabling/critical technologies and components identified? ",
                         "order": "2"
                       },
                       {
                         "questionId": "76",
-                        "questionText": "Do enabling/critical technologies and components consider the product lifecycle? ",
+                        "questionText": "B.2 - Do enabling/critical technologies and components consider the product lifecycle? ",
                         "order": "3"
                       },
                       {
                         "questionId": "77",
-                        "questionText": "Have the evaluation of design Key Characteristics (KC) been initiated? ",
+                        "questionText": "B.2 - Have the evaluation of design Key Characteristics (KC) been initiated? ",
                         "order": "4"
                       },
                       {
                         "questionId": "78",
-                        "questionText": "Have product data required for prototype component manufacturing been released?",
+                        "questionText": "B.2 - Have product data required for prototype component manufacturing been released?",
                         "order": "5"
                       }
                     ]
@@ -809,27 +809,27 @@
                     "questions": [
                       {
                         "questionId": "79",
-                        "questionText": "Has a system allocated baseline been established?",
+                        "questionText": "B.2 - Has a system allocated baseline been established?",
                         "order": "1"
                       },
                       {
                         "questionId": "80",
-                        "questionText": "Are the product requirements and features well enough defined to support Preliminary Design Review?",
+                        "questionText": "B.2 - Are the product requirements and features well enough defined to support Preliminary Design Review?",
                         "order": "2"
                       },
                       {
                         "questionId": "81",
-                        "questionText": "Has product data essential for  subsystem/system prototyping been released?",
+                        "questionText": "B.2 - Has product data essential for  subsystem/system prototyping been released?",
                         "order": "3"
                       },
                       {
                         "questionId": "82",
-                        "questionText": "Have all enabling/critical technologies/components been demonstrated?",
+                        "questionText": "B.2 - Have all enabling/critical technologies/components been demonstrated?",
                         "order": "4"
                       },
                       {
                         "questionId": "83",
-                        "questionText": "Have preliminary design Key Characteristics (KC) been defined and are mitigation plans in development?",
+                        "questionText": "B.2 - Have preliminary design Key Characteristics (KC) been defined and are mitigation plans in development?",
                         "order": "5"
                       }
                     ]
@@ -842,22 +842,22 @@
                     "questions": [
                       {
                         "questionId": "84",
-                        "questionText": "Are the product design and features well enough defined to support critical design review even though design change traffic may be significant?",
+                        "questionText": "B.2 - Are the product design and features well enough defined to support critical design review even though design change traffic may be significant?",
                         "order": "1"
                       },
                       {
                         "questionId": "85",
-                        "questionText": "Has all the product data essential for component manufacturing been released?",
+                        "questionText": "B.2 - Has all the product data essential for component manufacturing been released?",
                         "order": "2"
                       },
                       {
                         "questionId": "86",
-                        "questionText": "Have potential Key Characteristic risk issues been identified?",
+                        "questionText": "B.2 - Have potential Key Characteristic risk issues been identified?",
                         "order": "3"
                       },
                       {
                         "questionId": "87",
-                        "questionText": "Have preliminary design Key Characteristic (KC) issues been defined and are mitigation plans in development?",
+                        "questionText": "B.2 - Have preliminary design Key Characteristic (KC) issues been defined and are mitigation plans in development?",
                         "order": "4"
                       }
                     ]
@@ -870,22 +870,22 @@
                     "questions": [
                       {
                         "questionId": "88",
-                        "questionText": "Is the detailed design of product features and interfaces complete?",
+                        "questionText": "B.2 - Is the detailed design of product features and interfaces complete?",
                         "order": "1"
                       },
                       {
                         "questionId": "89",
-                        "questionText": "Has all the product data essential for system manufacturing been released?",
+                        "questionText": "B.2 - Has all the product data essential for system manufacturing been released?",
                         "order": "2"
                       },
                       {
                         "questionId": "90",
-                        "questionText": "Does the design change traffic have minimal impact on Low Rate Initial Production (LRIP)?",
+                        "questionText": "B.2 - Does the design change traffic have minimal impact on Low Rate Initial Production (LRIP)?",
                         "order": "3"
                       },
                       {
                         "questionId": "91",
-                        "questionText": "Are the Key Characteristics attainable based upon pilot line demonstrations?",
+                        "questionText": "B.2 - Are the Key Characteristics attainable based upon pilot line demonstrations?",
                         "order": "4"
                       }
                     ]
@@ -898,27 +898,27 @@
                     "questions": [
                       {
                         "questionId": "92",
-                        "questionText": "Are the major product design features and configuration stable?",
+                        "questionText": "B.2 - Are the major product design features and configuration stable?",
                         "order": "1"
                       },
                       {
                         "questionId": "93",
-                        "questionText": "Has the system design been validated through operational testing of Low Rate Initial Production (LRIP) items?",
+                        "questionText": "B.2 - Has the system design been validated through operational testing of Low Rate Initial Production (LRIP) items?",
                         "order": "2"
                       },
                       {
                         "questionId": "94",
-                        "questionText": "Is the Physical Configuration Audit (PCA) or equivalent complete as necessary?",
+                        "questionText": "B.2 - Is the Physical Configuration Audit (PCA) or equivalent complete as necessary?",
                         "order": "3"
                       },
                       {
                         "questionId": "95",
-                        "questionText": "Is the design change traffic limited to minor configuration changes?",
+                        "questionText": "B.2 - Is the design change traffic limited to minor configuration changes?",
                         "order": "4"
                       },
                       {
                         "questionId": "96",
-                        "questionText": "Are all Key Characteristics controlled in Low Rate Initial Production (LRIP) to appropriate quality levels?",
+                        "questionText": "B.2 - Are all Key Characteristics controlled in Low Rate Initial Production (LRIP) to appropriate quality levels?",
                         "order": "5"
                       }
                     ]
@@ -931,12 +931,12 @@
                     "questions": [
                       {
                         "questionId": "97",
-                        "questionText": "Is the product design stable (i.e. design changes are few and generally limited to those required for continuous improvement or in reaction to obsolescence)? ",
+                        "questionText": "B.2 - Is the product design stable (i.e. design changes are few and generally limited to those required for continuous improvement or in reaction to obsolescence)? ",
                         "order": "1"
                       },
                       {
                         "questionId": "98",
-                        "questionText": "Are all Key Characteristics controlled in Full Rate Production (FRP) to appropriate quality levels?",
+                        "questionText": "B.2 - Are all Key Characteristics controlled in Full Rate Production (FRP) to appropriate quality levels?",
                         "order": "2"
                       }
                     ]
@@ -970,7 +970,7 @@
                     "questions": [
                       {
                         "questionId": "99",
-                        "questionText": "Has the cost model approach been defined?",
+                        "questionText": "C.1 - Has the cost model approach been defined?",
                         "order": "1"
                       }
                     ]
@@ -983,17 +983,17 @@
                     "questions": [
                       {
                         "questionId": "100",
-                        "questionText": "Have initial cost targets and risks been identified? ",
+                        "questionText": "C.1 - Have initial cost targets and risks been identified? ",
                         "order": "1"
                       },
                       {
                         "questionId": "101",
-                        "questionText": "Has a high level process chart model been developed? ",
+                        "questionText": "C.1 - Has a high level process chart model been developed? ",
                         "order": "2"
                       },
                       {
                         "questionId": "102",
-                        "questionText": "Have technology cost models been developed for new process steps and materials based on experiments?",
+                        "questionText": "C.1 - Have technology cost models been developed for new process steps and materials based on experiments?",
                         "order": "3"
                       }
                     ]
@@ -1006,17 +1006,17 @@
                     "questions": [
                       {
                         "questionId": "103",
-                        "questionText": "Have key manufacturing, material and specialized requirement cost drivers been identified?    ",
+                        "questionText": "C.1 - Have key manufacturing, material and specialized requirement cost drivers been identified?    ",
                         "order": "1"
                       },
                       {
                         "questionId": "104",
-                        "questionText": "Are detailed process chart cost models driven by process variables?",
+                        "questionText": "C.1 - Are detailed process chart cost models driven by process variables?",
                         "order": "2"
                       },
                       {
                         "questionId": "105",
-                        "questionText": "Has cost driver uncertainty been quantified?",
+                        "questionText": "C.1 - Has cost driver uncertainty been quantified?",
                         "order": "3"
                       }
                     ]
@@ -1029,12 +1029,12 @@
                     "questions": [
                       {
                         "questionId": "106",
-                        "questionText": "Do prototype components or simulations produced in a production relevant environment drive the formulation of the final production cost model?",
+                        "questionText": "C.1 - Do prototype components or simulations produced in a production relevant environment drive the formulation of the final production cost model?",
                         "order": "1"
                       },
                       {
                         "questionId": "107",
-                        "questionText": "Is there a realistic cost model that includes  materials, labor, equipment, tooling/Special Test Equipment (STE), setup, yield/scrap/rework, Work In Progress (WIP), and capability/capacity constraints?",
+                        "questionText": "C.1 - Is there a realistic cost model that includes  materials, labor, equipment, tooling/Special Test Equipment (STE), setup, yield/scrap/rework, Work In Progress (WIP), and capability/capacity constraints?",
                         "order": "2"
                       }
                     ]
@@ -1047,7 +1047,7 @@
                     "questions": [
                       {
                         "questionId": "108",
-                        "questionText": "Have cost models been updated with design requirements, material specifications, tolerances, integrated master schedule, results of system/subsystem simulations and  production relevant prototype demonstrations?  ",
+                        "questionText": "C.1 - Have cost models been updated with design requirements, material specifications, tolerances, integrated master schedule, results of system/subsystem simulations and  production relevant prototype demonstrations?  ",
                         "order": "1"
                       }
                     ]
@@ -1060,7 +1060,7 @@
                     "questions": [
                       {
                         "questionId": "109",
-                        "questionText": "Are cost models updated with the results of systems/sub-systems produced in a production representative environment, production plant layout and design, and obsolescence solutions?",
+                        "questionText": "C.1 - Are cost models updated with the results of systems/sub-systems produced in a production representative environment, production plant layout and design, and obsolescence solutions?",
                         "order": "1"
                       }
                     ]
@@ -1073,7 +1073,7 @@
                     "questions": [
                       {
                         "questionId": "110",
-                        "questionText": "Have cost models been updated with results of the pilot line build?",
+                        "questionText": "C.1 - Have cost models been updated with results of the pilot line build?",
                         "order": "1"
                       }
                     ]
@@ -1086,7 +1086,7 @@
                     "questions": [
                       {
                         "questionId": "111",
-                        "questionText": "Has the Full Rate Production (FRP) cost model been updated with the result of the Low Rate Initial Production (LRIP) build?",
+                        "questionText": "C.1 - Has the Full Rate Production (FRP) cost model been updated with the result of the Low Rate Initial Production (LRIP) build?",
                         "order": "1"
                       }
                     ]
@@ -1099,7 +1099,7 @@
                     "questions": [
                       {
                         "questionId": "112",
-                        "questionText": "Has the cost model been validated against actual Full Rate Production (FRP) cost?",
+                        "questionText": "C.1 - Has the cost model been validated against actual Full Rate Production (FRP) cost?",
                         "order": "1"
                       }
                     ]
@@ -1118,7 +1118,7 @@
                     "questions": [
                       {
                         "questionId": "113",
-                        "questionText": "Have manufacturing cost implications been identified?",
+                        "questionText": "C.2 - Have manufacturing cost implications been identified?",
                         "order": "1"
                       }
                     ]
@@ -1131,7 +1131,7 @@
                     "questions": [
                       {
                         "questionId": "114",
-                        "questionText": "Have cost elements been identified?",
+                        "questionText": "C.2 - Have cost elements been identified?",
                         "order": "1"
                       }
                     ]
@@ -1144,7 +1144,7 @@
                     "questions": [
                       {
                         "questionId": "115",
-                        "questionText": "Has a sensitivity analysis been conducted to define cost drivers and production development strategy (i.e. lab to pilot to factory)?",
+                        "questionText": "C.2 - Has a sensitivity analysis been conducted to define cost drivers and production development strategy (i.e. lab to pilot to factory)?",
                         "order": "1"
                       }
                     ]
@@ -1157,12 +1157,12 @@
                     "questions": [
                       {
                         "questionId": "116",
-                        "questionText": "Have producibility cost risks been assessed?  ",
+                        "questionText": "C.2 - Have producibility cost risks been assessed?  ",
                         "order": "1"
                       },
                       {
                         "questionId": "117",
-                        "questionText": " Do initial cost models support Analysis of Alternatives (AoA) and Alternative Systems Review (ASR)?",
+                        "questionText": "C.2 - Do initial cost models support Analysis of Alternatives (AoA) and Alternative Systems Review (ASR)?",
                         "order": "2"
                       }
                     ]
@@ -1175,12 +1175,12 @@
                     "questions": [
                       {
                         "questionId": "118",
-                        "questionText": "Are costs analyzed using prototype component actuals to ensure target costs are achievable? ",
+                        "questionText": "C.2 - Are costs analyzed using prototype component actuals to ensure target costs are achievable? ",
                         "order": "1"
                       },
                       {
                         "questionId": "119",
-                        "questionText": "Are decisions regarding design choices, make/buy, capacity, process capability, sources, quality, key characteristics, yield/rate, and variability influenced by cost models?   ",
+                        "questionText": "C.2 - Are decisions regarding design choices, make/buy, capacity, process capability, sources, quality, key characteristics, yield/rate, and variability influenced by cost models?   ",
                         "order": "2"
                       }
                     ]
@@ -1193,22 +1193,22 @@
                     "questions": [
                       {
                         "questionId": "120",
-                        "questionText": "Are costs analyzed using prototype system/sub-system actuals to ensure target costs are achievable? ",
+                        "questionText": "C.2 - Are costs analyzed using prototype system/sub-system actuals to ensure target costs are achievable? ",
                         "order": "1"
                       },
                       {
                         "questionId": "121",
-                        "questionText": "Have cost targets been allocated to subsystems?",
+                        "questionText": "C.2 - Have cost targets been allocated to subsystems?",
                         "order": "2"
                       },
                       {
                         "questionId": "122",
-                        "questionText": "Have cost reduction and avoidance strategies been developed?",
+                        "questionText": "C.2 - Have cost reduction and avoidance strategies been developed?",
                         "order": "3"
                       },
                       {
                         "questionId": "123",
-                        "questionText": "Have the manufacturing cost drivers for \"Should-Cost\" models been provided?",
+                        "questionText": "C.2 - Have the manufacturing cost drivers for \"Should-Cost\" models been provided?",
                         "order": "4"
                       }
                     ]
@@ -1221,22 +1221,22 @@
                     "questions": [
                       {
                         "questionId": "124",
-                        "questionText": "Have the manufacturing costs been rolled up to the system/sub-system level and been tracked against targets?",
+                        "questionText": "C.2 - Have the manufacturing costs been rolled up to the system/sub-system level and been tracked against targets?",
                         "order": "1"
                       },
                       {
                         "questionId": "125",
-                        "questionText": " Are detailed trade studies and engineering change requests supported by cost estimates?",
+                        "questionText": "C.2 - Are detailed trade studies and engineering change requests supported by cost estimates?",
                         "order": "2"
                       },
                       {
                         "questionId": "126",
-                        "questionText": "Are cost reduction and avoidance strategies underway?",
+                        "questionText": "C.2 - Are cost reduction and avoidance strategies underway?",
                         "order": "3"
                       },
                       {
                         "questionId": "127",
-                        "questionText": "Have the manufacturing cost drivers for \"Should-Cost\" models been updated?",
+                        "questionText": "C.2 - Have the manufacturing cost drivers for \"Should-Cost\" models been updated?",
                         "order": "4"
                       }
                     ]
@@ -1249,17 +1249,17 @@
                     "questions": [
                       {
                         "questionId": "128",
-                        "questionText": "Are costs analyzed using pilot line actuals to ensure target costs are achievable? ",
+                        "questionText": "C.2 - Are costs analyzed using pilot line actuals to ensure target costs are achievable? ",
                         "order": "1"
                       },
                       {
                         "questionId": "129",
-                        "questionText": "Does manufacturing cost analysis support proposed changes to requirements or configuration?",
+                        "questionText": "C.2 - Does manufacturing cost analysis support proposed changes to requirements or configuration?",
                         "order": "2"
                       },
                       {
                         "questionId": "130",
-                        "questionText": "Are the cost reduction initiatives ongoing?",
+                        "questionText": "C.2 - Are the cost reduction initiatives ongoing?",
                         "order": "3"
                       }
                     ]
@@ -1272,27 +1272,27 @@
                     "questions": [
                       {
                         "questionId": "131",
-                        "questionText": "Have Low Rate Initial Production (LRIP) cost goals been met and has the learning curve been analyzed with actual data?  ",
+                        "questionText": "C.2 - Have Low Rate Initial Production (LRIP) cost goals been met and has the learning curve been analyzed with actual data?  ",
                         "order": "1"
                       },
                       {
                         "questionId": "132",
-                        "questionText": "Are the cost reduction initiatives still ongoing?",
+                        "questionText": "C.2 - Are the cost reduction initiatives still ongoing?",
                         "order": "2"
                       },
                       {
                         "questionId": "133",
-                        "questionText": "Have the manufacturing cost drivers for \"Should-Cost\" models been updated?",
+                        "questionText": "C.2 - Have the manufacturing cost drivers for \"Should-Cost\" models been updated?",
                         "order": "3"
                       },
                       {
                         "questionId": "134",
-                        "questionText": "Has touch labor efficiency been analyzed to meet production rates?",
+                        "questionText": "C.2 - Has touch labor efficiency been analyzed to meet production rates?",
                         "order": "4"
                       },
                       {
                         "questionId": "135",
-                        "questionText": "Have elements of inefficiency for touch labor been identified with plans in place for reduction?",
+                        "questionText": "C.2 - Have elements of inefficiency for touch labor been identified with plans in place for reduction?",
                         "order": "5"
                       }
                     ]
@@ -1305,12 +1305,12 @@
                     "questions": [
                       {
                         "questionId": "136",
-                        "questionText": "Have Full Rate Production (FRP) cost goals been met?",
+                        "questionText": "C.2 - Have Full Rate Production (FRP) cost goals been met?",
                         "order": "1"
                       },
                       {
                         "questionId": "137",
-                        "questionText": "Are the cost reduction initiatives continuing?",
+                        "questionText": "C.2 - Are the cost reduction initiatives continuing?",
                         "order": "2"
                       }
                     ]
@@ -1329,7 +1329,7 @@
                     "questions": [
                       {
                         "questionId": "138",
-                        "questionText": "Have potential investments been identified?",
+                        "questionText": "C.3 - Have potential investments been identified?",
                         "order": "1"
                       }
                     ]
@@ -1342,7 +1342,7 @@
                     "questions": [
                       {
                         "questionId": "139",
-                        "questionText": "Do the program/projects have reasonable budget estimates for reaching MRL 3 through experiment?",
+                        "questionText": "C.3 - Do the program/projects have reasonable budget estimates for reaching MRL 3 through experiment?",
                         "order": "1"
                       }
                     ]
@@ -1355,7 +1355,7 @@
                     "questions": [
                       {
                         "questionId": "140",
-                        "questionText": "Do the program/projects have reasonable budget estimates for reaching MRL 4 by Milestone A?",
+                        "questionText": "C.3 - Do the program/projects have reasonable budget estimates for reaching MRL 4 by Milestone A?",
                         "order": "1"
                       }
                     ]
@@ -1368,22 +1368,22 @@
                     "questions": [
                       {
                         "questionId": "141",
-                        "questionText": "Have manufacturing technology initiatives been identified to reduce costs?",
+                        "questionText": "C.3 - Have manufacturing technology initiatives been identified to reduce costs?",
                         "order": "1"
                       },
                       {
                         "questionId": "142",
-                        "questionText": "Does the program have a reasonable budget estimate to reach MRL 6 by Milestone B?",
+                        "questionText": "C.3 - Does the program have a reasonable budget estimate to reach MRL 6 by Milestone B?",
                         "order": "2"
                       },
                       {
                         "questionId": "143",
-                        "questionText": "Does the cost estimate include capital investment for production-relevant equipment?",
+                        "questionText": "C.3 - Does the cost estimate include capital investment for production-relevant equipment?",
                         "order": "3"
                       },
                       {
                         "questionId": "144",
-                        "questionText": "Are all outstanding MRL 4 risk areas understood with approved mitigation plans in place?",
+                        "questionText": "C.3 - Are all outstanding MRL 4 risk areas understood with approved mitigation plans in place?",
                         "order": "4"
                       }
                     ]
@@ -1396,12 +1396,12 @@
                     "questions": [
                       {
                         "questionId": "145",
-                        "questionText": "Does the program have an updated budget estimate for reaching MRL 6 by Milestone B?",
+                        "questionText": "C.3 - Does the program have an updated budget estimate for reaching MRL 6 by Milestone B?",
                         "order": "1"
                       },
                       {
                         "questionId": "146",
-                        "questionText": "Are all outstanding MRL 5 risk areas understood with approved mitigation plans in place?",
+                        "questionText": "C.3 - Are all outstanding MRL 5 risk areas understood with approved mitigation plans in place?",
                         "order": "2"
                       }
                     ]
@@ -1414,17 +1414,17 @@
                     "questions": [
                       {
                         "questionId": "147",
-                        "questionText": "Does the program have a reasonable budget estimate for reaching MRL 8 by Milestone C?",
+                        "questionText": "C.3 - Does the program have a reasonable budget estimate for reaching MRL 8 by Milestone C?",
                         "order": "1"
                       },
                       {
                         "questionId": "148",
-                        "questionText": "Does the cost estimate include capital investment for production-representative equipment by CDR and pilot line equipment by Milestone C?",
+                        "questionText": "C.3 - Does the cost estimate include capital investment for production-representative equipment by CDR and pilot line equipment by Milestone C?",
                         "order": "2"
                       },
                       {
                         "questionId": "149",
-                        "questionText": "Are all outstanding MRL 6 risk areas understood with approved mitigation plans in place?",
+                        "questionText": "C.3 - Are all outstanding MRL 6 risk areas understood with approved mitigation plans in place?",
                         "order": "3"
                       }
                     ]
@@ -1437,12 +1437,12 @@
                     "questions": [
                       {
                         "questionId": "150",
-                        "questionText": "Does the program have an updated budget estimate for reaching MRL 8 by Milestone C?",
+                        "questionText": "C.3 - Does the program have an updated budget estimate for reaching MRL 8 by Milestone C?",
                         "order": "1"
                       },
                       {
                         "questionId": "151",
-                        "questionText": "Are all outstanding MRL 7 risk areas understood with approved mitigation plans in place?",
+                        "questionText": "C.3 - Are all outstanding MRL 7 risk areas understood with approved mitigation plans in place?",
                         "order": "2"
                       }
                     ]
@@ -1455,17 +1455,17 @@
                     "questions": [
                       {
                         "questionId": "152",
-                        "questionText": "Does the program have a reasonable budget estimate for reaching MRL 9 by the Full Rate Production (FRP) decision point?",
+                        "questionText": "C.3 - Does the program have a reasonable budget estimate for reaching MRL 9 by the Full Rate Production (FRP) decision point?",
                         "order": "1"
                       },
                       {
                         "questionId": "153",
-                        "questionText": "Does the cost estimate include investment for Low Rate Initial Production (LRIP) and Full Rate Production (FRP)?",
+                        "questionText": "C.3 - Does the cost estimate include investment for Low Rate Initial Production (LRIP) and Full Rate Production (FRP)?",
                         "order": "2"
                       },
                       {
                         "questionId": "154",
-                        "questionText": "Are all outstanding MRL 8 risk areas understood with approved mitigation plans in place?",
+                        "questionText": "C.3 - Are all outstanding MRL 8 risk areas understood with approved mitigation plans in place?",
                         "order": "3"
                       }
                     ]
@@ -1478,12 +1478,12 @@
                     "questions": [
                       {
                         "questionId": "155",
-                        "questionText": "Does the program have a reasonable budget estimate for Full Rate Production (FRP)?",
+                        "questionText": "C.3 - Does the program have a reasonable budget estimate for Full Rate Production (FRP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "156",
-                        "questionText": "Are all outstanding MRL 9 risk areas understood with approved mitigation plans in place?",
+                        "questionText": "C.3 - Are all outstanding MRL 9 risk areas understood with approved mitigation plans in place?",
                         "order": "2"
                       }
                     ]
@@ -1496,7 +1496,7 @@
                     "questions": [
                       {
                         "questionId": "157",
-                        "questionText": "Are the production budgets sufficient for production at the required rates and schedule to support the funded program?",
+                        "questionText": "C.3 - Are the production budgets sufficient for production at the required rates and schedule to support the funded program?",
                         "order": "1"
                       }
                     ]
@@ -1523,7 +1523,7 @@
                     "questions": [
                       {
                         "questionId": "158",
-                        "questionText": "Have material properties been identified for research?",
+                        "questionText": "D.1 - Have material properties been identified for research?",
                         "order": "1"
                       }
                     ]
@@ -1536,7 +1536,7 @@
                     "questions": [
                       {
                         "questionId": "159",
-                        "questionText": "Have material properties and characteristics been predicted?",
+                        "questionText": "D.1 - Have material properties and characteristics been predicted?",
                         "order": "1"
                       }
                     ]
@@ -1549,7 +1549,7 @@
                     "questions": [
                       {
                         "questionId": "160",
-                        "questionText": "Have material properties been validated and assessed for basic manufacturability using experiments?",
+                        "questionText": "D.1 - Have material properties been validated and assessed for basic manufacturability using experiments?",
                         "order": "1"
                       }
                     ]
@@ -1562,7 +1562,7 @@
                     "questions": [
                       {
                         "questionId": "161",
-                        "questionText": "Have projected materials been produced in a laboratory environment?",
+                        "questionText": "D.1 - Have projected materials been produced in a laboratory environment?",
                         "order": "1"
                       }
                     ]
@@ -1575,12 +1575,12 @@
                     "questions": [
                       {
                         "questionId": "162",
-                        "questionText": "Have all materials been manufactured or produced in a prototype environment (may be in a similar application/program)?",
+                        "questionText": "D.1 - Have all materials been manufactured or produced in a prototype environment (may be in a similar application/program)?",
                         "order": "1"
                       },
                       {
                         "questionId": "163",
-                        "questionText": "Are maturation efforts in place to address new material production risks for technology demonstration?",
+                        "questionText": "D.1 - Are maturation efforts in place to address new material production risks for technology demonstration?",
                         "order": "2"
                       }
                     ]
@@ -1593,17 +1593,17 @@
                     "questions": [
                       {
                         "questionId": "164",
-                        "questionText": "Has the material maturity been verified with technology demonstration articles?",
+                        "questionText": "D.1 - Has the material maturity been verified with technology demonstration articles?",
                         "order": "1"
                       },
                       {
                         "questionId": "165",
-                        "questionText": "Are preliminary material specifications in place?",
+                        "questionText": "D.1 - Are preliminary material specifications in place?",
                         "order": "2"
                       },
                       {
                         "questionId": "166",
-                        "questionText": "Have material properties been adequately characterized?",
+                        "questionText": "D.1 - Have material properties been adequately characterized?",
                         "order": "3"
                       }
                     ]
@@ -1616,12 +1616,12 @@
                     "questions": [
                       {
                         "questionId": "167",
-                        "questionText": "Is the material maturity sufficient for a pilot line build?",
+                        "questionText": "D.1 - Is the material maturity sufficient for a pilot line build?",
                         "order": "1"
                       },
                       {
                         "questionId": "168",
-                        "questionText": "Have the necessary material specifications been approved?",
+                        "questionText": "D.1 - Have the necessary material specifications been approved?",
                         "order": "2"
                       }
                     ]
@@ -1634,12 +1634,12 @@
                     "questions": [
                       {
                         "questionId": "169",
-                        "questionText": "Have the materials been proven and validated during Engineering and Manufacturing Development (EMD) as adequate to support Low Rate Initial Production (LRIP)?",
+                        "questionText": "D.1 - Have the materials been proven and validated during Engineering and Manufacturing Development (EMD) as adequate to support Low Rate Initial Production (LRIP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "170",
-                        "questionText": "Are material specifications stable?",
+                        "questionText": "D.1 - Are material specifications stable?",
                         "order": "2"
                       }
                     ]
@@ -1652,12 +1652,12 @@
                     "questions": [
                       {
                         "questionId": "171",
-                        "questionText": "Have all necessary materials been proven and controlled to specification in Low Rate Initial Production (LRIP)?",
+                        "questionText": "D.1 - Have all necessary materials been proven and controlled to specification in Low Rate Initial Production (LRIP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "172",
-                        "questionText": "Are the materials proven and validated as adequate to support FRP?",
+                        "questionText": "D.1 - Are the materials proven and validated as adequate to support FRP?",
                         "order": "2"
                       }
                     ]
@@ -1670,7 +1670,7 @@
                     "questions": [
                       {
                         "questionId": "173",
-                        "questionText": "Have all necessary materials been proven and controlled to specification in Full Rate Production (FRP)?",
+                        "questionText": "D.1 - Have all necessary materials been proven and controlled to specification in Full Rate Production (FRP)?",
                         "order": "1"
                       }
                     ]
@@ -1696,7 +1696,7 @@
                     "questions": [
                       {
                         "questionId": "174",
-                        "questionText": "Has material availability been assessed?",
+                        "questionText": "D.2 - Has material availability been assessed?",
                         "order": "1"
                       }
                     ]
@@ -1709,7 +1709,7 @@
                     "questions": [
                       {
                         "questionId": "175",
-                        "questionText": "Have material scale-up issues been identified?",
+                        "questionText": "D.2 - Have material scale-up issues been identified?",
                         "order": "1"
                       }
                     ]
@@ -1722,12 +1722,12 @@
                     "questions": [
                       {
                         "questionId": "176",
-                        "questionText": "Have projected lead times been identified for all difficult to obtain, difficult to process, or hazardous materials?",
+                        "questionText": "D.2 - Have projected lead times been identified for all difficult to obtain, difficult to process, or hazardous materials?",
                         "order": "1"
                       },
                       {
                         "questionId": "177",
-                        "questionText": "Have material quantities and lead times been estimated?",
+                        "questionText": "D.2 - Have material quantities and lead times been estimated?",
                         "order": "2"
                       }
                     ]
@@ -1740,17 +1740,17 @@
                     "questions": [
                       {
                         "questionId": "178",
-                        "questionText": "Have material availability issues been addressed for the prototype build?",
+                        "questionText": "D.2 - Have material availability issues been addressed for the prototype build?",
                         "order": "1"
                       },
                       {
                         "questionId": "179",
-                        "questionText": "Have significant material risks been identified for all materials?",
+                        "questionText": "D.2 - Have significant material risks been identified for all materials?",
                         "order": "2"
                       },
                       {
                         "questionId": "180",
-                        "questionText": "Has planning begun to address scale-up issues?",
+                        "questionText": "D.2 - Has planning begun to address scale-up issues?",
                         "order": "3"
                       }
                     ]
@@ -1763,22 +1763,22 @@
                     "questions": [
                       {
                         "questionId": "181",
-                        "questionText": "Have material availability issues been addressed to meet Engineering and Manufacturing Development (EMD) build?",
+                        "questionText": "D.2 - Have material availability issues been addressed to meet Engineering and Manufacturing Development (EMD) build?",
                         "order": "1"
                       },
                       {
                         "questionId": "182",
-                        "questionText": "Have Long-lead items been identified?",
+                        "questionText": "D.2 - Have Long-lead items been identified?",
                         "order": "2"
                       },
                       {
                         "questionId": "183",
-                        "questionText": "Have potential obsolescence issues been identified?",
+                        "questionText": "D.2 - Have potential obsolescence issues been identified?",
                         "order": "3"
                       },
                       {
                         "questionId": "184",
-                        "questionText": "Have components been assessed for future DMSMS risk?",
+                        "questionText": "D.2 - Have components been assessed for future DMSMS risk?",
                         "order": "4"
                       }
                     ]
@@ -1791,22 +1791,22 @@
                     "questions": [
                       {
                         "questionId": "185",
-                        "questionText": "Have material availability issues been addressed to meet Engineering and Manufacturing Development (EMD) builds?",
+                        "questionText": "D.2 - Have material availability issues been addressed to meet Engineering and Manufacturing Development (EMD) builds?",
                         "order": "1"
                       },
                       {
                         "questionId": "186",
-                        "questionText": "Have long lead procurements been identified/planned for Low Rate Initial Production (LRIP)?",
+                        "questionText": "D.2 - Have long lead procurements been identified/planned for Low Rate Initial Production (LRIP)?",
                         "order": "2"
                       },
                       {
                         "questionId": "187",
-                        "questionText": "Is an obsolescence plan in place?",
+                        "questionText": "D.2 - Is an obsolescence plan in place?",
                         "order": "3"
                       },
                       {
                         "questionId": "188",
-                        "questionText": "Are mitigation strategies in place for DMSMS components?",
+                        "questionText": "D.2 - Are mitigation strategies in place for DMSMS components?",
                         "order": "4"
                       }
                     ]
@@ -1819,17 +1819,17 @@
                     "questions": [
                       {
                         "questionId": "189",
-                        "questionText": "Have long lead procurements been initiated for Low Rate Initial Production (LRIP)?",
+                        "questionText": "D.2 - Have long lead procurements been initiated for Low Rate Initial Production (LRIP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "190",
-                        "questionText": "Are material availability risk issues minimized for Low Rate Initial Production (LRIP)?",
+                        "questionText": "D.2 - Are material availability risk issues minimized for Low Rate Initial Production (LRIP)?",
                         "order": "2"
                       },
                       {
                         "questionId": "191",
-                        "questionText": "Have availability Issues been addressed to meet FRP needs?",
+                        "questionText": "D.2 - Have availability Issues been addressed to meet FRP needs?",
                         "order": "3"
                       }
                     ]
@@ -1842,12 +1842,12 @@
                     "questions": [
                       {
                         "questionId": "192",
-                        "questionText": "Have long lead procurements been initiated for Full Rate Production (FRP)?",
+                        "questionText": "D.2 - Have long lead procurements been initiated for Full Rate Production (FRP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "193",
-                        "questionText": "Are availability risk issues minimized for Full Rate Production (FRP)?",
+                        "questionText": "D.2 - Are availability risk issues minimized for Full Rate Production (FRP)?",
                         "order": "2"
                       }
                     ]
@@ -1860,7 +1860,7 @@
                     "questions": [
                       {
                         "questionId": "194",
-                        "questionText": "Are all significant Full Rate Production (FRP) material availability risk issues resolved?",
+                        "questionText": "D.2 - Are all significant Full Rate Production (FRP) material availability risk issues resolved?",
                         "order": "1"
                       }
                     ]
@@ -1893,7 +1893,7 @@
                     "questions": [
                       {
                         "questionId": "195",
-                        "questionText": "Has an initial assessment of potential supply chain capability been completed?",
+                        "questionText": "D.3 - Has an initial assessment of potential supply chain capability been completed?",
                         "order": "1"
                       }
                     ]
@@ -1906,7 +1906,7 @@
                     "questions": [
                       {
                         "questionId": "196",
-                        "questionText": "Has a survey for potential supply chain sources been completed?",
+                        "questionText": "D.3 - Has a survey for potential supply chain sources been completed?",
                         "order": "1"
                       }
                     ]
@@ -1919,7 +1919,7 @@
                     "questions": [
                       {
                         "questionId": "197",
-                        "questionText": "Have potential supply chain sources been identified and evaluated as able to support prototype build?",
+                        "questionText": "D.3 - Have potential supply chain sources been identified and evaluated as able to support prototype build?",
                         "order": "1"
                       }
                     ]
@@ -1932,12 +1932,12 @@
                     "questions": [
                       {
                         "questionId": "198",
-                        "questionText": "Have life cycle supply chain requirements and the critical suppliers list been updated?",
+                        "questionText": "D.3 - Have life cycle supply chain requirements and the critical suppliers list been updated?",
                         "order": "1"
                       },
                       {
                         "questionId": "199",
-                        "questionText": "Are supply chain plans (e.g., teaming agreements, etc.) in place leading to an Engineering and Manufacturing Development (EMD) contract award?",
+                        "questionText": "D.3 - Are supply chain plans (e.g., teaming agreements, etc.) in place leading to an Engineering and Manufacturing Development (EMD) contract award?",
                         "order": "2"
                       }
                     ]
@@ -1950,17 +1950,17 @@
                     "questions": [
                       {
                         "questionId": "200",
-                        "questionText": "Is there an effective supply chain management process defined, documented and in place?",
+                        "questionText": "D.3 - Is there an effective supply chain management process defined, documented and in place?",
                         "order": "1"
                       },
                       {
                         "questionId": "201",
-                        "questionText": "Has a plan been developed for establishing predictive indicators?",
+                        "questionText": "D.3 - Has a plan been developed for establishing predictive indicators?",
                         "order": "2"
                       },
                       {
                         "questionId": "202",
-                        "questionText": "Has an adequate assessment of the critical first tier supply chain been completed (i.e., capability, capacity, etc.)?",
+                        "questionText": "D.3 - Has an adequate assessment of the critical first tier supply chain been completed (i.e., capability, capacity, etc.)?",
                         "order": "3"
                       }
                     ]
@@ -1973,27 +1973,27 @@
                     "questions": [
                       {
                         "questionId": "203",
-                        "questionText": "Is the supply chain adequate to support Low Rate Initial Production (LRIP)?",
+                        "questionText": "D.3 - Is the supply chain adequate to support Low Rate Initial Production (LRIP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "204",
-                        "questionText": "Has an adequate assessment of the critical second and lower tier supply chain been completed?",
+                        "questionText": "D.3 - Has an adequate assessment of the critical second and lower tier supply chain been completed?",
                         "order": "2"
                       },
                       {
                         "questionId": "205",
-                        "questionText": "Is there a robust and disciplined requirements flow-down process verified and in place?",
+                        "questionText": "D.3 - Is there a robust and disciplined requirements flow-down process verified and in place?",
                         "order": "3"
                       },
                       {
                         "questionId": "206",
-                        "questionText": "Has supplier compliance with program requirements and changes been validated?",
+                        "questionText": "D.3 - Has supplier compliance with program requirements and changes been validated?",
                         "order": "4"
                       },
                       {
                         "questionId": "207",
-                        "questionText": "Has the plan for predictive indicators been updated for use in production?",
+                        "questionText": "D.3 - Has the plan for predictive indicators been updated for use in production?",
                         "order": "5"
                       }
                     ]
@@ -2006,22 +2006,22 @@
                     "questions": [
                       {
                         "questionId": "208",
-                        "questionText": "Is the supply chain stable and adequate to support Full Rate Production (FRP)?",
+                        "questionText": "D.3 - Is the supply chain stable and adequate to support Full Rate Production (FRP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "209",
-                        "questionText": "Are long term agreements in place where practical?",
+                        "questionText": "D.3 - Are long term agreements in place where practical?",
                         "order": "2"
                       },
                       {
                         "questionId": "210",
-                        "questionText": "Are the Prime's supplier management metrics (including thresholds and goals) in place and being used to manage risk?",
+                        "questionText": "D.3 - Are the Prime's supplier management metrics (including thresholds and goals) in place and being used to manage risk?",
                         "order": "3"
                       },
                       {
                         "questionId": "211",
-                        "questionText": "Are predictive indicators in place to manage suppliers?",
+                        "questionText": "D.3 - Are predictive indicators in place to manage suppliers?",
                         "order": "4"
                       }
                     ]
@@ -2034,7 +2034,7 @@
                     "questions": [
                       {
                         "questionId": "212",
-                        "questionText": "Has the supply chain been proven to support Full Rate Production (FRP) requirements?",
+                        "questionText": "D.3 - Has the supply chain been proven to support Full Rate Production (FRP) requirements?",
                         "order": "1"
                       }
                     ]
@@ -2060,7 +2060,7 @@
                     "questions": [
                       {
                         "questionId": "213",
-                        "questionText": "Has an initial evaluation of potential regulatory requirements and special handling concerns been completed?",
+                        "questionText": "D.4 - Has an initial evaluation of potential regulatory requirements and special handling concerns been completed?",
                         "order": "1"
                       }
                     ]
@@ -2073,17 +2073,17 @@
                     "questions": [
                       {
                         "questionId": "214",
-                        "questionText": "Has a list of hazardous materials been identified?",
+                        "questionText": "D.4 - Has a list of hazardous materials been identified?",
                         "order": "1"
                       },
                       {
                         "questionId": "215",
-                        "questionText": "Have potential special handling procedures been applied in the lab?",
+                        "questionText": "D.4 - Have potential special handling procedures been applied in the lab?",
                         "order": "2"
                       },
                       {
                         "questionId": "216",
-                        "questionText": "Have special handling concerns been assessed?",
+                        "questionText": "D.4 - Have special handling concerns been assessed?",
                         "order": "3"
                       }
                     ]
@@ -2096,17 +2096,17 @@
                     "questions": [
                       {
                         "questionId": "217",
-                        "questionText": "Has a list of hazardous materials been updated?",
+                        "questionText": "D.4 - Has a list of hazardous materials been updated?",
                         "order": "1"
                       },
                       {
                         "questionId": "218",
-                        "questionText": "Have special handling requirements been identified?",
+                        "questionText": "D.4 - Have special handling requirements been identified?",
                         "order": "2"
                       },
                       {
                         "questionId": "219",
-                        "questionText": "Have the special handling procedures been applied in the lab?",
+                        "questionText": "D.4 - Have the special handling procedures been applied in the lab?",
                         "order": "3"
                       }
                     ]
@@ -2119,17 +2119,17 @@
                     "questions": [
                       {
                         "questionId": "220",
-                        "questionText": "Have special handling procedures been applied in a production relevant environment?",
+                        "questionText": "D.4 - Have special handling procedures been applied in a production relevant environment?",
                         "order": "1"
                       },
                       {
                         "questionId": "221",
-                        "questionText": "Have all special handling requirement gaps been identified?",
+                        "questionText": "D.4 - Have all special handling requirement gaps been identified?",
                         "order": "2"
                       },
                       {
                         "questionId": "222",
-                        "questionText": "Have new special handling processes been demonstrated in lab environment?",
+                        "questionText": "D.4 - Have new special handling processes been demonstrated in lab environment?",
                         "order": "3"
                       }
                     ]
@@ -2142,12 +2142,12 @@
                     "questions": [
                       {
                         "questionId": "223",
-                        "questionText": "Have special handling procedures been applied in a production relevant environment?",
+                        "questionText": "D.4 - Have special handling procedures been applied in a production relevant environment?",
                         "order": "1"
                       },
                       {
                         "questionId": "224",
-                        "questionText": "Have the plans to address the special handling requirement gaps been completed?",
+                        "questionText": "D.4 - Have the plans to address the special handling requirement gaps been completed?",
                         "order": "2"
                       }
                     ]
@@ -2160,12 +2160,12 @@
                     "questions": [
                       {
                         "questionId": "225",
-                        "questionText": "Have special handling procedures been applied in a production representative environment?",
+                        "questionText": "D.4 - Have special handling procedures been applied in a production representative environment?",
                         "order": "1"
                       },
                       {
                         "questionId": "226",
-                        "questionText": "Have special handling procedures been developed and annotated on work instructions for the pilot line?",
+                        "questionText": "D.4 - Have special handling procedures been developed and annotated on work instructions for the pilot line?",
                         "order": "2"
                       }
                     ]
@@ -2178,22 +2178,22 @@
                     "questions": [
                       {
                         "questionId": "227",
-                        "questionText": "Have special handling procedures been applied in a pilot line environment?",
+                        "questionText": "D.4 - Have special handling procedures been applied in a pilot line environment?",
                         "order": "1"
                       },
                       {
                         "questionId": "228",
-                        "questionText": "Have special handling procedures been demonstrated in Engineering and Manufacturing Development (EMD) or technology insertion programs?",
+                        "questionText": "D.4 - Have special handling procedures been demonstrated in Engineering and Manufacturing Development (EMD) or technology insertion programs?",
                         "order": "2"
                       },
                       {
                         "questionId": "229",
-                        "questionText": "Have the special handling risk issues been minimized for Low Rate Initial Production (LRIP)?",
+                        "questionText": "D.4 - Have the special handling risk issues been minimized for Low Rate Initial Production (LRIP)?",
                         "order": "3"
                       },
                       {
                         "questionId": "230",
-                        "questionText": "Do all work instructions contain special handling provisions as required?",
+                        "questionText": "D.4 - Do all work instructions contain special handling provisions as required?",
                         "order": "4"
                       }
                     ]
@@ -2206,17 +2206,17 @@
                     "questions": [
                       {
                         "questionId": "231",
-                        "questionText": "Have special handling procedures been applied in a Low Rate Initial Production (LRIP) environment?",
+                        "questionText": "D.4 - Have special handling procedures been applied in a Low Rate Initial Production (LRIP) environment?",
                         "order": "1"
                       },
                       {
                         "questionId": "232",
-                        "questionText": "Have the special handling procedures been demonstrated in Low Rate Initial Production (LRIP)?",
+                        "questionText": "D.4 - Have the special handling procedures been demonstrated in Low Rate Initial Production (LRIP)?",
                         "order": "2"
                       },
                       {
                         "questionId": "233",
-                        "questionText": "Have the special handling risk issues been minimized for Full Rate Production (FRP)?",
+                        "questionText": "D.4 - Have the special handling risk issues been minimized for Full Rate Production (FRP)?",
                         "order": "3"
                       }
                     ]
@@ -2229,7 +2229,7 @@
                     "questions": [
                       {
                         "questionId": "234",
-                        "questionText": "Have the special handling procedures been effectively implemented in Full Rate Production (FRP)?  ",
+                        "questionText": "D.4 - Have the special handling procedures been effectively implemented in Full Rate Production (FRP)?  ",
                         "order": "1"
                       }
                     ]
@@ -2263,7 +2263,7 @@
                     "questions": [
                       {
                         "questionId": "235",
-                        "questionText": "Have initial models been developed, if applicable?",
+                        "questionText": "E.1 - Have initial models been developed, if applicable?",
                         "order": "1"
                       }
                     ]
@@ -2276,7 +2276,7 @@
                     "questions": [
                       {
                         "questionId": "236",
-                        "questionText": "Have proposed manufacturing concepts or producibility needs been identified based on high-level process flow chart models?",
+                        "questionText": "E.1 - Have proposed manufacturing concepts or producibility needs been identified based on high-level process flow chart models?",
                         "order": "1"
                       }
                     ]
@@ -2289,7 +2289,7 @@
                     "questions": [
                       {
                         "questionId": "237",
-                        "questionText": "Have production modeling and simulation approaches for process or product been identified?",
+                        "questionText": "E.1 - Have production modeling and simulation approaches for process or product been identified?",
                         "order": "1"
                       }
                     ]
@@ -2302,7 +2302,7 @@
                     "questions": [
                       {
                         "questionId": "238",
-                        "questionText": "Have the initial simulation models (product or process) been developed at the component level and used to determine constraints?",
+                        "questionText": "E.1 - Have the initial simulation models (product or process) been developed at the component level and used to determine constraints?",
                         "order": "1"
                       }
                     ]
@@ -2315,7 +2315,7 @@
                     "questions": [
                       {
                         "questionId": "239",
-                        "questionText": "Have the initial simulation models been developed at the technology sub-system or system level and used to determine system constraints?",
+                        "questionText": "E.1 - Have the initial simulation models been developed at the technology sub-system or system level and used to determine system constraints?",
                         "order": "1"
                       }
                     ]
@@ -2328,7 +2328,7 @@
                     "questions": [
                       {
                         "questionId": "240",
-                        "questionText": "Have the simulation models been used to determine system constraints and identify improvement opportunities?",
+                        "questionText": "E.1 - Have the simulation models been used to determine system constraints and identify improvement opportunities?",
                         "order": "1"
                       }
                     ]
@@ -2341,12 +2341,12 @@
                     "questions": [
                       {
                         "questionId": "241",
-                        "questionText": "Have the simulation models been verified by the pilot line? ",
+                        "questionText": "E.1 - Have the simulation models been verified by the pilot line? ",
                         "order": "1"
                       },
                       {
                         "questionId": "242",
-                        "questionText": "Have the results of the simulation models been used to improve processes and determine that Low Rate Initial Production (LRIP) requirements can be met?",
+                        "questionText": "E.1 - Have the results of the simulation models been used to improve processes and determine that Low Rate Initial Production (LRIP) requirements can be met?",
                         "order": "2"
                       }
                     ]
@@ -2359,12 +2359,12 @@
                     "questions": [
                       {
                         "questionId": "243",
-                        "questionText": "Have the simulation models been verified by Low Rate Initial Production (LRIP) build and used to assist in management of Low Rate Initial Production (LRIP)?",
+                        "questionText": "E.1 - Have the simulation models been verified by Low Rate Initial Production (LRIP) build and used to assist in management of Low Rate Initial Production (LRIP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "244",
-                        "questionText": "Have the results of the simulation models been used to determine if Full Rate Production (FRP) requirements can be met?",
+                        "questionText": "E.1 - Have the results of the simulation models been used to determine if Full Rate Production (FRP) requirements can be met?",
                         "order": "2"
                       }
                     ]
@@ -2377,12 +2377,12 @@
                     "questions": [
                       {
                         "questionId": "245",
-                        "questionText": "Have the simulation models been verified by Full Rate Production (FRP) build?",
+                        "questionText": "E.1 - Have the simulation models been verified by Full Rate Production (FRP) build?",
                         "order": "1"
                       },
                       {
                         "questionId": "246",
-                        "questionText": "Have the production simulation models been used as a tool to assist in management of Full Rate Production (FRP)?",
+                        "questionText": "E.1 - Have the production simulation models been used as a tool to assist in management of Full Rate Production (FRP)?",
                         "order": "2"
                       }
                     ]
@@ -2408,7 +2408,7 @@
                     "questions": [
                       {
                         "questionId": "247",
-                        "questionText": "Have material and/or process approaches been identified?",
+                        "questionText": "E.2 - Have material and/or process approaches been identified?",
                         "order": "1"
                       }
                     ]
@@ -2421,12 +2421,12 @@
                     "questions": [
                       {
                         "questionId": "248",
-                        "questionText": "Have high level manufacturing processes been documented?",
+                        "questionText": "E.2 - Have high level manufacturing processes been documented?",
                         "order": "1"
                       },
                       {
                         "questionId": "249",
-                        "questionText": "Have critical manufacturing processes been identified through experimentation?",
+                        "questionText": "E.2 - Have critical manufacturing processes been identified through experimentation?",
                         "order": "2"
                       }
                     ]
@@ -2439,7 +2439,7 @@
                     "questions": [
                       {
                         "questionId": "250",
-                        "questionText": "Has a survey been completed to determine the current state of critical processes?",
+                        "questionText": "E.2 - Has a survey been completed to determine the current state of critical processes?",
                         "order": "1"
                       }
                     ]
@@ -2452,12 +2452,12 @@
                     "questions": [
                       {
                         "questionId": "251",
-                        "questionText": "Has process maturity been assessed on similar processes in production?",
+                        "questionText": "E.2 - Has process maturity been assessed on similar processes in production?",
                         "order": "1"
                       },
                       {
                         "questionId": "252",
-                        "questionText": "Have process capability requirements been identified for pilot line, Low Rate Initial Production (LRIP) and Full Rate Production (FRP)?",
+                        "questionText": "E.2 - Have process capability requirements been identified for pilot line, Low Rate Initial Production (LRIP) and Full Rate Production (FRP)?",
                         "order": "2"
                       }
                     ]
@@ -2470,12 +2470,12 @@
                     "questions": [
                       {
                         "questionId": "253",
-                        "questionText": "Have the key manufacturing processes been demonstrated in a production relevant environment?",
+                        "questionText": "E.2 - Have the key manufacturing processes been demonstrated in a production relevant environment?",
                         "order": "1"
                       },
                       {
                         "questionId": "254",
-                        "questionText": "Has collecting or estimating process capability data from prototype build begun, and have process capability requirements been refined? ",
+                        "questionText": "E.2 - Has collecting or estimating process capability data from prototype build begun, and have process capability requirements been refined? ",
                         "order": "2"
                       }
                     ]
@@ -2488,17 +2488,17 @@
                     "questions": [
                       {
                         "questionId": "255",
-                        "questionText": "Have the manufacturing processes been successfully demonstrated in a production representative environment?",
+                        "questionText": "E.2 - Have the manufacturing processes been successfully demonstrated in a production representative environment?",
                         "order": "1"
                       },
                       {
                         "questionId": "256",
-                        "questionText": "Has collecting or estimating process capability data continued? ",
+                        "questionText": "E.2 - Has collecting or estimating process capability data continued? ",
                         "order": "2"
                       },
                       {
                         "questionId": "257",
-                        "questionText": "Have process capability requirements been refined?",
+                        "questionText": "E.2 - Have process capability requirements been refined?",
                         "order": "3"
                       }
                     ]
@@ -2511,17 +2511,17 @@
                     "questions": [
                       {
                         "questionId": "258",
-                        "questionText": "Have the manufacturing processes for Low Rate Initial Production (LRIP) been verified on a pilot line?",
+                        "questionText": "E.2 - Have the manufacturing processes for Low Rate Initial Production (LRIP) been verified on a pilot line?",
                         "order": "1"
                       },
                       {
                         "questionId": "259",
-                        "questionText": "Does capability data from the pilot line meet the target?",
+                        "questionText": "E.2 - Does capability data from the pilot line meet the target?",
                         "order": "2"
                       },
                       {
                         "questionId": "260",
-                        "questionText": "Have process capability requirements for LRIP been refined based on Pilot Line data?",
+                        "questionText": "E.2 - Have process capability requirements for LRIP been refined based on Pilot Line data?",
                         "order": "3"
                       }
                     ]
@@ -2534,12 +2534,12 @@
                     "questions": [
                       {
                         "questionId": "261",
-                        "questionText": "Are the manufacturing processes stable, adequately controlled, capable, and have the manufacturing processes achieved program  Low Rate Initial Production (LRIP) objectives?",
+                        "questionText": "E.2 - Are the manufacturing processes stable, adequately controlled, capable, and have the manufacturing processes achieved program  Low Rate Initial Production (LRIP) objectives?",
                         "order": "1"
                       },
                       {
                         "questionId": "262",
-                        "questionText": "Have variability experiments been conducted to show Full Rate Production (FRP) impact and potential for continuous improvement? ",
+                        "questionText": "E.2 - Have variability experiments been conducted to show Full Rate Production (FRP) impact and potential for continuous improvement? ",
                         "order": "2"
                       }
                     ]
@@ -2552,7 +2552,7 @@
                     "questions": [
                       {
                         "questionId": "263",
-                        "questionText": "Are the manufacturing processes stable, adequately controlled, capable, and have the manufacturing processes achieved program  Full Rate Production (FRP) objectives?",
+                        "questionText": "E.2 - Are the manufacturing processes stable, adequately controlled, capable, and have the manufacturing processes achieved program  Full Rate Production (FRP) objectives?",
                         "order": "1"
                       }
                     ]
@@ -2585,7 +2585,7 @@
                     "questions": [
                       {
                         "questionId": "264",
-                        "questionText": "Have initial estimates of yields and rates based on experiments or state of the art been completed?",
+                        "questionText": "E.3 - Have initial estimates of yields and rates based on experiments or state of the art been completed?",
                         "order": "1"
                       }
                     ]
@@ -2598,12 +2598,12 @@
                     "questions": [
                       {
                         "questionId": "265",
-                        "questionText": "Has a yield and rates assessment on proposed/similar processes been completed?",
+                        "questionText": "E.3 - Has a yield and rates assessment on proposed/similar processes been completed?",
                         "order": "1"
                       },
                       {
                         "questionId": "266",
-                        "questionText": "Has a yield and rates assessment on proposed/similar processes been applied within the Analysis of Alternatives (AoA)?",
+                        "questionText": "E.3 - Has a yield and rates assessment on proposed/similar processes been applied within the Analysis of Alternatives (AoA)?",
                         "order": "2"
                       }
                     ]
@@ -2616,17 +2616,17 @@
                     "questions": [
                       {
                         "questionId": "267",
-                        "questionText": "Have target yield and rates been established for the pilot line, Low Rate Initial Production (LRIP), and Full Rate Production (FRP)?",
+                        "questionText": "E.3 - Have target yield and rates been established for the pilot line, Low Rate Initial Production (LRIP), and Full Rate Production (FRP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "268",
-                        "questionText": "Have yield and rate issues been identified and does the detailed production schedule support the required production rate?",
+                        "questionText": "E.3 - Have yield and rate issues been identified and does the detailed production schedule support the required production rate?",
                         "order": "2"
                       },
                       {
                         "questionId": "269",
-                        "questionText": "Have yield and rate improvement plans been developed/initiated?",
+                        "questionText": "E.3 - Have yield and rate improvement plans been developed/initiated?",
                         "order": "3"
                       }
                     ]
@@ -2639,12 +2639,12 @@
                     "questions": [
                       {
                         "questionId": "270",
-                        "questionText": "Are yields and rates from the production relevant environment being evaluated against targets?",
+                        "questionText": "E.3 - Are yields and rates from the production relevant environment being evaluated against targets?",
                         "order": "1"
                       },
                       {
                         "questionId": "271",
-                        "questionText": "Are results from the yields and rates from the production relevant environment being fed into an improvement plan?",
+                        "questionText": "E.3 - Are results from the yields and rates from the production relevant environment being fed into an improvement plan?",
                         "order": "2"
                       }
                     ]
@@ -2657,12 +2657,12 @@
                     "questions": [
                       {
                         "questionId": "272",
-                        "questionText": "Are yields and rates from the production representative environment being evaluated against pilot line targets?",
+                        "questionText": "E.3 - Are yields and rates from the production representative environment being evaluated against pilot line targets?",
                         "order": "1"
                       },
                       {
                         "questionId": "273",
-                        "questionText": "Are results from the yields and rates from the production representative environment being fed into  improvement plans?",
+                        "questionText": "E.3 - Are results from the yields and rates from the production representative environment being fed into  improvement plans?",
                         "order": "2"
                       }
                     ]
@@ -2675,17 +2675,17 @@
                     "questions": [
                       {
                         "questionId": "274",
-                        "questionText": "Have pilot line yield and rate targets been achieved?",
+                        "questionText": "E.3 - Have pilot line yield and rate targets been achieved?",
                         "order": "1"
                       },
                       {
                         "questionId": "275",
-                        "questionText": "Have yields and rates required to begin Low Rate Initial Production (LRIP) been refined using pilot line articles?",
+                        "questionText": "E.3 - Have yields and rates required to begin Low Rate Initial Production (LRIP) been refined using pilot line articles?",
                         "order": "2"
                       },
                       {
                         "questionId": "276",
-                        "questionText": "Are yield and rate improvement plans ongoing and being updated?",
+                        "questionText": "E.3 - Are yield and rate improvement plans ongoing and being updated?",
                         "order": "3"
                       }
                     ]
@@ -2698,17 +2698,17 @@
                     "questions": [
                       {
                         "questionId": "277",
-                        "questionText": "Have the Low Rate Initial Production (LRIP) yield and rate targets been achieved?",
+                        "questionText": "E.3 - Have the Low Rate Initial Production (LRIP) yield and rate targets been achieved?",
                         "order": "1"
                       },
                       {
                         "questionId": "278",
-                        "questionText": "Have the results of LRIP yields and rates been used to refine FRP yield requirements?",
+                        "questionText": "E.3 - Have the results of LRIP yields and rates been used to refine FRP yield requirements?",
                         "order": "2"
                       },
                       {
                         "questionId": "279",
-                        "questionText": "Are yield improvements on-going?",
+                        "questionText": "E.3 - Are yield improvements on-going?",
                         "order": "3"
                       }
                     ]
@@ -2721,12 +2721,12 @@
                     "questions": [
                       {
                         "questionId": "280",
-                        "questionText": "Have the Full Rate Production (FRP) yield and rate targets been achieved?",
+                        "questionText": "E.3 - Have the Full Rate Production (FRP) yield and rate targets been achieved?",
                         "order": "1"
                       },
                       {
                         "questionId": "281",
-                        "questionText": "Are yield improvements on-going?",
+                        "questionText": "E.3 - Are yield improvements on-going?",
                         "order": "2"
                       }
                     ]
@@ -2774,12 +2774,12 @@
                     "questions": [
                       {
                         "questionId": "282",
-                        "questionText": "Has a quality strategy been identified as part of the Acquisition Strategy (AS)?",
+                        "questionText": "F.1 - Has a quality strategy been identified as part of the Acquisition Strategy (AS)?",
                         "order": "1"
                       },
                       {
                         "questionId": "283",
-                        "questionText": "Is the updated quality strategy included in the System Engineering Plan (SEP)?",
+                        "questionText": "F.1 - Is the updated quality strategy included in the System Engineering Plan (SEP)?",
                         "order": "2"
                       }
                     ]
@@ -2792,7 +2792,7 @@
                     "questions": [
                       {
                         "questionId": "284",
-                        "questionText": "Has the quality strategy been updated to reflect Key Characteristic identification activities?",
+                        "questionText": "F.1 - Has the quality strategy been updated to reflect Key Characteristic identification activities?",
                         "order": "1"
                       }
                     ]
@@ -2805,12 +2805,12 @@
                     "questions": [
                       {
                         "questionId": "285",
-                        "questionText": "Is there an initial Quality Plan (QP) and a Quality Management System (QMS) in place?",
+                        "questionText": "F.1 - Is there an initial Quality Plan (QP) and a Quality Management System (QMS) in place?",
                         "order": "1"
                       },
                       {
                         "questionId": "286",
-                        "questionText": "Have quality risks and adequate metrics been identified and improvement plans initiated?",
+                        "questionText": "F.1 - Have quality risks and adequate metrics been identified and improvement plans initiated?",
                         "order": "2"
                       }
                     ]
@@ -2823,17 +2823,17 @@
                     "questions": [
                       {
                         "questionId": "287",
-                        "questionText": "Have the quality targets been established?",
+                        "questionText": "F.1 - Have the quality targets been established?",
                         "order": "1"
                       },
                       {
                         "questionId": "288",
-                        "questionText": "Do Quality Management System (QMS) elements (e.g., control of nonconforming material, corrective action, etc.) meet requirements of appropriate industry standards?",
+                        "questionText": "F.1 - Do Quality Management System (QMS) elements (e.g., control of nonconforming material, corrective action, etc.) meet requirements of appropriate industry standards?",
                         "order": "2"
                       },
                       {
                         "questionId": "289",
-                        "questionText": "Is a program-specific quality plan being developed?",
+                        "questionText": "F.1 - Is a program-specific quality plan being developed?",
                         "order": "3"
                       }
                     ]
@@ -2846,12 +2846,12 @@
                     "questions": [
                       {
                         "questionId": "290",
-                        "questionText": "Have the program-specific quality plan and Quality Manager been established?",
+                        "questionText": "F.1 - Have the program-specific quality plan and Quality Manager been established?",
                         "order": "1"
                       },
                       {
                         "questionId": "291",
-                        "questionText": "Have quality targets been assessed against the pilot line to see if they drive continuous quality improvement?",
+                        "questionText": "F.1 - Have quality targets been assessed against the pilot line to see if they drive continuous quality improvement?",
                         "order": "2"
                       }
                     ]
@@ -2864,17 +2864,17 @@
                     "questions": [
                       {
                         "questionId": "292",
-                        "questionText": "Have quality targets been verified on the Low Rate Initial Production (LRIP) line?",
+                        "questionText": "F.1 - Have quality targets been verified on the Low Rate Initial Production (LRIP) line?",
                         "order": "1"
                       },
                       {
                         "questionId": "293",
-                        "questionText": "Is continuous quality improvement on-going?",
+                        "questionText": "F.1 - Is continuous quality improvement on-going?",
                         "order": "2"
                       },
                       {
                         "questionId": "294",
-                        "questionText": "Is management review of quality targets conducted on a regular basis with appropriate action being taken?",
+                        "questionText": "F.1 - Is management review of quality targets conducted on a regular basis with appropriate action being taken?",
                         "order": "3"
                       }
                     ]
@@ -2887,17 +2887,17 @@
                     "questions": [
                       {
                         "questionId": "295",
-                        "questionText": "Have the quality targets been verified on the Full Rate Production (FRP) line?",
+                        "questionText": "F.1 - Have the quality targets been verified on the Full Rate Production (FRP) line?",
                         "order": "1"
                       },
                       {
                         "questionId": "296",
-                        "questionText": "Is continuous quality improvement on-going?",
+                        "questionText": "F.1 - Is continuous quality improvement on-going?",
                         "order": "2"
                       },
                       {
                         "questionId": "297",
-                        "questionText": "Are statistical controls being applied where appropriate?",
+                        "questionText": "F.1 - Are statistical controls being applied where appropriate?",
                         "order": "3"
                       }
                     ]
@@ -2937,12 +2937,12 @@
                     "questions": [
                       {
                         "questionId": "298",
-                        "questionText": "Has a product inspection and acceptance testing strategy been identified as part of the Acquisition Strategy?",
+                        "questionText": "F.2 - Has a product inspection and acceptance testing strategy been identified as part of the Acquisition Strategy?",
                         "order": "1"
                       },
                       {
                         "questionId": "299",
-                        "questionText": "Has a product inspection and acceptance testing strategy been included in the Systems Engineering Plan (SEP)?",
+                        "questionText": "F.2 - Has a product inspection and acceptance testing strategy been included in the Systems Engineering Plan (SEP)?",
                         "order": "2"
                       }
                     ]
@@ -2955,12 +2955,12 @@
                     "questions": [
                       {
                         "questionId": "300",
-                        "questionText": "Have roles and responsibilities been identified for acceptance test procedures, in-process and final inspections? ",
+                        "questionText": "F.2 - Have roles and responsibilities been identified for acceptance test procedures, in-process and final inspections? ",
                         "order": "1"
                       },
                       {
                         "questionId": "301",
-                        "questionText": "Have statistical process controls been identified for prototype units?",
+                        "questionText": "F.2 - Have statistical process controls been identified for prototype units?",
                         "order": "2"
                       }
                     ]
@@ -2973,17 +2973,17 @@
                     "questions": [
                       {
                         "questionId": "302",
-                        "questionText": "Has a Key Characteristic management approach been defined?",
+                        "questionText": "F.2 - Has a Key Characteristic management approach been defined?",
                         "order": "1"
                       },
                       {
                         "questionId": "303",
-                        "questionText": "Have initial requirements been identified for acceptance test procedures and in-process and final inspection requirements for EMD units?",
+                        "questionText": "F.2 - Have initial requirements been identified for acceptance test procedures and in-process and final inspection requirements for EMD units?",
                         "order": "2"
                       },
                       {
                         "questionId": "304",
-                        "questionText": "Have appropriate inspection and acceptance test procedures been identified for prototype units?",
+                        "questionText": "F.2 - Have appropriate inspection and acceptance test procedures been identified for prototype units?",
                         "order": "3"
                       }
                     ]
@@ -2996,17 +2996,17 @@
                     "questions": [
                       {
                         "questionId": "305",
-                        "questionText": "Has quality data from the production representative environment been collected and analyzed and the results used to shape improvement plans?",
+                        "questionText": "F.2 - Has quality data from the production representative environment been collected and analyzed and the results used to shape improvement plans?",
                         "order": "1"
                       },
                       {
                         "questionId": "306",
-                        "questionText": "Are control plans completed for management of Key Characteristics?",
+                        "questionText": "F.2 - Are control plans completed for management of Key Characteristics?",
                         "order": "2"
                       },
                       {
                         "questionId": "307",
-                        "questionText": "Are Test and Inspection Plans being developed for EMD units?",
+                        "questionText": "F.2 - Are Test and Inspection Plans being developed for EMD units?",
                         "order": "3"
                       }
                     ]
@@ -3019,17 +3019,17 @@
                     "questions": [
                       {
                         "questionId": "308",
-                        "questionText": "Are Key Characteristics managed with measurement procedures and controls in place (e.g. SPC, FRACAS, audits, customer satisfaction, etc.)?",
+                        "questionText": "F.2 - Are Key Characteristics managed with measurement procedures and controls in place (e.g. SPC, FRACAS, audits, customer satisfaction, etc.)?",
                         "order": "1"
                       },
                       {
                         "questionId": "309",
-                        "questionText": "Does the Pilot line data meet capability requirements for all Key Characteristics?",
+                        "questionText": "F.2 - Does the Pilot line data meet capability requirements for all Key Characteristics?",
                         "order": "2"
                       },
                       {
                         "questionId": "310",
-                        "questionText": "Are Test and Inspection Plans complete and validated for production units?",
+                        "questionText": "F.2 - Are Test and Inspection Plans complete and validated for production units?",
                         "order": "3"
                       }
                     ]
@@ -3042,7 +3042,7 @@
                     "questions": [
                       {
                         "questionId": "311",
-                        "questionText": "Does data from LRIP demonstrate that production processes for all Key Characteristics and other manufacturing processes critical to quality are capable and under control for FRP?",
+                        "questionText": "F.2 - Does data from LRIP demonstrate that production processes for all Key Characteristics and other manufacturing processes critical to quality are capable and under control for FRP?",
                         "order": "1"
                       }
                     ]
@@ -3055,17 +3055,17 @@
                     "questions": [
                       {
                         "questionId": "312",
-                        "questionText": "Is the quality of Key Characteristics controlled at rate, and the data reflects only rare and unrepeated quality issues related to manufacturing processes?",
+                        "questionText": "F.2 - Is the quality of Key Characteristics controlled at rate, and the data reflects only rare and unrepeated quality issues related to manufacturing processes?",
                         "order": "1"
                       },
                       {
                         "questionId": "313",
-                        "questionText": "Do results of quality data achieve targeted statistical level on all Key Characteristics?",
+                        "questionText": "F.2 - Do results of quality data achieve targeted statistical level on all Key Characteristics?",
                         "order": "2"
                       },
                       {
                         "questionId": "314",
-                        "questionText": "Do results of quality data reflect continuous improvement?",
+                        "questionText": "F.2 - Do results of quality data reflect continuous improvement?",
                         "order": "3"
                       }
                     ]
@@ -3105,7 +3105,7 @@
                     "questions": [
                       {
                         "questionId": "315",
-                        "questionText": "Are potential supplier base quality capabilities and risks identified, to include subtier supplier quality management? ",
+                        "questionText": "F.3 - Are potential supplier base quality capabilities and risks identified, to include subtier supplier quality management? ",
                         "order": "1"
                       }
                     ]
@@ -3118,7 +3118,7 @@
                     "questions": [
                       {
                         "questionId": "316",
-                        "questionText": "Have supply base quality capabilities and risks been identified, to include subtier quality management?",
+                        "questionText": "F.3 - Have supply base quality capabilities and risks been identified, to include subtier quality management?",
                         "order": "1"
                       }
                     ]
@@ -3131,7 +3131,7 @@
                     "questions": [
                       {
                         "questionId": "317",
-                        "questionText": "Have specific supply base quality improvement initiatives been identified addressing supplier Quality Management System shortfalls, including subtier supplier quality management?",
+                        "questionText": "F.3 - Have specific supply base quality improvement initiatives been identified addressing supplier Quality Management System shortfalls, including subtier supplier quality management?",
                         "order": "1"
                       }
                     ]
@@ -3144,17 +3144,17 @@
                     "questions": [
                       {
                         "questionId": "318",
-                        "questionText": "Do key supplier Quality Management Systems meet appropriate industry standards? ",
+                        "questionText": "F.3 - Do key supplier Quality Management Systems meet appropriate industry standards? ",
                         "order": "1"
                       },
                       {
                         "questionId": "319",
-                        "questionText": "Has supplier quality data from production representative units been collected and analyzed?",
+                        "questionText": "F.3 - Has supplier quality data from production representative units been collected and analyzed?",
                         "order": "2"
                       },
                       {
                         "questionId": "320",
-                        "questionText": "Has a strategy been outlined for audits of critical supplier processes?",
+                        "questionText": "F.3 - Has a strategy been outlined for audits of critical supplier processes?",
                         "order": "3"
                       }
                     ]
@@ -3167,27 +3167,27 @@
                     "questions": [
                       {
                         "questionId": "321",
-                        "questionText": "Are supplier program-specific Quality Management Systems adequate ?",
+                        "questionText": "F.3 - Are supplier program-specific Quality Management Systems adequate ?",
                         "order": "1"
                       },
                       {
                         "questionId": "322",
-                        "questionText": "Have supplier products completed qualification testing?",
+                        "questionText": "F.3 - Have supplier products completed qualification testing?",
                         "order": "2"
                       },
                       {
                         "questionId": "323",
-                        "questionText": "Have supplier products completed first article inspection?",
+                        "questionText": "F.3 - Have supplier products completed first article inspection?",
                         "order": "3"
                       },
                       {
                         "questionId": "324",
-                        "questionText": "Is acceptance testing of supplier products adequate to begin LRIP?",
+                        "questionText": "F.3 - Is acceptance testing of supplier products adequate to begin LRIP?",
                         "order": "4"
                       },
                       {
                         "questionId": "325",
-                        "questionText": "Is a plan for subcontractor process audits in place and being implemented by prime contractor?",
+                        "questionText": "F.3 - Is a plan for subcontractor process audits in place and being implemented by prime contractor?",
                         "order": "5"
                       }
                     ]
@@ -3200,17 +3200,17 @@
                     "questions": [
                       {
                         "questionId": "326",
-                        "questionText": "Does supplier management of quality of Key Characteristics and other critical manufacturing processes demonstrate capability and control for FRP?",
+                        "questionText": "F.3 - Does supplier management of quality of Key Characteristics and other critical manufacturing processes demonstrate capability and control for FRP?",
                         "order": "1"
                       },
                       {
                         "questionId": "327",
-                        "questionText": "Does acceptance testing of supplier products reflects control of quality adequate to begin FRP?",
+                        "questionText": "F.3 - Does acceptance testing of supplier products reflects control of quality adequate to begin FRP?",
                         "order": "2"
                       },
                       {
                         "questionId": "328",
-                        "questionText": "Are subcontractor Quality Audits performed as necessary to ensure subcontractor specification compliance?",
+                        "questionText": "F.3 - Are subcontractor Quality Audits performed as necessary to ensure subcontractor specification compliance?",
                         "order": "3"
                       }
                     ]
@@ -3223,17 +3223,17 @@
                     "questions": [
                       {
                         "questionId": "329",
-                        "questionText": "Does supplier quality data reflect adequate management of Key Characteristics and control of critical manufacturing processes, including quality management down to subtier suppliers?",
+                        "questionText": "F.3 - Does supplier quality data reflect adequate management of Key Characteristics and control of critical manufacturing processes, including quality management down to subtier suppliers?",
                         "order": "1"
                       },
                       {
                         "questionId": "330",
-                        "questionText": "Does process quality achieve high statistical level (e.g. 6-sigma) on all critical dimensions? ",
+                        "questionText": "F.3 - Does process quality achieve high statistical level (e.g. 6-sigma) on all critical dimensions? ",
                         "order": "2"
                       },
                       {
                         "questionId": "331",
-                        "questionText": "Are subcontractor Quality Audits performed as necessary to ensure subcontractor specification compliance?",
+                        "questionText": "F.3 - Are subcontractor Quality Audits performed as necessary to ensure subcontractor specification compliance?",
                         "order": "3"
                       }
                     ]
@@ -3274,7 +3274,7 @@
                     "questions": [
                       {
                         "questionId": "332",
-                        "questionText": "Have new manufacturing skills been identified?",
+                        "questionText": "G.1 - Have new manufacturing skills been identified?",
                         "order": "1"
                       }
                     ]
@@ -3287,17 +3287,17 @@
                     "questions": [
                       {
                         "questionId": "333",
-                        "questionText": "Have manufacturing skill sets been identified?",
+                        "questionText": "G.1 - Have manufacturing skill sets been identified?",
                         "order": "1"
                       },
                       {
                         "questionId": "334",
-                        "questionText": "Have production workforce requirements (technical and operational) been evaluated as part of AoA?",
+                        "questionText": "G.1 - Have production workforce requirements (technical and operational) been evaluated as part of AoA?",
                         "order": "2"
                       },
                       {
                         "questionId": "335",
-                        "questionText": "Has the availability of process development workforce for the Technology Maturation and Risk Reduction Phase been determined?",
+                        "questionText": "G.1 - Has the availability of process development workforce for the Technology Maturation and Risk Reduction Phase been determined?",
                         "order": "3"
                       }
                     ]
@@ -3310,17 +3310,17 @@
                     "questions": [
                       {
                         "questionId": "336",
-                        "questionText": "Have the necessary workforce skill sets been identified to meet prototype production needs?",
+                        "questionText": "G.1 - Have the necessary workforce skill sets been identified to meet prototype production needs?",
                         "order": "1"
                       },
                       {
                         "questionId": "337",
-                        "questionText": "Have plans for the identified skill sets been developed to meet prototype production needs?",
+                        "questionText": "G.1 - Have plans for the identified skill sets been developed to meet prototype production needs?",
                         "order": "2"
                       },
                       {
                         "questionId": "338",
-                        "questionText": "Have special skills certification and training requirements been established?",
+                        "questionText": "G.1 - Have special skills certification and training requirements been established?",
                         "order": "3"
                       }
                     ]
@@ -3333,17 +3333,17 @@
                     "questions": [
                       {
                         "questionId": "339",
-                        "questionText": "Are the manufacturing workforce skills available for production in a relevant environment?",
+                        "questionText": "G.1 - Are the manufacturing workforce skills available for production in a relevant environment?",
                         "order": "1"
                       },
                       {
                         "questionId": "340",
-                        "questionText": "Have resources (quantities and skill sets) been identified to achieve requirements for pilot line and production? ",
+                        "questionText": "G.1 - Have resources (quantities and skill sets) been identified to achieve requirements for pilot line and production? ",
                         "order": "2"
                       },
                       {
                         "questionId": "341",
-                        "questionText": "Have initial plans for the identified resources (quantities and skill sets) been developed to achieve requirements for pilot line and production? ",
+                        "questionText": "G.1 - Have initial plans for the identified resources (quantities and skill sets) been developed to achieve requirements for pilot line and production? ",
                         "order": "3"
                       }
                     ]
@@ -3356,22 +3356,22 @@
                     "questions": [
                       {
                         "questionId": "342",
-                        "questionText": "Have the manufacturing workforce resource requirements been identified for the pilot line?",
+                        "questionText": "G.1 - Have the manufacturing workforce resource requirements been identified for the pilot line?",
                         "order": "1"
                       },
                       {
                         "questionId": "343",
-                        "questionText": " Have plans been developed to achieve pilot line requirements?",
+                        "questionText": "G.1 - Have plans been developed to achieve pilot line requirements?",
                         "order": "2"
                       },
                       {
                         "questionId": "344",
-                        "questionText": " Have plans been updated to achieve Low Rate Initial Production (LRIP) workforce requirements? ",
+                        "questionText": "G.1 - Have plans been updated to achieve Low Rate Initial Production (LRIP) workforce requirements? ",
                         "order": "3"
                       },
                       {
                         "questionId": "345",
-                        "questionText": "Has the pilot line workforce been trained in the representative environment?",
+                        "questionText": "G.1 - Has the pilot line workforce been trained in the representative environment?",
                         "order": "4"
                       }
                     ]
@@ -3384,22 +3384,22 @@
                     "questions": [
                       {
                         "questionId": "346",
-                        "questionText": "Have manufacturing workforce resource requirements been identified for Low Rate Initial Production (LRIP)?",
+                        "questionText": "G.1 - Have manufacturing workforce resource requirements been identified for Low Rate Initial Production (LRIP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "347",
-                        "questionText": " Have plans been developed to achieve Low Rate Initial Production (LRIP) requirements?",
+                        "questionText": "G.1 - Have plans been developed to achieve Low Rate Initial Production (LRIP) requirements?",
                         "order": "2"
                       },
                       {
                         "questionId": "348",
-                        "questionText": " Have plans been updated to achieve  Full Rate Production (FRP) workforce requirements? ",
+                        "questionText": "G.1 - Have plans been updated to achieve  Full Rate Production (FRP) workforce requirements? ",
                         "order": "3"
                       },
                       {
                         "questionId": "349",
-                        "questionText": "Have Low Rate Initial Production (LRIP) personnel been trained on the pilot line where possible?",
+                        "questionText": "G.1 - Have Low Rate Initial Production (LRIP) personnel been trained on the pilot line where possible?",
                         "order": "4"
                       }
                     ]
@@ -3412,12 +3412,12 @@
                     "questions": [
                       {
                         "questionId": "350",
-                        "questionText": "Have Low Rate Initial Production (LRIP) personnel requirements been met?",
+                        "questionText": "G.1 - Have Low Rate Initial Production (LRIP) personnel requirements been met?",
                         "order": "1"
                       },
                       {
                         "questionId": "351",
-                        "questionText": "Has a plan been implemented to achieve Full Rate Production (FRP) workforce requirements?",
+                        "questionText": "G.1 - Has a plan been implemented to achieve Full Rate Production (FRP) workforce requirements?",
                         "order": "2"
                       }
                     ]
@@ -3430,12 +3430,12 @@
                     "questions": [
                       {
                         "questionId": "352",
-                        "questionText": "Have Full Rate Production (FRP) personnel requirements been met including all necessary certifications?",
+                        "questionText": "G.1 - Have Full Rate Production (FRP) personnel requirements been met including all necessary certifications?",
                         "order": "1"
                       },
                       {
                         "questionId": "353",
-                        "questionText": "Are production workforce skill sets being maintained due to attrition of the workforce?",
+                        "questionText": "G.1 - Are production workforce skill sets being maintained due to attrition of the workforce?",
                         "order": "2"
                       }
                     ]
@@ -3483,7 +3483,7 @@
                     "questions": [
                       {
                         "questionId": "354",
-                        "questionText": "Are tooling/Special Test Equipment (STE)/Special Inspection Equipment (SIE) requirements being considered as part of AoA?",
+                        "questionText": "H.1 - Are tooling/Special Test Equipment (STE)/Special Inspection Equipment (SIE) requirements being considered as part of AoA?",
                         "order": "1"
                       }
                     ]
@@ -3496,12 +3496,12 @@
                     "questions": [
                       {
                         "questionId": "355",
-                        "questionText": "Have tooling and STE/SIE requirements been identified?",
+                        "questionText": "H.1 - Have tooling and STE/SIE requirements been identified?",
                         "order": "1"
                       },
                       {
                         "questionId": "356",
-                        "questionText": "Have supporting rationale and a schedule been provided for the tooling and STE/SIE requirements? ",
+                        "questionText": "H.1 - Have supporting rationale and a schedule been provided for the tooling and STE/SIE requirements? ",
                         "order": "2"
                       }
                     ]
@@ -3514,12 +3514,12 @@
                     "questions": [
                       {
                         "questionId": "357",
-                        "questionText": "Have prototype tooling and STE/SIE concepts been demonstrated in production relevant environment? ",
+                        "questionText": "H.1 - Have prototype tooling and STE/SIE concepts been demonstrated in production relevant environment? ",
                         "order": "1"
                       },
                       {
                         "questionId": "358",
-                        "questionText": "Have production tooling and STE/SIE requirements been developed?",
+                        "questionText": "H.1 - Have production tooling and STE/SIE requirements been developed?",
                         "order": "2"
                       }
                     ]
@@ -3532,12 +3532,12 @@
                     "questions": [
                       {
                         "questionId": "359",
-                        "questionText": "Are production tooling and STE/SIE design and development efforts underway?",
+                        "questionText": "H.1 - Are production tooling and STE/SIE design and development efforts underway?",
                         "order": "1"
                       },
                       {
                         "questionId": "360",
-                        "questionText": "Has a manufacturing equipment maintenance strategy been developed?",
+                        "questionText": "H.1 - Has a manufacturing equipment maintenance strategy been developed?",
                         "order": "2"
                       }
                     ]
@@ -3550,17 +3550,17 @@
                     "questions": [
                       {
                         "questionId": "361",
-                        "questionText": "Have all tooling, test, and inspection equipment been proven on the pilot line?",
+                        "questionText": "H.1 - Have all tooling, test, and inspection equipment been proven on the pilot line?",
                         "order": "1"
                       },
                       {
                         "questionId": "362",
-                        "questionText": "Have all tooling, test and inspection equipment requirements been identified for Low Rate Initial Production (LRIP)?",
+                        "questionText": "H.1 - Have all tooling, test and inspection equipment requirements been identified for Low Rate Initial Production (LRIP)?",
                         "order": "2"
                       },
                       {
                         "questionId": "363",
-                        "questionText": "Has manufacturing equipment maintenance been demonstrated on pilot line?",
+                        "questionText": "H.1 - Has manufacturing equipment maintenance been demonstrated on pilot line?",
                         "order": "3"
                       }
                     ]
@@ -3573,17 +3573,17 @@
                     "questions": [
                       {
                         "questionId": "364",
-                        "questionText": "Have all tooling, test, and inspection equipment been proven in the Low Rate Initial Production (LRIP)?",
+                        "questionText": "H.1 - Have all tooling, test, and inspection equipment been proven in the Low Rate Initial Production (LRIP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "365",
-                        "questionText": "Has all tooling, test, and inspection equipment been proven in LRIP and additional requirements identified for Full Rate Production (FRP)?",
+                        "questionText": "H.1 - Has all tooling, test, and inspection equipment been proven in LRIP and additional requirements identified for Full Rate Production (FRP)?",
                         "order": "2"
                       },
                       {
                         "questionId": "366",
-                        "questionText": "Has a manufacturing equipment maintenance schedule been demonstrated?",
+                        "questionText": "H.1 - Has a manufacturing equipment maintenance schedule been demonstrated?",
                         "order": "3"
                       }
                     ]
@@ -3596,12 +3596,12 @@
                     "questions": [
                       {
                         "questionId": "367",
-                        "questionText": "Is proven tooling, test, and inspection equipment in place to support maximum Full Rate Production (FRP)?",
+                        "questionText": "H.1 - Is proven tooling, test, and inspection equipment in place to support maximum Full Rate Production (FRP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "368",
-                        "questionText": "Has a planned equipment maintenance schedule been achieved?",
+                        "questionText": "H.1 - Has a planned equipment maintenance schedule been achieved?",
                         "order": "2"
                       }
                     ]
@@ -3634,7 +3634,7 @@
                     "questions": [
                       {
                         "questionId": "369",
-                        "questionText": "Have specialized facility requirements/needs been identified? ",
+                        "questionText": "H.2 - Have specialized facility requirements/needs been identified? ",
                         "order": "1"
                       }
                     ]
@@ -3647,7 +3647,7 @@
                     "questions": [
                       {
                         "questionId": "370",
-                        "questionText": "Has the availability of manufacturing facilities for prototype development and production been evaluated as part of the Analysis of Alternatives (AoA)?",
+                        "questionText": "H.2 - Has the availability of manufacturing facilities for prototype development and production been evaluated as part of the Analysis of Alternatives (AoA)?",
                         "order": "1"
                       }
                     ]
@@ -3660,12 +3660,12 @@
                     "questions": [
                       {
                         "questionId": "371",
-                        "questionText": "Have manufacturing facilities been identified to produce prototypes?",
+                        "questionText": "H.2 - Have manufacturing facilities been identified to produce prototypes?",
                         "order": "1"
                       },
                       {
                         "questionId": "372",
-                        "questionText": "Have plans for the identified manufacturing facilities been developed to produce prototypes?",
+                        "questionText": "H.2 - Have plans for the identified manufacturing facilities been developed to produce prototypes?",
                         "order": "2"
                       }
                     ]
@@ -3678,12 +3678,12 @@
                     "questions": [
                       {
                         "questionId": "373",
-                        "questionText": "Have manufacturing facilities been identified to produce the pilot line build?",
+                        "questionText": "H.2 - Have manufacturing facilities been identified to produce the pilot line build?",
                         "order": "1"
                       },
                       {
                         "questionId": "374",
-                        "questionText": "Have plans for the identified manufacturing facilities been developed to produce the pilot line build?",
+                        "questionText": "H.2 - Have plans for the identified manufacturing facilities been developed to produce the pilot line build?",
                         "order": "2"
                       }
                     ]
@@ -3696,12 +3696,12 @@
                     "questions": [
                       {
                         "questionId": "375",
-                        "questionText": "Have manufacturing facilities been identified to produce the Low Rate Initial Production (LRIP) build?",
+                        "questionText": "H.2 - Have manufacturing facilities been identified to produce the Low Rate Initial Production (LRIP) build?",
                         "order": "1"
                       },
                       {
                         "questionId": "376",
-                        "questionText": "Have plans for the identified manufacturing facilities been developed to produce the Low Rate Initial Production (LRIP) build?",
+                        "questionText": "H.2 - Have plans for the identified manufacturing facilities been developed to produce the Low Rate Initial Production (LRIP) build?",
                         "order": "2"
                       }
                     ]
@@ -3714,22 +3714,22 @@
                     "questions": [
                       {
                         "questionId": "377",
-                        "questionText": "Have pilot line facilities been demonstrated?",
+                        "questionText": "H.2 - Have pilot line facilities been demonstrated?",
                         "order": "1"
                       },
                       {
                         "questionId": "378",
-                        "questionText": "Are manufacturing facilities adequate to begin Low Rate Initial Production (LRIP)?",
+                        "questionText": "H.2 - Are manufacturing facilities adequate to begin Low Rate Initial Production (LRIP)?",
                         "order": "2"
                       },
                       {
                         "questionId": "379",
-                        "questionText": "Are plans in place to support the transition to Full Rate Production (FRP)?",
+                        "questionText": "H.2 - Are plans in place to support the transition to Full Rate Production (FRP)?",
                         "order": "3"
                       },
                       {
                         "questionId": "380",
-                        "questionText": "Is workplace safety adequate?",
+                        "questionText": "H.2 - Is workplace safety adequate?",
                         "order": "4"
                       }
                     ]
@@ -3742,12 +3742,12 @@
                     "questions": [
                       {
                         "questionId": "381",
-                        "questionText": "Have manufacturing facilities been demonstrated in Low Rate Initial Production (LRIP)? ",
+                        "questionText": "H.2 - Have manufacturing facilities been demonstrated in Low Rate Initial Production (LRIP)? ",
                         "order": "1"
                       },
                       {
                         "questionId": "382",
-                        "questionText": "Are capacity plans adequate to support Full Rate Production (FRP)? ",
+                        "questionText": "H.2 - Are capacity plans adequate to support Full Rate Production (FRP)? ",
                         "order": "2"
                       }
                     ]
@@ -3760,12 +3760,12 @@
                     "questions": [
                       {
                         "questionId": "383",
-                        "questionText": "Are the production facilities in place to meet Full Rate Production (FRP) requirements?",
+                        "questionText": "H.2 - Are the production facilities in place to meet Full Rate Production (FRP) requirements?",
                         "order": "1"
                       },
                       {
                         "questionId": "384",
-                        "questionText": "Has the capacity of the production facilities been demonstrated to meet Full Rate Production (FRP) requirements?",
+                        "questionText": "H.2 - Has the capacity of the production facilities been demonstrated to meet Full Rate Production (FRP) requirements?",
                         "order": "2"
                       }
                     ]
@@ -3813,12 +3813,12 @@
                     "questions": [
                       {
                         "questionId": "385",
-                        "questionText": "Has a manufacturing strategy been developed and integrated with an acquisition strategy?",
+                        "questionText": "I.1 - Has a manufacturing strategy been developed and integrated with an acquisition strategy?",
                         "order": "1"
                       },
                       {
                         "questionId": "386",
-                        "questionText": "Have prototype schedule risk mitigation efforts been incorporated into the Acquisition Strategy (AS)?",
+                        "questionText": "I.1 - Have prototype schedule risk mitigation efforts been incorporated into the Acquisition Strategy (AS)?",
                         "order": "2"
                       }
                     ]
@@ -3831,12 +3831,12 @@
                     "questions": [
                       {
                         "questionId": "387",
-                        "questionText": "Has the manufacturing strategy been refined based upon the preferred concept?",
+                        "questionText": "I.1 - Has the manufacturing strategy been refined based upon the preferred concept?",
                         "order": "1"
                       },
                       {
                         "questionId": "388",
-                        "questionText": "Have prototype schedule risk mitigation efforts been initiated?",
+                        "questionText": "I.1 - Have prototype schedule risk mitigation efforts been initiated?",
                         "order": "2"
                       }
                     ]
@@ -3849,17 +3849,17 @@
                     "questions": [
                       {
                         "questionId": "389",
-                        "questionText": "Has the initial manufacturing approach been developed?",
+                        "questionText": "I.1 - Has the initial manufacturing approach been developed?",
                         "order": "1"
                       },
                       {
                         "questionId": "390",
-                        "questionText": "Are all system design related manufacturing events included in the Integrated Master Plan/Schedule (IMP/S)?",
+                        "questionText": "I.1 - Are all system design related manufacturing events included in the Integrated Master Plan/Schedule (IMP/S)?",
                         "order": "2"
                       },
                       {
                         "questionId": "391",
-                        "questionText": "Has the manufacturing risk mitigation approach for the pilot line or technology insertion programs been defined?",
+                        "questionText": "I.1 - Has the manufacturing risk mitigation approach for the pilot line or technology insertion programs been defined?",
                         "order": "3"
                       }
                     ]
@@ -3872,27 +3872,27 @@
                     "questions": [
                       {
                         "questionId": "392",
-                        "questionText": "Has the initial manufacturing plan been developed?",
+                        "questionText": "I.1 - Has the initial manufacturing plan been developed?",
                         "order": "1"
                       },
                       {
                         "questionId": "393",
-                        "questionText": "Has manufacturing planning required to achieve MRL 8 been included in the Integrated Master Plan/Schedule (IMP/S)?",
+                        "questionText": "I.1 - Has manufacturing planning required to achieve MRL 8 been included in the Integrated Master Plan/Schedule (IMP/S)?",
                         "order": "2"
                       },
                       {
                         "questionId": "394",
-                        "questionText": "Have manufacturing risks been integrated into risk mitigation plans?",
+                        "questionText": "I.1 - Have manufacturing risks been integrated into risk mitigation plans?",
                         "order": "3"
                       },
                       {
                         "questionId": "395",
-                        "questionText": "Have initial work instructions been developed? ",
+                        "questionText": "I.1 - Have initial work instructions been developed? ",
                         "order": "4"
                       },
                       {
                         "questionId": "396",
-                        "questionText": "Is an effective production control system in place to support the pilot line? ",
+                        "questionText": "I.1 - Is an effective production control system in place to support the pilot line? ",
                         "order": "5"
                       }
                     ]
@@ -3905,22 +3905,22 @@
                     "questions": [
                       {
                         "questionId": "397",
-                        "questionText": "Has the manufacturing plan been updated for Low Rate Initial Production (LRIP)?",
+                        "questionText": "I.1 - Has the manufacturing plan been updated for Low Rate Initial Production (LRIP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "398",
-                        "questionText": "Have all key manufacturing risks been identified and assessed with approved mitigation plans in place?",
+                        "questionText": "I.1 - Have all key manufacturing risks been identified and assessed with approved mitigation plans in place?",
                         "order": "2"
                       },
                       {
                         "questionId": "399",
-                        "questionText": "Have work instructions been finalized? ",
+                        "questionText": "I.1 - Have work instructions been finalized? ",
                         "order": "3"
                       },
                       {
                         "questionId": "400",
-                        "questionText": "Is an effective production control system in place to support Low Rate Initial Production (LRIP)?",
+                        "questionText": "I.1 - Is an effective production control system in place to support Low Rate Initial Production (LRIP)?",
                         "order": "4"
                       }
                     ]
@@ -3933,17 +3933,17 @@
                     "questions": [
                       {
                         "questionId": "401",
-                        "questionText": "Has the manufacturing plan been updated for Full Rate Production (FRP)?",
+                        "questionText": "I.1 - Has the manufacturing plan been updated for Full Rate Production (FRP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "402",
-                        "questionText": "Have all manufacturing risks been tracked and mitigated?",
+                        "questionText": "I.1 - Have all manufacturing risks been tracked and mitigated?",
                         "order": "2"
                       },
                       {
                         "questionId": "403",
-                        "questionText": "Is an effective production control system in place to support Full Rate Production (FRP)?",
+                        "questionText": "I.1 - Is an effective production control system in place to support Full Rate Production (FRP)?",
                         "order": "3"
                       }
                     ]
@@ -3956,7 +3956,7 @@
                     "questions": [
                       {
                         "questionId": "404",
-                        "questionText": "Have all manufacturing risks been mitigated?",
+                        "questionText": "I.1 - Have all manufacturing risks been mitigated?",
                         "order": "1"
                       }
                     ]
@@ -3996,7 +3996,7 @@
                     "questions": [
                       {
                         "questionId": "405",
-                        "questionText": "Has the technology development article component list been developed with associated lead time estimates?",
+                        "questionText": "I.2 - Has the technology development article component list been developed with associated lead time estimates?",
                         "order": "1"
                       }
                     ]
@@ -4009,17 +4009,17 @@
                     "questions": [
                       {
                         "questionId": "406",
-                        "questionText": "Is the technology development part list maturing?",
+                        "questionText": "I.2 - Is the technology development part list maturing?",
                         "order": "1"
                       },
                       {
                         "questionId": "407",
-                        "questionText": "Have make/buy evaluations begun?",
+                        "questionText": "I.2 - Have make/buy evaluations begun?",
                         "order": "2"
                       },
                       {
                         "questionId": "408",
-                        "questionText": "Do the make/buy evaluations include production considerations reflecting the pilot line, Low Rate Initial Production (LRIP), and Full Rate Production (FRP) needs?",
+                        "questionText": "I.2 - Do the make/buy evaluations include production considerations reflecting the pilot line, Low Rate Initial Production (LRIP), and Full Rate Production (FRP) needs?",
                         "order": "3"
                       }
                     ]
@@ -4032,22 +4032,22 @@
                     "questions": [
                       {
                         "questionId": "409",
-                        "questionText": "Are most material decisions complete (make/buy)?",
+                        "questionText": "I.2 - Are most material decisions complete (make/buy)?",
                         "order": "1"
                       },
                       {
                         "questionId": "410",
-                        "questionText": "Have material risks been identified? ",
+                        "questionText": "I.2 - Have material risks been identified? ",
                         "order": "2"
                       },
                       {
                         "questionId": "411",
-                        "questionText": "Have material risk mitigation plans been developed?",
+                        "questionText": "I.2 - Have material risk mitigation plans been developed?",
                         "order": "3"
                       },
                       {
                         "questionId": "412",
-                        "questionText": "Has the Bill of Materials (BOM) been initiated?",
+                        "questionText": "I.2 - Has the Bill of Materials (BOM) been initiated?",
                         "order": "4"
                       }
                     ]
@@ -4060,12 +4060,12 @@
                     "questions": [
                       {
                         "questionId": "413",
-                        "questionText": "Are the make/Buy decisions and Bill of Materials (BOM) complete for pilot line build?  ",
+                        "questionText": "I.2 - Are the make/Buy decisions and Bill of Materials (BOM) complete for pilot line build?  ",
                         "order": "1"
                       },
                       {
                         "questionId": "414",
-                        "questionText": "Are material planning systems in place for the pilot line build?",
+                        "questionText": "I.2 - Are material planning systems in place for the pilot line build?",
                         "order": "2"
                       }
                     ]
@@ -4078,12 +4078,12 @@
                     "questions": [
                       {
                         "questionId": "415",
-                        "questionText": "Are the Make/Buy decisions and Bill of Materials (BOM) complete to support Low Rate Initial Production (LRIP)?",
+                        "questionText": "I.2 - Are the Make/Buy decisions and Bill of Materials (BOM) complete to support Low Rate Initial Production (LRIP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "416",
-                        "questionText": "Have material planning systems been proven on the pilot line and are in place for Low Rate Initial Production (LRIP) build?",
+                        "questionText": "I.2 - Have material planning systems been proven on the pilot line and are in place for Low Rate Initial Production (LRIP) build?",
                         "order": "2"
                       }
                     ]
@@ -4096,12 +4096,12 @@
                     "questions": [
                       {
                         "questionId": "417",
-                        "questionText": "Are the Make/Buy decisions and Bill of Materials (BOM) complete enough to support Full Rate Production (FRP)?",
+                        "questionText": "I.2 - Are the Make/Buy decisions and Bill of Materials (BOM) complete enough to support Full Rate Production (FRP)?",
                         "order": "1"
                       },
                       {
                         "questionId": "418",
-                        "questionText": "Has the material planning system been proven in LRIP, and is it sufficient for Full Rate Production (FRP?",
+                        "questionText": "I.2 - Has the material planning system been proven in LRIP, and is it sufficient for Full Rate Production (FRP?",
                         "order": "2"
                       }
                     ]
@@ -4114,7 +4114,7 @@
                     "questions": [
                       {
                         "questionId": "419",
-                        "questionText": "Have the material planning systems been validated on the Full Rate Production (FRP) build?",
+                        "questionText": "I.2 - Have the material planning systems been validated on the Full Rate Production (FRP) build?",
                         "order": "1"
                       }
                     ]
