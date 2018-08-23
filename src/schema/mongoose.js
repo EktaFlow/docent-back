@@ -33,6 +33,8 @@ var questionSchema = new Schema({
 	threadName:					String,
 	subThreadName:			String,
 	mrLevel:						Number,
+	helpText:           String,
+	criteriaText:       String,
 	answered:						Boolean,
 	answer:							String,
 	objectiveEvidence:	String,

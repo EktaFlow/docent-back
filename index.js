@@ -51,6 +51,9 @@ input QuestionUpdate {
 	assumptionsSkipped: String
 	notesSkipped:       String
 
+	helpText: String
+	criteriaText: String
+
 	# No variables ######################################
 #	actionPeople:				
 	when:								Date
@@ -108,6 +111,10 @@ type Question{
 	technical:          Boolean
 	schedule:           Boolean
 	cost:               Boolean
+
+
+	helpText: String
+	criteriaText: String
 
 	# NA variables ######################################
 	documentation:			String
