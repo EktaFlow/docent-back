@@ -9,6 +9,7 @@ scalar Date
 type Assessment{
 	_id:							String
 	id:								String
+	userId:           String
 	scope:						String
 	targetMRL:				Int	
 	currentMRL:       Int
@@ -135,13 +136,14 @@ type File{
 type Query {
 	allThreadNames:						[String]
 	question(questionId: Int, assessmentId: String):		Question
-	questions(mrLevel: Int):	[Question]
-	assessment(_id: String):	Assessment
-	assessments:							[Assessment]
+	questions(mrLevel: Int):	    [Question]
+	assessment(_id: String):	    Assessment
+	assessments(userId: String):							[Assessment]
 }
 
 type Mutation {
 	createAssessment(
+		userId:  String
 		id:      Int
 		threads: [Int]
 		scope: String

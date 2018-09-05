@@ -15,6 +15,7 @@ db.once("open", function() {
 /////////// the ObjectId type.
 var make_id = idString => mongoose.Types.ObjectId(idString)
 
+/*
 var sqlResolvers = {
 	Query: {
 		assessment: async(root, args, context, info) => {
@@ -22,6 +23,7 @@ var sqlResolvers = {
 		}
 	}
 };
+*/
 
 var resolvers = {
 	Query: {
@@ -30,8 +32,9 @@ var resolvers = {
 			return Assessment.findById(args._id);
 		},
 		assessments: async(root, args, context, info) => {
-			console.log("fire!!");
-			return Assessment.find({})
+			var {userId} = args;
+			console.log(userId);
+			return Assessment.find({ userId });
 		},
 		question: async(root, args, context, info) => {
 			var assessment = await Assessment.findById(args.assessmentId);
@@ -59,7 +62,7 @@ var resolvers = {
 			args.currentMRL = args.targetMRL;
 			args.questions = getQuestions.getQuestions(args.threads, 0);
 			// TODO: test if this works without await <21-07-18, yourname> //
-			console.log(args);
+			console.log(args.questions[0]);
 		  return await Assessment.create(args);
 		},
 		addFile: async(root, args, context, info) => {
