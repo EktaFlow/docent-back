@@ -152,7 +152,7 @@
           },
           {
             "threadId": "2",
-            "name": "Technology & Industrial Base",
+            "name": "A. Technology & Industrial Base",
             "helpText": "Technology and the Industrial Base: Requires an analysis of the capability of the national technology and industrial base to support the design, development, production, operation, uninterrupted maintenance support of the system and eventual disposal (environmental impacts).<br>Technology and the Industrial Base includes industrial base issues and manufacturing technology development.",
             "threadOrder": "2",
             "subThreads": [
@@ -489,7 +489,7 @@
           },
           {
             "threadId": "3",
-            "name": "Design",
+            "name": "B. Design",
             "helpText": "Design: Requires an understanding of the maturity and stability of the evolving system design and any related impact on manufacturing readiness.<br>Design includes producibility and maturity.",
             "threadOrder": "3",
             "subThreads": [
@@ -947,7 +947,7 @@
           },
           {
             "threadId": "4",
-            "name": "Cost & Funding",
+            "name": "C. Cost & Funding",
             "helpText": "Cost and Funding: Requires an analysis of the adequacy of funding to achieve target manufacturing maturity levels. Examines the risk associated with reaching manufacturing cost targets.<br>Cost and Funding includes production cost knowledge (cost modeling), cost analysis, and manufacturing investment budget.",
             "threadOrder": "4",
             "subThreads": [
@@ -1507,7 +1507,7 @@
           },
           {
             "threadId": "5",
-            "name": "Materials",
+            "name": "D. Materials",
             "helpText": "Materials: Requires an analysis of the risks associated with materials (including basic/raw materials, components, semi-finished parts, and subassemblies).<br>\"Materials\" include analysis of the maturity, availability, supply chain management, and special handling (i.e. government furnished property, shelf life, security, hazardous materials, storage environment, etc.).",
             "threadOrder": "5",
             "subThreads": [
@@ -2240,7 +2240,7 @@
           },
           {
             "threadId": "6",
-            "name": "Process Capability & Control",
+            "name": "E. Process Capability & Control",
             "helpText": "Process Capability and Control: Requires an analysis of the risks that the manufacturing processes are able to reflect the design intent (repeatability and affordability) of key characteristics.<br>Process Capability and Control includes modeling and simulation (product and process), manufacturing process maturity, and process yields and rates.",
             "threadOrder": "6",
             "subThreads": [
@@ -2737,7 +2737,7 @@
           },
           {
             "threadId": "7",
-            "name": "Quality Management",
+            "name": "F. Quality Management",
             "helpText": "Quality Management: Requires an analysis of the risks and management efforts to control quality, and foster continuous improvement at prime and suppliers.<br>Quality Management includes supplier quality.",
             "threadOrder": "7",
             "subThreads": [
@@ -3244,7 +3244,7 @@
           },
           {
             "threadId": "8",
-            "name": "Mfg Personnel",
+            "name": "G. Mfg Personnel",
             "helpText": "Manufacturing Workforce (Engineering and Production): Requires an assessment of the required skills, availability, and required number of personnel to support the manufacturing effort.<br>Manufacturing Management includes manufacturing planning and scheduling, materials planning, and tooling/special test and inspection equipment.",
             "threadOrder": "8",
             "subThreads": [
@@ -3446,7 +3446,7 @@
           },
           {
             "threadId": "9",
-            "name": "Facilities",
+            "name": "HFacilities",
             "helpText": "Facilities: Requires an analysis of the capabilities and capacity of key manufacturing facilities (prime, subcontractor, supplier, vendor, and maintenance/repair).",
             "threadOrder": "9",
             "subThreads": [
@@ -3776,7 +3776,7 @@
           },
           {
             "threadId": "10",
-            "name": "Mfg Management",
+            "name": "I. Mfg Management",
             "helpText": "Manufacturing Management: Requires an analysis of the orchestration of all elements needed to translate the design into an integrated and fielded system (meeting Program goals for affordability and availability).",
             "threadOrder": "10",
             "subThreads": [
