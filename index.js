@@ -13,7 +13,7 @@ type Assessment{
 	scope:						String
 	targetMRL:				Int	
 	currentMRL:       Int
-	teamMembers:			[Person]
+	teamMembers:			[String]
 	levelSwitching:		Boolean
 	targetDate:				Date
 	location:					String
@@ -134,6 +134,7 @@ type File{
 }
 
 type Query {
+  getShared(assessments: [String]): [Assessment]
 	allThreadNames:						[String]
 	question(questionId: Int, assessmentId: String):		Question
 	questions(mrLevel: Int):	    [Question]
@@ -153,6 +154,7 @@ type Mutation {
 		deskbookVersion: String
 		name:            String
 		levelSwitching: Boolean
+		teamMembers: [String]
 	): Assessment
 
 	updateAssessment(
