@@ -62,8 +62,6 @@ threads.forEach(thread => {
 				});
 			})
 });
-	console.log("asdf");
-	console.log(questions);
 	return questions;
 }
 
