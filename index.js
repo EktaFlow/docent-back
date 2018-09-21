@@ -9,10 +9,11 @@ scalar Date
 type Assessment{
 	_id:							String
 	id:								String
+	userId:           String
 	scope:						String
 	targetMRL:				Int	
 	currentMRL:       Int
-	teamMembers:			[Person]
+	teamMembers:			[String]
 	levelSwitching:		Boolean
 	targetDate:				Date
 	location:					String
@@ -50,6 +51,9 @@ input QuestionUpdate {
 	notesYes:						String
 	assumptionsSkipped: String
 	notesSkipped:       String
+
+	helpText: String
+	criteriaText: String
 
 	# No variables ######################################
 #	actionPeople:				
@@ -109,6 +113,10 @@ type Question{
 	schedule:           Boolean
 	cost:               Boolean
 
+
+	helpText: String
+	criteriaText: String
+
 	# NA variables ######################################
 	documentation:			String
 	assumptionsNA:			String
@@ -126,15 +134,17 @@ type File{
 }
 
 type Query {
+  getShared(assessments: [String]): [Assessment]
 	allThreadNames:						[String]
 	question(questionId: Int, assessmentId: String):		Question
-	questions(mrLevel: Int):	[Question]
-	assessment(_id: String):	Assessment
-	assessments:							[Assessment]
+	questions(mrLevel: Int):	    [Question]
+	assessment(_id: String):	    Assessment
+	assessments(userId: String):							[Assessment]
 }
 
 type Mutation {
 	createAssessment(
+		userId:  String
 		id:      Int
 		threads: [Int]
 		scope: String
@@ -144,6 +154,7 @@ type Mutation {
 		deskbookVersion: String
 		name:            String
 		levelSwitching: Boolean
+		teamMembers: [String]
 	): Assessment
 
 	updateAssessment(

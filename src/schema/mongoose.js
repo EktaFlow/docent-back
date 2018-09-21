@@ -33,6 +33,8 @@ var questionSchema = new Schema({
 	threadName:					String,
 	subThreadName:			String,
 	mrLevel:						Number,
+	helpText:           String,
+	criteriaText:       String,
 	answered:						Boolean,
 	answer:							String,
 	objectiveEvidence:	String,
@@ -67,8 +69,9 @@ var assessmentSchema = new Schema({
 	targetDate:         Date,
 	location:						String,
 	deskbookVersion:    String,
+	userId:             String,
 	threads:            [String],
-	teamMembers:        [personSchema],
+	teamMembers:        [String],
 	questions:          [questionSchema],
 	files:              [fileSchema]
 });
