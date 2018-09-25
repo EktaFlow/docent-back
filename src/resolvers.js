@@ -61,7 +61,10 @@ var resolvers = {
 	},
 		createAssessment: async(roots, args, context, info) => {
 			args.currentMRL = args.targetMRL;
-			args.questions = getQuestions.getQuestions(args.threads, 0);
+			console.log(args.schema);
+			var schema = JSON.parse(args.schema);
+			// var schema = require('../assets/2016.json');
+			args.questions = getQuestions.getQuestions(schema);
 			console.log(args.teamMembers);
 			// TODO: test if this works without await <21-07-18, yourname> //
 		  return await Assessment.create(args);

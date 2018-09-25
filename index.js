@@ -11,7 +11,7 @@ type Assessment{
 	id:								String
 	userId:           String
 	scope:						String
-	targetMRL:				Int	
+	targetMRL:				Int
 	currentMRL:       Int
 	teamMembers:			[String]
 	levelSwitching:		Boolean
@@ -35,12 +35,12 @@ input QuestionUpdate {
 	questionText:       String
 	currentAnswer:      String
 	skipped:            Boolean
-	# for traversing the questions 
+	# for traversing the questions
 	questionId:					Int
-	thread:						  Int	
+	thread:						  Int
 	threadName:	  		  String
-	subThread:				  Int	
-	mrLevel:            Int 
+	subThread:				  Int
+	mrLevel:            Int
 	# if answered is false, the question has been skipped.
 	answered:           Boolean
 	# User's answer to main question
@@ -56,7 +56,7 @@ input QuestionUpdate {
 	criteriaText: String
 
 	# No variables ######################################
-#	actionPeople:				
+#	actionPeople:
 	when:								Date
 	who:								String
 	risk:								String
@@ -72,7 +72,7 @@ input QuestionUpdate {
 	documentation:			String
 	assumptionsNA:			String
 	notesNA:						String
-	
+
 #	Files:						[File]
 
 }
@@ -83,12 +83,12 @@ type Question{
 	questionText:       String
 	currentAnswer:      String
 	skipped:            Boolean
-	# for traversing the questions 
+	# for traversing the questions
 	questionId:					Int
-	thread:						  Int	
+	thread:						  Int
 	threadName:	  		  String
 	subThreadName:			String
-	mrLevel:            Int 
+	mrLevel:            Int
 	# if answered is false, the question has been skipped.
 	answered:           Boolean
 	# User's answer to main question
@@ -121,7 +121,7 @@ type Question{
 	documentation:			String
 	assumptionsNA:			String
 	notesNA:						String
-	
+
 	Files:						[File]
 }
 
@@ -155,6 +155,7 @@ type Mutation {
 		name:            String
 		levelSwitching: Boolean
 		teamMembers: [String]
+		schema: String
 	): Assessment
 
 	updateAssessment(
@@ -174,7 +175,7 @@ type Mutation {
 }
 `;
 
-const server = new ApolloServer({ typeDefs, 
+const server = new ApolloServer({ typeDefs,
 																	resolvers });
 
 server.listen()
