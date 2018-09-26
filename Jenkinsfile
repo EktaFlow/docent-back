@@ -3,7 +3,7 @@ node {
   deleteDir()
   
   try {
-    stage ('Clone") {
+    stage ('Clone') {
       checkout scm
     }
     stage ('Build') {
