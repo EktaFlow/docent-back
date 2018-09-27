@@ -61,8 +61,9 @@ var resolvers = {
 	},
 		createAssessment: async(roots, args, context, info) => {
 			args.currentMRL = args.targetMRL;
-			console.log(args.schema);
+			// console.log(args.schema);
 			var schema = JSON.parse(args.schema);
+			console.log(schema);
 			// var schema = require('../assets/2016.json');
 			args.questions = getQuestions.getQuestions(schema);
 			console.log(args.teamMembers);
@@ -82,6 +83,13 @@ var resolvers = {
 
 			updateObject(question, args.updates);
 			return assessment.save();
+		},
+
+		deleteAssessment: async(root, args, context, info) => {
+			let _id = make_id(args._id)
+			let assessment = await Assessment.findById(_id);
+			assessment.remove();
+
 		}
 	}
 }

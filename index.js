@@ -158,6 +158,10 @@ type Mutation {
 		schema: String
 	): Assessment
 
+	deleteAssessment(
+		_id: String!
+	): Assessment
+
 	updateAssessment(
 		_id:               String!
 		questionId:        Int
