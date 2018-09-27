@@ -62,9 +62,8 @@ threads.forEach(thread => {
 function getQuestions(schema) {
 	console.log(typeof schema == "string")
 	// var threads = getThreads(threadsArray);
-	var versions = schema[0];
-	versions = versions.versions;
-	var threads = versions[0].threads;
+	console.log(schema[0]);
+	var threads = schema;
 	return drillQuestions(threads);
 }
 
