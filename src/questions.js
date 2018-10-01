@@ -1,9 +1,9 @@
-// const criteria2016 = require("../assets/2016");
+ const criteria2016 = require("../assets/2016");
 // parsing criteria...
-// var versions = criteria2016[0];
+ var versions = criteria2016[0];
 //
-// versions = versions.versions;
-// var threads = versions[0].threads;
+ versions = versions.versions;
+ var threadsa = versions[0].threads;
 
 
 // filter the threads selected for the assessment
@@ -13,7 +13,7 @@
 
 // Array of Thread names to correspond with the menu to select which threads
 // a user will include on their assessment.
-var allThreadNames = () => threads.map(thread => thread.name)
+var allThreadNames = () => threadsa.map(thread => thread.name)
 
 
 // turn nested assessment structure into flat questions array
