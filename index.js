@@ -10,6 +10,7 @@ type Assessment{
 	_id:							String
 	id:								String
 	userId:           String
+	userEmail: 		String
 	scope:						String
 	targetMRL:				Int
 	currentMRL:       Int
@@ -140,11 +141,13 @@ type Query {
 	questions(mrLevel: Int):	    [Question]
 	assessment(_id: String):	    Assessment
 	assessments(userId: String):							[Assessment]
+	
 }
 
 type Mutation {
 	createAssessment(
 		userId:  String
+		userEmail: String
 		id:      Int
 		threads: [Int]
 		scope: String
