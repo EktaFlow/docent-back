@@ -69,8 +69,9 @@ var assessmentSchema = new Schema({
 	targetDate:         Date,
 	location:						String,
 	deskbookVersion:    String,
+	userId:             String,
 	threads:            [String],
-	teamMembers:        [personSchema],
+	teamMembers:        [String],
 	questions:          [questionSchema],
 	files:              [fileSchema]
 });

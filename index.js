@@ -9,10 +9,11 @@ scalar Date
 type Assessment{
 	_id:							String
 	id:								String
+	userId:           String
 	scope:						String
-	targetMRL:				Int	
+	targetMRL:				Int
 	currentMRL:       Int
-	teamMembers:			[Person]
+	teamMembers:			[String]
 	levelSwitching:		Boolean
 	targetDate:				Date
 	location:					String
@@ -34,12 +35,12 @@ input QuestionUpdate {
 	questionText:       String
 	currentAnswer:      String
 	skipped:            Boolean
-	# for traversing the questions 
+	# for traversing the questions
 	questionId:					Int
-	thread:						  Int	
+	thread:						  Int
 	threadName:	  		  String
-	subThread:				  Int	
-	mrLevel:            Int 
+	subThread:				  Int
+	mrLevel:            Int
 	# if answered is false, the question has been skipped.
 	answered:           Boolean
 	# User's answer to main question
@@ -55,7 +56,7 @@ input QuestionUpdate {
 	criteriaText: String
 
 	# No variables ######################################
-#	actionPeople:				
+#	actionPeople:
 	when:								Date
 	who:								String
 	risk:								String
@@ -71,7 +72,7 @@ input QuestionUpdate {
 	documentation:			String
 	assumptionsNA:			String
 	notesNA:						String
-	
+
 #	Files:						[File]
 
 }
@@ -82,12 +83,12 @@ type Question{
 	questionText:       String
 	currentAnswer:      String
 	skipped:            Boolean
-	# for traversing the questions 
+	# for traversing the questions
 	questionId:					Int
-	thread:						  Int	
+	thread:						  Int
 	threadName:	  		  String
 	subThreadName:			String
-	mrLevel:            Int 
+	mrLevel:            Int
 	# if answered is false, the question has been skipped.
 	answered:           Boolean
 	# User's answer to main question
@@ -120,7 +121,7 @@ type Question{
 	documentation:			String
 	assumptionsNA:			String
 	notesNA:						String
-	
+
 	Files:						[File]
 }
 
@@ -133,15 +134,17 @@ type File{
 }
 
 type Query {
+  getShared(assessments: [String]): [Assessment]
 	allThreadNames:						[String]
 	question(questionId: Int, assessmentId: String):		Question
-	questions(mrLevel: Int):	[Question]
-	assessment(_id: String):	Assessment
-	assessments:							[Assessment]
+	questions(mrLevel: Int):	    [Question]
+	assessment(_id: String):	    Assessment
+	assessments(userId: String):							[Assessment]
 }
 
 type Mutation {
 	createAssessment(
+		userId:  String
 		id:      Int
 		threads: [Int]
 		scope: String
@@ -151,6 +154,12 @@ type Mutation {
 		deskbookVersion: String
 		name:            String
 		levelSwitching: Boolean
+		teamMembers: [String]
+		schema: String
+	): Assessment
+
+	deleteAssessment(
+		_id: String!
 	): Assessment
 
 	updateAssessment(
@@ -170,7 +179,7 @@ type Mutation {
 }
 `;
 
-const server = new ApolloServer({ typeDefs, 
+const server = new ApolloServer({ typeDefs,
 																	resolvers });
 
 server.listen()
