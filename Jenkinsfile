@@ -10,6 +10,7 @@ podTemplate(label: 'back', containers: [
 					checkout scm
 				}
 				stage ('Build') {
+          sh "echo $GIT_BRANCH"
 					sh "echo 'here we build some stuff!!!'"
 					sh "echo 'this is a test'"
 				}
