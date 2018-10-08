@@ -22,6 +22,7 @@ podTemplate(label: 'back', containers: [
           sh "echo ${branchName}"
           container('docker') {
 					    checkout scm
+              sh "ls -la"
               sh "docker build -t back-${dockerSuffix} ."
               // build and run the docker container
           }
