@@ -11,8 +11,7 @@ podTemplate(label: 'back', containers: [
 			deleteDir()
 			
 			try {
-				stage ('Clone') {
-					checkout scm
+				stage ('setup') {
           if (branchName == "dev") {
               dockerSuffix     = "dev"
               kubectlNamespace = "dev" 
@@ -22,6 +21,7 @@ podTemplate(label: 'back', containers: [
 				stage ('Build') {
           sh "echo ${branchName}"
           container('docker') {
+					    checkout scm
               sh "docker build -t back-${dockerSuffix} ."
               // build and run the docker container
           }
