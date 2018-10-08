@@ -1,6 +1,7 @@
 def branchName = "${env.BRANCH_NAME}"
 def dockerSuffix
 def kubectlNamespace
+def anotherVariable
 
 podTemplate(label: 'back', 
     containers: [
