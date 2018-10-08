@@ -2,10 +2,14 @@ def branchName = "${env.BRANCH_NAME}"
 def dockerSuffix
 def kubectlNamespace
 
-podTemplate(label: 'back', containers: [
-    containerTemplate(name: 'kubectl', image: 'lachlanevenson/k8s-kubectl', command: 'cat', ttyEnabled: true),
-    containerTemplate(name: 'docker', image: 'docker', command: 'cat', ttyEnabled: true )
-]) {
+podTemplate(label: 'back', 
+    containers: [
+        containerTemplate(name: 'kubectl', image: 'lachlanevenson/k8s-kubectl', command: 'cat', ttyEnabled: true),
+        containerTemplate(name: 'docker', image: 'docker', command: 'cat', ttyEnabled: true )
+    ],
+    volumes: [ 
+        hostPathVolume(mountPath: '/var/run/docker.sock', hostPath: '/var/run/docker.sock;)]
+){
 		node('back') {
 
 			deleteDir()
