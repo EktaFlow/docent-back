@@ -1,3 +1,5 @@
+def branchName = "${env.BRANCH_NAME}"
+
 podTemplate(label: 'back', containers: [
     containerTemplate(name: 'kubectl', image: 'lachlanevenson/k8s-kubectl', command: 'cat', ttyEnabled: true)
 ]) {
@@ -10,7 +12,7 @@ podTemplate(label: 'back', containers: [
 					checkout scm
 				}
 				stage ('Build') {
-          sh "echo $GIT_BRANCH"
+          sh "echo ${branchName}"
 					sh "echo 'here we build some stuff!!!'"
 					sh "echo 'this is a test'"
 				}
