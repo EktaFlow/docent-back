@@ -1,5 +1,5 @@
 podTemplate(label: 'back', containers: [
-    containerTemplate(name: 'kubectl', image: 'lachlanevenson/k8s-kubectl, command: 'cat', ttyEnabled: true)
+    containerTemplate(name: 'kubectl', image: 'lachlanevenson/k8s-kubectl', command: 'cat', ttyEnabled: true)
 ]) {
 		node('back') {
 
