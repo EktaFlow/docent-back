@@ -1,10 +1,10 @@
 def branchName = "${env.BRANCH_NAME}"
 def dockerSuffix
 def kubectlNamespace
-// this is just a comment
 
 podTemplate(label: 'back', containers: [
-    containerTemplate(name: 'kubectl', image: 'lachlanevenson/k8s-kubectl', command: 'cat', ttyEnabled: true)
+    containerTemplate(name: 'kubectl', image: 'lachlanevenson/k8s-kubectl', command: 'cat', ttyEnabled: true),
+    containerTemplate(name: 'docker', image: 'docker', command: 'cat', ttyEnabled: true )
 ]) {
 		node('back') {
 
@@ -21,10 +21,10 @@ podTemplate(label: 'back', containers: [
 				}
 				stage ('Build') {
           sh "echo ${branchName}"
-          if (branchName == "dev") {
-              sh "echo AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          container('docker') {
+              sh "docker build -t back-${dockerSuffix} ."
+              // build and run the docker container
           }
-          // sh "echo ${dockerSuffix}"
 				}
 				stage ('Test') {
 					parallel 'integration': {
