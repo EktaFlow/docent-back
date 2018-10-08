@@ -1,4 +1,6 @@
 def branchName = "${env.BRANCH_NAME}"
+def dockerSuffix
+def kubectlNamespace
 
 podTemplate(label: 'back', containers: [
     containerTemplate(name: 'kubectl', image: 'lachlanevenson/k8s-kubectl', command: 'cat', ttyEnabled: true)
@@ -11,16 +13,17 @@ podTemplate(label: 'back', containers: [
 				stage ('Clone') {
 					checkout scm
           if (branchName == "dev") {
-              def dockerSuffix     = "dev"
-              def kubectlNamespace = "dev" 
+              dockerSuffix     = "dev"
+              kubectlNamespace = "dev" 
           }
+          sh "echo ${dockerSuffix}"
 				}
 				stage ('Build') {
           sh "echo ${branchName}"
           if (branchName == "dev") {
               sh "echo AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
           }
-          sh "echo ${dockerSuffix}"
+          // sh "echo ${dockerSuffix}"
 				}
 				stage ('Test') {
 					parallel 'integration': {
