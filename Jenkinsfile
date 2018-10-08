@@ -1,6 +1,7 @@
 def branchName = "${env.BRANCH_NAME}"
 def dockerSuffix
 def kubectlNamespace
+// this is just a comment
 
 podTemplate(label: 'back', containers: [
     containerTemplate(name: 'kubectl', image: 'lachlanevenson/k8s-kubectl', command: 'cat', ttyEnabled: true)
