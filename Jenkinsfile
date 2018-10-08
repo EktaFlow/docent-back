@@ -8,6 +8,7 @@ node {
     }
     stage ('Build') {
       sh "echo 'here we build some stuff!!!'"
+			sh "echo 'this is a test'"
     }
     stage ('Test') {
       parallel 'integration': {
