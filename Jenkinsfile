@@ -41,8 +41,8 @@ podTemplate(label: 'back',
           sh "echo ${branchName}"
           container('docker') {
             withCredentials([
-                [string(credentialsId: 'containerRegistry', variable: 'CONTAINER_REGISTRY')],
-                [usernamePassword(credentialsId: 'containerRegistryCreds', passwordVariable: 'password', usernameVariable: 'user')]
+                string(credentialsId: 'containerRegistry', variable: 'CONTAINER_REGISTRY'),
+                usernamePassword(credentialsId: 'containerRegistryCreds', passwordVariable: 'password', usernameVariable: 'user')
             ]){
               sh "echo ${branchName}"
 					    checkout scm
