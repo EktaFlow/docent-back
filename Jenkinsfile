@@ -66,9 +66,10 @@ podTemplate(label: 'back',
 				stage ('Deploy') {
 					sh "echo 'deploy!!'"
             container('kubectl') {
-                // sh "kubectl set image deployment/ -n ${kubectlNamespace} front= "
-                sh "kubectl get pods -n app"
-                sh "ls -la"
+                sh "kubectl set image deployment/dev -n ${kubectlNamespace} devback=${containerImagePath}"
+
+                // sh "kubectl get pods -n app"
+                //sh "ls -la"
             }
 				}
 			} catch (err) {
