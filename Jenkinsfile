@@ -1,7 +1,18 @@
+/*
+*
+* The purpose of this file is to define a pipeline that can take a dev branch and 
+* build the latest push to the dev branch and deploy to the dev deployment
+*
+*/
+
+
 def branchName = "${env.BRANCH_NAME}"
 def dockerSuffix
 def kubectlNamespace
 def containerImagePath
+def serviceName
+def deploymentName
+def imageName
 
 podTemplate(label: 'back', 
     containers: [
@@ -22,20 +33,24 @@ podTemplate(label: 'back',
           if (branchName == "dev") {
               dockerSuffix     = "dev"
               kubectlNamespace = "dev" 
+              imageName        = "back-${dockerSuffix}:b${env.BUILD_NUMBER}"
           }
           sh "echo ${dockerSuffix}"
 				}
 				stage ('Build') {
           sh "echo ${branchName}"
           container('docker') {
-            withCredentials([string(credentialsId: 'containerRegistry', variable: 'CONTAINER_REGISTRY')]) {
+            withCredentials([
+                [string(credentialsId: 'containerRegistry', variable: 'CONTAINER_REGISTRY')],
+                [usernamePassword(credentialsId: 'containerRegistryCreds', passwordVariable: 'password', usernameVariable: 'user')]
+            ]){
               sh "echo ${branchName}"
 					    checkout scm
-              sh "docker build -t back-${dockerSuffix} ."
-              containerImagePath = "${dockerSuffix}aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-              sh "echo ${containerImagePath}"
-              sh "docker tag back-${dockerSuffix} ${CONTAINER_REGISTRY}/back-${dockerSuffix}:b${env.BUILD_NUMBER}"
-              sh "docker images"
+              sh "docker build -t ${imageName} ."
+              containerImagePath = "${CONTAINER_REGISTRY}/${imageName}"
+              sh "docker tag ${imageName} ${containerImagePath}"
+              sh "docker login ${CONTAINER_REGISTRY} -u ${user} -p ${password}
+              sh "docker push ${containerImagePath}"
               // build and run the docker container
             }
           }
@@ -51,7 +66,7 @@ podTemplate(label: 'back',
 				stage ('Deploy') {
 					sh "echo 'deploy!!'"
             container('kubectl') {
-                // sh "kubectl set image deployment/${kubectlNamespace} front= "
+                // sh "kubectl set image deployment/ -n ${kubectlNamespace} front= "
                 sh "kubectl get pods -n app"
                 sh "ls -la"
             }
