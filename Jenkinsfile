@@ -1,7 +1,7 @@
 def branchName = "${env.BRANCH_NAME}"
 def dockerSuffix
 def kubectlNamespace
-def anotherVariable
+def containerImagePath
 
 podTemplate(label: 'back', 
     containers: [
@@ -32,7 +32,10 @@ podTemplate(label: 'back',
               sh "echo ${branchName}"
 					    checkout scm
               sh "docker build -t back-${dockerSuffix} ."
+              containerImagePath = "${dockerSuffix}aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+              sh "echo ${containerImagePath}"
               sh "docker tag back-${dockerSuffix} ${CONTAINER_REGISTRY}/back-${dockerSuffix}:b${env.BUILD_NUMBER}"
+              sh "docker images"
               // build and run the docker container
             }
           }
@@ -48,6 +51,7 @@ podTemplate(label: 'back',
 				stage ('Deploy') {
 					sh "echo 'deploy!!'"
             container('kubectl') {
+                // sh "kubectl set image deployment/${kubectlNamespace} front= "
                 sh "kubectl get pods -n app"
                 sh "ls -la"
             }
