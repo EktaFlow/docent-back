@@ -31,11 +31,9 @@ podTemplate(label: 'back',
             withCredentials([string(credentialsId: 'containerRegistry', variable: 'CONTAINER_REGISTRY')]) {
               sh "echo ${branchName}"
 					    checkout scm
-              sh '''
               ls -la
-              # docker build -t back-${dockerSuffix} .
-              # docker tag back-${dockerSuffix} ${CONTAINER_REGISTRY}/back-${dockerSuffix}:b${env.BUILD_NUMBER}
-              '''
+              sh "docker build -t back-${dockerSuffix} ."
+              sh "docker tag back-${dockerSuffix} ${CONTAINER_REGISTRY}/back-${dockerSuffix}:b${env.BUILD_NUMBER}"
               // build and run the docker container
             }
           }
