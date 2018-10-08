@@ -10,13 +10,17 @@ podTemplate(label: 'back', containers: [
 			try {
 				stage ('Clone') {
 					checkout scm
+          if (branchName == "dev") {
+              def dockerSuffix     = "dev"
+              def kubectlNamespace = "dev" 
+          }
 				}
 				stage ('Build') {
           sh "echo ${branchName}"
           if (branchName == "dev") {
               sh "echo AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
           }
-          sh "ls -la"
+          sh "echo ${dockerSuffix}"
 				}
 				stage ('Test') {
 					parallel 'integration': {
@@ -30,6 +34,7 @@ podTemplate(label: 'back', containers: [
 					sh "echo 'deploy!!'"
             container('kubectl') {
                 sh "kubectl get pods -n app"
+                sh "ls -la"
             }
 				}
 			} catch (err) {
