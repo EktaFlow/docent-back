@@ -13,8 +13,10 @@ podTemplate(label: 'back', containers: [
 				}
 				stage ('Build') {
           sh "echo ${branchName}"
-					sh "echo 'here we build some stuff!!!'"
-					sh "echo 'this is a test'"
+          if (branchName == "dev") {
+              sh "echo AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          }
+          sh "ls -la"
 				}
 				stage ('Test') {
 					parallel 'integration': {
