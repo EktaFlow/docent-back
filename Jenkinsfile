@@ -27,7 +27,7 @@ podTemplate(label: 'back',
 				stage ('Build') {
           sh "echo ${branchName}"
           container('docker') {
-            withCredentials([text(credentialsId: 'containerRegistry', variable: 'CONTAINER_REGISTRY')]) {
+            withCredentials([string(credentialsId: 'containerRegistry', variable: 'CONTAINER_REGISTRY')]) {
 					    checkout scm
               sh '''
               ls -la
