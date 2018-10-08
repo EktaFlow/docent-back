@@ -49,7 +49,7 @@ podTemplate(label: 'back',
               sh "docker build -t ${imageName} ."
               containerImagePath = "${CONTAINER_REGISTRY}/${imageName}"
               sh "docker tag ${imageName} ${containerImagePath}"
-              sh "docker login ${CONTAINER_REGISTRY} -u ${user} -p ${password}
+              sh "docker login ${CONTAINER_REGISTRY} -u ${user} -p ${password}"
               sh "docker push ${containerImagePath}"
               // build and run the docker container
             }
