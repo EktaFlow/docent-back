@@ -34,6 +34,8 @@ podTemplate(label: 'back',
           checkout scm
           repo = getRepoName()
           echo "${repo}"
+          serviceName = getServiceName(repo)
+          echo "${serviceName}"
           if (!branchName == "dev") {
 						  echo 'How did you get here you clever dog?'
               // throw some cool error and kick them out. 
@@ -46,8 +48,6 @@ podTemplate(label: 'back',
                 usernamePassword(credentialsId: 'containerRegistryCreds', passwordVariable: 'password', usernameVariable: 'user')
             ]){
 					    checkout scm
-              def url = sh(returnStdout: true, script: 'git config remote.origin.url').trim()
-              sh "echo ${url}"
               sh "docker build -t ${imageName} ."
               containerImagePath = "${CONTAINER_REGISTRY}/${imageName}"
               sh "docker tag ${imageName} ${containerImagePath}"
@@ -72,6 +72,11 @@ String getRepoName() {
 	return scm.getUserRemoteConfigs()[0].getUrl().tokenize('/')[3].split("\\.")[0]
 }
 
-def getRepo(String url) {
-	
+String getServiceName(String repoName) {
+	def matchingMap = [:]
+  matchingMap["docent-back"] = "back"
+  matchingMap["docent-base"] = "front"
+  matchingMap["auth"] = "auth"
+
+  return matchingMap.repoName
 }
