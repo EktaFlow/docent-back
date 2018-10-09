@@ -78,5 +78,5 @@ String getServiceName(String repoName) {
   matchingMap["docent-base"] = "front"
   matchingMap["auth"] = "auth"
 
-  return matchingMap.repoName
+  return matchingMap[repoName]
 }
