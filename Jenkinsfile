@@ -31,6 +31,9 @@ podTemplate(label: 'back',
 			
 			try {
 				stage ('setup') {
+          checkout scm
+          repo = getRepoName()
+          echo "${repo}"
           if (!branchName == "dev") {
 						  echo 'How did you get here you clever dog?'
               // throw some cool error and kick them out. 
@@ -63,6 +66,10 @@ podTemplate(label: 'back',
 				throw err
 			}
 		}
+}
+
+String getRepoName() {
+	return scm.getUserRemoteConfigs()[0].getUrl().tokenize('/')[3].split("\\.")[0]
 }
 
 def getRepo(String url) {
