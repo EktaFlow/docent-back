@@ -1,18 +1,18 @@
 /*
-*
+* Ekta - mpf
 * The purpose of this file is to define a pipeline that can take a dev branch and 
 * build the latest push to the dev branch and deploy to the dev deployment
 *
+* This utilizes a simpler pipeline, designed only to build & deploy and image
 */
 
-
 def branchName = "${env.BRANCH_NAME}"
-def dockerSuffix
-def kubectlNamespace
+def dockerSuffix = "dev"
+def kubectlNamespace = "dev"
 def containerImagePath
 def serviceName
 def deploymentName
-def imageName
+def imageName = "back-${dockerSuffix}:b${env.BUILD_NUMBER}"
 
 podTemplate(label: 'back', 
     containers: [
@@ -27,49 +27,33 @@ podTemplate(label: 'back',
 		node('back') {
 
 			deleteDir()
+			echo '${GIT_REPO_URL}'
 			
 			try {
 				stage ('setup') {
-          if (branchName == "dev") {
-              dockerSuffix     = "dev"
-              kubectlNamespace = "dev" 
-              imageName        = "back-${dockerSuffix}:b${env.BUILD_NUMBER}"
+          if (!branchName == "dev") {
+						  echo 'How did you get here you clever dog?'
+              // throw some cool error and kick them out. 
           }
-          sh "echo ${dockerSuffix}"
 				}
-				stage ('Build') {
-          sh "echo ${branchName}"
+				stage ('Build and Push') {
           container('docker') {
             withCredentials([
                 string(credentialsId: 'containerRegistry', variable: 'CONTAINER_REGISTRY'),
                 usernamePassword(credentialsId: 'containerRegistryCreds', passwordVariable: 'password', usernameVariable: 'user')
             ]){
-              sh "echo ${branchName}"
 					    checkout scm
               sh "docker build -t ${imageName} ."
               containerImagePath = "${CONTAINER_REGISTRY}/${imageName}"
               sh "docker tag ${imageName} ${containerImagePath}"
               sh "docker login ${CONTAINER_REGISTRY} -u ${user} -p ${password}"
               sh "docker push ${containerImagePath}"
-              // build and run the docker container
             }
           }
 				}
-				stage ('Test') {
-					parallel 'integration': {
-						sh "echo 'running integration tests'"
-					},
-					'static': {
-						sh "echo 'running static checking'"
-					}
-				}
 				stage ('Deploy') {
-					sh "echo 'deploy!!'"
             container('kubectl') {
                 sh "kubectl set image deployment/dev -n ${kubectlNamespace} back=${containerImagePath}"
-
-                // sh "kubectl get pods -n app"
-                //sh "ls -la"
             }
 				}
 			} catch (err) {
@@ -77,4 +61,7 @@ podTemplate(label: 'back',
 				throw err
 			}
 		}
+}
+
+def getRepo(String url) {
 }
