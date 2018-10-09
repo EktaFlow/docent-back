@@ -27,7 +27,7 @@ podTemplate(label: 'back',
 		node('back') {
 
 			deleteDir()
-			echo "${GIT_REPO_URL}"
+			echo "${env.GIT_REPO_URL}"
 			
 			try {
 				stage ('setup') {
@@ -42,7 +42,7 @@ podTemplate(label: 'back',
                 string(credentialsId: 'containerRegistry', variable: 'CONTAINER_REGISTRY'),
                 usernamePassword(credentialsId: 'containerRegistryCreds', passwordVariable: 'password', usernameVariable: 'user')
             ]){
-              sh "${GIT_REPO_URL}"
+              sh "${env.GIT_REPO_URL}"
 					    checkout scm
               sh "docker build -t ${imageName} ."
               containerImagePath = "${CONTAINER_REGISTRY}/${imageName}"
