@@ -7,13 +7,13 @@
 */
 
 def repo
+def serviceName
+def imageName
+def containerImagePath
+
 def branchName = "${env.BRANCH_NAME}"
 def dockerSuffix = "dev"
 def kubectlNamespace = "dev"
-def containerImagePath
-def serviceName
-def deploymentName
-def imageName = "back-${dockerSuffix}:b${env.BUILD_NUMBER}"
 
 podTemplate(label: 'back', 
     containers: [
@@ -31,16 +31,15 @@ podTemplate(label: 'back',
 			
 			try {
 				stage ('setup') {
-          checkout scm
-          repo = getRepoName()
-          echo "${repo}"
-          serviceName = getServiceName(repo)
-          echo "${serviceName}"
           if (!branchName == "dev") {
 						  echo 'How did you get here you clever dog?'
               // throw some cool error and kick them out. 
           }
-				}
+          checkout scm
+          repo = getRepoName()
+          serviceName = getServiceName(repo)
+			    imageName = "${serviceName}-${dockerSuffix}:b${env.BUILD_NUMBER}"
+	      }  
 				stage ('Build and Push') {
           container('docker') {
             withCredentials([
@@ -48,8 +47,8 @@ podTemplate(label: 'back',
                 usernamePassword(credentialsId: 'containerRegistryCreds', passwordVariable: 'password', usernameVariable: 'user')
             ]){
 					    checkout scm
-              sh "docker build -t ${imageName} ."
               containerImagePath = "${CONTAINER_REGISTRY}/${imageName}"
+              sh "docker build -t ${imageName} ."
               sh "docker tag ${imageName} ${containerImagePath}"
               sh "docker login ${CONTAINER_REGISTRY} -u ${user} -p ${password}"
               sh "docker push ${containerImagePath}"
@@ -58,7 +57,7 @@ podTemplate(label: 'back',
 				}
 				stage ('Deploy') {
             container('kubectl') {
-                sh "kubectl set image deployment/dev -n ${kubectlNamespace} back=${containerImagePath}"
+                sh "kubectl set image deployment/dev -n ${kubectlNamespace} ${serviceName}=${containerImagePath}"
             }
 				}
 			} catch (err) {
