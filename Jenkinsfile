@@ -6,6 +6,7 @@
 * This utilizes a simpler pipeline, designed only to build & deploy and image
 */
 
+def repo
 def branchName = "${env.BRANCH_NAME}"
 def dockerSuffix = "dev"
 def kubectlNamespace = "dev"
@@ -27,7 +28,6 @@ podTemplate(label: 'back',
 		node('back') {
 
 			deleteDir()
-			echo "${env.GIT_REPO_URL}"
 			
 			try {
 				stage ('setup') {
@@ -42,8 +42,9 @@ podTemplate(label: 'back',
                 string(credentialsId: 'containerRegistry', variable: 'CONTAINER_REGISTRY'),
                 usernamePassword(credentialsId: 'containerRegistryCreds', passwordVariable: 'password', usernameVariable: 'user')
             ]){
-              sh "${env.GIT_REPO_URL}"
 					    checkout scm
+              def url = sh(returnStdout: true, script: 'git config remote.origin.url').trim()
+              sh "echo ${url}"
               sh "docker build -t ${imageName} ."
               containerImagePath = "${CONTAINER_REGISTRY}/${imageName}"
               sh "docker tag ${imageName} ${containerImagePath}"
@@ -65,4 +66,5 @@ podTemplate(label: 'back',
 }
 
 def getRepo(String url) {
+	
 }
