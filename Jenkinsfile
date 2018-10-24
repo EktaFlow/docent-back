@@ -67,7 +67,7 @@ podTemplate(label: 'back',
             // the deploy stage: 
             stage ('Deploy') {
                 container('kubectl') {
-                    // sh "kubectl set image deployment/dev -n ${kubectlNamespace} ${serviceName}=${containerImagePath}"
+                    sh "kubectl set image deployment/${serviceName} -n ${kubectlNamespace} ${serviceName}=${containerImagePath}"
                 }
             }
         } 

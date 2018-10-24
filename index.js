@@ -2,6 +2,8 @@ const { ApolloServer,
 				gql		} = require("apollo-server");
 const resolvers = require("./src/resolvers");
 
+console.log('this is new!');
+
 var typeDefs = gql`
 
 scalar Date
