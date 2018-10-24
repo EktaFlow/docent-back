@@ -14,8 +14,8 @@ def imageName
 def containerImagePath
 
 def branchName = "${env.BRANCH_NAME}"
-def dockerSuffix = "dev"
-def kubectlNamespace = "dev"
+def dockerSuffix = "prod"
+def kubectlNamespace = "app"
 
 podTemplate(label: 'back', 
     containers: [
@@ -67,7 +67,7 @@ podTemplate(label: 'back',
             // the deploy stage: 
             stage ('Deploy') {
                 container('kubectl') {
-                    sh "kubectl set image deployment/dev -n ${kubectlNamespace} ${serviceName}=${containerImagePath}"
+                    // sh "kubectl set image deployment/dev -n ${kubectlNamespace} ${serviceName}=${containerImagePath}"
                 }
             }
         } 
