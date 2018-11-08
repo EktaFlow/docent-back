@@ -15,6 +15,7 @@ db.once("open", function() {
 /////////// the ObjectId type.
 var make_id = idString => mongoose.Types.ObjectId(idString)
 
+/*
 var sqlResolvers = {
 	Query: {
 		assessment: async(root, args, context, info) => {
@@ -22,6 +23,7 @@ var sqlResolvers = {
 		}
 	}
 };
+*/
 
 var resolvers = {
 	Query: {
@@ -30,14 +32,20 @@ var resolvers = {
 			return Assessment.findById(args._id);
 		},
 		assessments: async(root, args, context, info) => {
-			console.log("fire!!");
-			return Assessment.find({})
+			var {userId} = args;
+			return Assessment.find({ userId });
+		},
+		getShared: async(root, args, context, info) => {
+			var {assessments} = args;
+			var shared = await assessments.map(async assess => {
+				return await Assessment.findById(assess)
+			});
+
+			return shared;
 		},
 		question: async(root, args, context, info) => {
 			var assessment = await Assessment.findById(args.assessmentId);
 			var question = assessment.questions.filter(a => a.questionId == args.questionId);
-			console.log("fire!!");
-			console.log(question[0]);
 			return question[0]
 		}
 	},
@@ -47,19 +55,19 @@ var resolvers = {
 
 			var cool = JSON.parse(stringy);
 
-			console.log(cool);
 			cool = cool.assessment
-			//var threads = cool.assessment.threads;
-			//cool.questions = getQuestions.getQuestions(threads, 0)
 		  var ok  = await Assessment.create(cool);
-			console.log(ok);
 			return ok;
 	},
 		createAssessment: async(roots, args, context, info) => {
 			args.currentMRL = args.targetMRL;
-			args.questions = getQuestions.getQuestions(args.threads, 0);
+			// console.log(args.schema);
+			var schema = JSON.parse(args.schema);
+			console.log(schema);
+			// var schema = require('../assets/2016.json');
+			args.questions = getQuestions.getQuestions(schema);
+			console.log(args.teamMembers);
 			// TODO: test if this works without await <21-07-18, yourname> //
-			console.log(args);
 		  return await Assessment.create(args);
 		},
 		addFile: async(root, args, context, info) => {
@@ -75,6 +83,13 @@ var resolvers = {
 
 			updateObject(question, args.updates);
 			return assessment.save();
+		},
+
+		deleteAssessment: async(root, args, context, info) => {
+			let _id = make_id(args._id)
+			let assessment = await Assessment.findById(_id);
+			assessment.remove();
+
 		}
 	}
 }

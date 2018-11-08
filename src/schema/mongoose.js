@@ -18,7 +18,7 @@ var fileSchema     = new Schema({
 	url:								String,
 	name:								String
 });
-	
+
 var personSchema   = new Schema({
 	name:								String,
 	role:								String
@@ -26,9 +26,9 @@ var personSchema   = new Schema({
 
 var questionSchema = new Schema({
 	_id:                String,
-	questionText:				String, 
+	questionText:				String,
 	questionId:					String,
-	currentAnswer:      String, 
+	currentAnswer:      String,
 	skipped:            Boolean,
 	threadName:					String,
 	subThreadName:			String,
@@ -59,8 +59,8 @@ var questionSchema = new Schema({
 	actionPeople:       [personSchema],
 	files:							[fileSchema]
 });
-	
-var assessmentSchema = new Schema({		
+
+var assessmentSchema = new Schema({
 	scope:							String,
 	name:               String,
 	targetMRL:					Number,
@@ -69,8 +69,10 @@ var assessmentSchema = new Schema({
 	targetDate:         Date,
 	location:						String,
 	deskbookVersion:    String,
+	userId:             String,
+	userEmail: 			String,
 	threads:            [String],
-	teamMembers:        [personSchema],
+	teamMembers:        [String],
 	questions:          [questionSchema],
 	files:              [fileSchema]
 });
