@@ -66,6 +66,7 @@ var resolvers = {
 			console.log(schema);
 			// var schema = require('../assets/2016.json');
 			args.questions = getQuestions.getQuestions(schema);
+
 			console.log(args.teamMembers);
 			// TODO: test if this works without await <21-07-18, yourname> //
 		  return await Assessment.create(args);
