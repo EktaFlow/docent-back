@@ -91,6 +91,14 @@ var resolvers = {
 			let assessment = await Assessment.findById(_id);
 			assessment.remove();
 
+		},
+
+		addTeamMember: async(root, args, context, info) => {
+			console.log("in the back");
+			let _id = make_id(args._id);
+			let assessment = await Assessment.findById(_id);
+			let newTeamMember = args._teamMember;
+			console.log(assessment.teamMembers);
 		}
 	}
 }
