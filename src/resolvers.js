@@ -99,6 +99,14 @@ var resolvers = {
 			let assessment = await Assessment.findById(_id);
 			let newTeamMember = args._teamMember;
 			console.log(assessment.teamMembers);
+			var newTeamMembers = [...assessment.teamMembers, newTeamMember];
+			updateObject(assessment.teamMembers, newTeamMembers);
+			assessment.save();
+
+
+			// var updatedUser = await user.set({
+			// 	jsonFiles: newFiles
+			// });
 		}
 	}
 }
