@@ -141,7 +141,7 @@ type Query {
 	questions(mrLevel: Int):	    [Question]
 	assessment(_id: String):	    Assessment
 	assessments(userId: String):							[Assessment]
-	
+
 }
 
 type Mutation {
@@ -177,6 +177,11 @@ type Mutation {
 		url:									String
 		name:									String
 	): File
+
+	addTeamMember(
+		_id: String!
+		teamMembers: [String]
+	): Assessment
 
 	importAssessment(import: String): Assessment
 }

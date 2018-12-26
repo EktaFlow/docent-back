@@ -66,6 +66,7 @@ var resolvers = {
 			console.log(schema);
 			// var schema = require('../assets/2016.json');
 			args.questions = getQuestions.getQuestions(schema);
+
 			console.log(args.teamMembers);
 			// TODO: test if this works without await <21-07-18, yourname> //
 		  return await Assessment.create(args);
@@ -90,6 +91,22 @@ var resolvers = {
 			let assessment = await Assessment.findById(_id);
 			assessment.remove();
 
+		},
+
+		addTeamMember: async(root, args, context, info) => {
+			console.log("in the back");
+			let _id = make_id(args._id);
+			let assessment = await Assessment.findById(_id);
+			let newTeamMember = args._teamMember;
+			console.log(assessment.teamMembers);
+			var newTeamMembers = [...assessment.teamMembers, newTeamMember];
+			updateObject(assessment.teamMembers, newTeamMembers);
+			assessment.save();
+
+
+			// var updatedUser = await user.set({
+			// 	jsonFiles: newFiles
+			// });
 		}
 	}
 }
