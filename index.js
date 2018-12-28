@@ -44,6 +44,13 @@ input QuestionUpdate {
 	mrLevel:            Int
 	# if answered is false, the question has been skipped.
 	answered:           Boolean
+	answers: 			[Answer]
+
+}
+
+input answerUpdate {
+	userId: String
+	updatedAt: Date
 	# User's answer to main question
 	answer:							String
 	# Yes variables #####################################
@@ -75,7 +82,6 @@ input QuestionUpdate {
 	notesNA:						String
 
 #	Files:						[File]
-
 }
 
 type Question{
@@ -92,7 +98,14 @@ type Question{
 	mrLevel:            Int
 	# if answered is false, the question has been skipped.
 	answered:           Boolean
-	# User's answer to main question
+	answers: [Answer]
+
+
+}
+
+type Answer {
+	userId: 			String
+	updatedAt: 	Date
 	answer:							String
 	# Yes variables #####################################
 	objectiveEvidence:	String

@@ -14,7 +14,7 @@ mongoose.connect(ConnectionString);
 
 ///////////////SCHEMAS//////////////////////
 var fileSchema     = new Schema({
-	questionId:         String,
+	answerId:         String,
 	url:								String,
 	name:								String
 });
@@ -36,6 +36,12 @@ var questionSchema = new Schema({
 	helpText:           String,
 	criteriaText:       String,
 	answered:						Boolean,
+	answers: 						AnswerSchema
+});
+
+var answerSchema = new Schema({
+	userId:						String,
+	updatedAt: 			Date,
 	answer:							String,
 	objectiveEvidence:	String,
   assumptionsYes:			String,

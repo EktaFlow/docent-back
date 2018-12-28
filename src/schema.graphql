@@ -22,23 +22,29 @@ type Question{
 	subThread:					String
 	mrlLevel:           Number
 	questionText:				String
-	answer:							String
-	objectiveEvidence:	String
-	assumptionsYes:			String
-	notesYes:						String
-	filesYes:						[File]
-	actionPeople:				[Person]
-	when:								Date
-	who:								String
-	risk:								String
-	whatDone:						String
-	reason:							String
-	assumptionsNo:			String
-	FilesNo:						[File]
-	documentation:			String
-	assumptionsNA:			String
-	notesNA:						String
-	FilesNA:						[File]
+	answers: 					[Answer]
+}
+
+type Answer {
+userId: 			String
+updatedAt: 				Date
+answer:							String
+objectiveEvidence:	String
+assumptionsYes:			String
+notesYes:						String
+filesYes:						[File]
+actionPeople:				[Person]
+when:								Date
+who:								String
+risk:								String
+whatDone:						String
+reason:							String
+assumptionsNo:			String
+FilesNo:						[File]
+documentation:			String
+assumptionsNA:			String
+notesNA:						String
+FilesNA:						[File]
 }
 
 type File{
