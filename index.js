@@ -44,6 +44,8 @@ input QuestionUpdate {
 	mrLevel:            Int
 	# if answered is false, the question has been skipped.
 	answered:           Boolean
+	helpText: String
+	criteriaText: String
 	answers: 			[Answer]
 
 }
@@ -59,9 +61,6 @@ input answerUpdate {
 	notesYes:						String
 	assumptionsSkipped: String
 	notesSkipped:       String
-
-	helpText: String
-	criteriaText: String
 
 	# No variables ######################################
 #	actionPeople:
@@ -98,6 +97,8 @@ type Question{
 	mrLevel:            Int
 	# if answered is false, the question has been skipped.
 	answered:           Boolean
+	helpText: String
+	criteriaText: String
 	answers: [Answer]
 
 
@@ -126,10 +127,6 @@ type Answer {
 	technical:          Boolean
 	schedule:           Boolean
 	cost:               Boolean
-
-
-	helpText: String
-	criteriaText: String
 
 	# NA variables ######################################
 	documentation:			String
