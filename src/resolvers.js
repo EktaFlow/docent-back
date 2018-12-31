@@ -82,7 +82,10 @@ var resolvers = {
 			let question = assessment.questions
 											         .find(question => question.questionId == args.questionId);
 
-			updateObject(question, args.updates);
+			// updateObject(question, args.updates);
+			var answerList = addAnswer(question, args.updates, args.userId);
+			question.answers = answerList;
+
 			return assessment.save();
 		},
 
@@ -117,6 +120,25 @@ function updateObject(original, newObject) {
 		original[key] = newObject[key]
 	}
 	return original;
+}
+
+function addAnswer(question, newAnswers, userId){
+	//need to only send needed answer properties, not the whole question object
+	var addedAnswer = await Answer.create(newAnswers);
+	addedAnswer.userId = userId;
+	addedAnswer.updatedAt = getUpdatedAtTime();
+
+	addedAnswer.save();
+	var newAnswersList = [...question.answers, addedAnswer];
+	return newAnswersList;
+}
+
+function getUpdatedAtTime(){
+	var today = new Date();
+	var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+	var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+	return dateTime = date+' '+time;
+
 }
 
 module.exports = resolvers;
