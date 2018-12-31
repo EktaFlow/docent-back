@@ -30,83 +30,42 @@ type Person{
 	name: String!
 }
 
-input QuestionUpdate {
-	_id:								String
-	id:									Int
-	questionText:       String
-	currentAnswer:      String
-	skipped:            Boolean
-	# for traversing the questions
-	questionId:					Int
-	thread:						  Int
-	threadName:	  		  String
-	subThread:				  Int
-	mrLevel:            Int
-	# if answered is false, the question has been skipped.
-	answered:           Boolean
-	answers: 			[Answer]
-
-}
-
-input answerUpdate {
-	userId: String
-	updatedAt: Date
-	# User's answer to main question
-	answer:							String
-	# Yes variables #####################################
-	objectiveEvidence:	String
-	assumptionsYes:			String
-	notesYes:						String
-	assumptionsSkipped: String
-	notesSkipped:       String
-
-	helpText: String
-	criteriaText: String
-
-	# No variables ######################################
-#	actionPeople:
-	when:								Date
-	who:								String
-	risk:								String
-	what:						    String
-	reason:							String
-	assumptionsNo:			String
-	notesNo:            String
-	technical:          Boolean
-	schedule:           Boolean
-	cost:               Boolean
-
-	# NA variables ######################################
-	documentation:			String
-	assumptionsNA:			String
-	notesNA:						String
-
-#	Files:						[File]
-}
-
 type Question{
   _id:                String
 	id:									Int
 	questionText:       String
 	currentAnswer:      String
 	skipped:            Boolean
+	helpText:           String
+	criteriaText:       String
+
 	# for traversing the questions
 	questionId:					Int
 	thread:						  Int
 	threadName:	  		  String
 	subThreadName:			String
 	mrLevel:            Int
+
 	# if answered is false, the question has been skipped.
 	answered:           Boolean
 	answers: [Answer]
-
-
 }
 
 type Answer {
 	userId: 			String
-	updatedAt: 	Date
-	answer:							String
+	updatedAt: 	  Date
+	answer:				String
+
+  ####################################################
+	# RISK - 
+  ####################################################
+
+  likelihood:         Int
+  consequence:        Int
+  greatestImpact:     String
+  riskResponse:       String
+  mmpSummary:         String
+
 	# Yes variables #####################################
 	objectiveEvidence:	String
 	assumptionsYes:			String
@@ -128,9 +87,6 @@ type Answer {
 	cost:               Boolean
 
 
-	helpText: String
-	criteriaText: String
-
 	# NA variables ######################################
 	documentation:			String
 	assumptionsNA:			String
@@ -145,6 +101,56 @@ type File{
 	url:			String
 	name:     String
 	questionId: Int
+}
+
+input QuestionUpdate {
+	_id:								String
+	id:									Int
+	questionText:       String
+	currentAnswer:      String
+	skipped:            Boolean
+	# for traversing the questions
+	questionId:					Int
+	thread:						  Int
+	threadName:	  		  String
+	subThread:				  Int
+	mrLevel:            Int
+	# if answered is false, the question has been skipped.
+	answered:           Boolean
+	answers: 			      [Answer]
+}
+
+input answerUpdate {
+	userId: String
+	updatedAt: Date
+	# User's answer to main question
+	answer:							String
+	# Yes variables #####################################
+	objectiveEvidence:	String
+	assumptionsYes:			String
+	notesYes:						String
+	assumptionsSkipped: String
+	notesSkipped:       String
+
+	# No variables ######################################
+#	actionPeople:
+	when:								Date
+	who:								String
+	risk:								String
+	what:						    String
+	reason:							String
+	assumptionsNo:			String
+	notesNo:            String
+	technical:          Boolean
+	schedule:           Boolean
+	cost:               Boolean
+
+	# NA variables ######################################
+	documentation:			String
+	assumptionsNA:			String
+	notesNA:						String
+
+#	Files:						[File]
 }
 
 type Query {
