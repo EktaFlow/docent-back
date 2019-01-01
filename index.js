@@ -48,7 +48,9 @@ type Question{
 
 	# if answered is false, the question has been skipped.
 	answered:           Boolean
-	answers: [Answer]
+	helpText: String
+	criteriaText: String
+	answers: 			[Answer]
 }
 
 type Answer {
