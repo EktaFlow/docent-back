@@ -54,12 +54,15 @@ podTemplate(label: 'back',
                         string(credentialsId: 'containerRegistry', variable: 'CONTAINER_REGISTRY'),
                         usernamePassword(credentialsId: 'containerRegistryCreds', passwordVariable: 'password', usernameVariable: 'user')
                     ])  {
+                            // dont build the image either
+                           /* 
                             checkout scm
                             containerImagePath = "${CONTAINER_REGISTRY}/${imageName}"
                             sh "docker build -t ${imageName} ."
                             sh "docker tag ${imageName} ${containerImagePath}"
                             sh "docker login ${CONTAINER_REGISTRY} -u ${user} -p ${password}"
                             sh "docker push ${containerImagePath}"
+                            */
                         }
                 }
             }
@@ -67,7 +70,8 @@ podTemplate(label: 'back',
             // the deploy stage: 
             stage ('Deploy') {
                 container('kubectl') {
-                    sh "kubectl set image deployment/dev -n ${kubectlNamespace} ${serviceName}=${containerImagePath}"
+                    // not updating dev on feature-branch push
+                    // sh "kubectl set image deployment/dev -n ${kubectlNamespace} ${serviceName}=${containerImagePath}"
                 }
             }
         } 
