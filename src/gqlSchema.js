@@ -55,7 +55,7 @@ type Answer {
 	answer:				String
 
   ####################################################
-	# RISK - 
+	# RISK -
   ####################################################
 
   likelihood:         Int
@@ -68,6 +68,8 @@ type Answer {
 	objectiveEvidence:	String
 	assumptionsYes:			String
 	notesYes:						String
+
+	#Skipped variables ################
 	assumptionsSkipped: String
 	notesSkipped:       String
 
