@@ -63,15 +63,32 @@ var resolvers = {
 			return assessment.save();
 		},
 		updateAssessment: async(root, args, context, info) => {
+			// console.log(args);
 			let _id = make_id(args._id)
 			let assessment = await Assessment.findById(_id);
 			let question = assessment.questions
 											         .find(question => question.questionId == args.questionId);
 
-			// updateObject(question, args.updates);
-			var answerList = addAnswer(question, args.updates, args.userId);
-			question.answers = answerList;
 
+							/// separate out question args & answer args
+							// only need to take out currentAnswer out of 'updates' and update that on the question
+							//send the rest of the values in 'updates' to addAnswer
+
+							//currentAnswer = args.updates.currentAnswer;
+							//delete args.updates.currentAnswer;
+
+					console.log(args.questionUpdates.currentAnswer);
+			question.currentAnswer = args.questionUpdates.currentAnswer;
+
+			// updateObject(question, args.updates);
+			// var answerList = addAnswer(question, args.answerUpdates, assessment);
+			// console.log(question.answers);
+			question.answers.push(args.answerUpdates);
+			// console.log(question.answers);
+			var temp = assessment.questions.filter(q => q.questionId == args.questionId);
+			// console.log(temp[0].answers);
+			// console.log(temp);
+			// question.answers = answerList;
 			return assessment.save();
 		},
 
@@ -106,23 +123,23 @@ function updateObject(original, newObject) {
 	return original;
 }
 
-async function addAnswer(question, newAnswers, userId){
+async function addAnswer(question, newAnswers, assessment){
 	//need to only send needed answer properties, not the whole question object
 	var addedAnswer = await Answer.create(newAnswers);
-	addedAnswer.userId = userId;
-	addedAnswer.updatedAt = getUpdatedAtTime();
+	// addedAnswer.userId = userId;
+	// addedAnswer.updatedAt = new Date();
 
 	addedAnswer.save();
 	var newAnswersList = [...question.answers, addedAnswer];
 	return newAnswersList;
 }
 
-function getUpdatedAtTime(){
-	var today = new Date();
-	var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-	var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-	return dateTime = date+' '+time;
-
-}
+// function getUpdatedAtTime(){
+// 	var today = new Date();
+// 	var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+// 	var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+// 	return dateTime = date+' '+time;
+//
+// }
 
 module.exports = resolvers;
