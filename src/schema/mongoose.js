@@ -5,12 +5,10 @@ const { CollectionName,
 				ConnectionString
 			} = Constants;
 
-
 ////////////// Mongoose loading //////////////
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 mongoose.connect(ConnectionString);
-
 
 ///////////////SCHEMAS//////////////////////
 var fileSchema     = new Schema({
@@ -24,24 +22,9 @@ var personSchema   = new Schema({
 	role:								String
 });
 
-var questionSchema = new Schema({
-	_id:                String,
-	questionText:				String,
-	questionId:					String,
-	currentAnswer:      String,
-	skipped:            Boolean,
-	threadName:					String,
-	subThreadName:			String,
-	mrLevel:						Number,
-	helpText:           String,
-	criteriaText:       String,
-	answered:						Boolean,
-	answers: 						AnswerSchema
-});
-
 var answerSchema = new Schema({
-	userId:						String,
-	updatedAt: 			Date,
+	userId:						  String,
+	updatedAt: 			    Date,
 	answer:							String,
 	objectiveEvidence:	String,
   assumptionsYes:			String,
@@ -66,6 +49,21 @@ var answerSchema = new Schema({
 	files:							[fileSchema]
 });
 
+var questionSchema = new Schema({
+	_id:                String,
+	questionText:				String,
+	questionId:					String,
+	currentAnswer:      String,
+	skipped:            Boolean,
+	threadName:					String,
+	subThreadName:			String,
+	mrLevel:						Number,
+	helpText:           String,
+	criteriaText:       String,
+	answered:						Boolean,
+	answers: 						[answerSchema]
+});
+
 var assessmentSchema = new Schema({
 	scope:							String,
 	name:               String,
@@ -76,7 +74,7 @@ var assessmentSchema = new Schema({
 	location:						String,
 	deskbookVersion:    String,
 	userId:             String,
-	userEmail: 			String,
+	userEmail: 			    String,
 	threads:            [String],
 	teamMembers:        [String],
 	questions:          [questionSchema],

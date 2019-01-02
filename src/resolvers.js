@@ -122,7 +122,7 @@ function updateObject(original, newObject) {
 	return original;
 }
 
-function addAnswer(question, newAnswers, userId){
+async function addAnswer(question, newAnswers, userId){
 	//need to only send needed answer properties, not the whole question object
 	var addedAnswer = await Answer.create(newAnswers);
 	addedAnswer.userId = userId;
