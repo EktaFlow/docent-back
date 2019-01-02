@@ -50,6 +50,7 @@ type Question{
 }
 
 type Answer {
+	_id: 				String
 	userId: 			String
 	updatedAt: 	  Date
 	answer:				String
@@ -184,7 +185,8 @@ type Mutation {
 	updateAssessment(
 		_id:               String!
 		questionId:        Int
-		updates:           QuestionInput
+		answerUpdates:           AnswerInput
+		questionUpdates: 				QuestionInput
 	): Assessment
 
 	addFile(
