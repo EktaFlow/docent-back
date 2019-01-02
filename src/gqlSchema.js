@@ -46,8 +46,6 @@ type Question{
 
 	# if answered is false, the question has been skipped.
 	answered:           Boolean
-	helpText: String
-	criteriaText: String
 	answers: 			[Answer]
 }
 
@@ -117,10 +115,10 @@ input QuestionInput {
 	mrLevel:            Int
 	# if answered is false, the question has been skipped.
 	answered:           Boolean
-	answers: 			      [Answer]
+	answers: 			      [AnswerInput]
 }
 
-input answerInput {
+input AnswerInput {
 	userId: String
 	updatedAt: Date
 	# User's answer to main question
@@ -146,10 +144,8 @@ input answerInput {
 	cost:               Boolean
 
 	# NA variables ######################################
-	documentation:			String
 	assumptionsNA:			String
 	notesNA:						String
-
 #	Files:						[File]
 }
 
@@ -186,7 +182,7 @@ type Mutation {
 	updateAssessment(
 		_id:               String!
 		questionId:        Int
-		updates:           QuestionUpdate
+		updates:           QuestionInput
 	): Assessment
 
 	addFile(

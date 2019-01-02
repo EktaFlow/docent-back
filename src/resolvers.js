@@ -15,16 +15,6 @@ db.once("open", function() {
 /////////// the ObjectId type.
 var make_id = idString => mongoose.Types.ObjectId(idString)
 
-/*
-var sqlResolvers = {
-	Query: {
-		assessment: async(root, args, context, info) => {
-			// return SQLite.execute("SELECT * FROM assessments WHERE id = $")
-		}
-	}
-};
-*/
-
 var resolvers = {
 	Query: {
 		allThreadNames: () => getQuestions.allThreadNames(),
@@ -51,23 +41,19 @@ var resolvers = {
 	},
 	Mutation: {
 		importAssessment: async(roots, args, context, info) => {
-			var stringy = args.import
+			var stringifiedAssessment = args.import
+			var parsedAssessment      = JSON.parse(stringifiedAssessment);
+			var assessment            = parsedAssessment.assessment
+		  var importedAssessment    = await Assessment.create(assessment);
 
-			var cool = JSON.parse(stringy);
-
-			cool = cool.assessment
-		  var ok  = await Assessment.create(cool);
-			return ok;
+			return importedAssessment;
 	},
 		createAssessment: async(roots, args, context, info) => {
 			args.currentMRL = args.targetMRL;
-			// console.log(args.schema);
 			var schema = JSON.parse(args.schema);
-			console.log(schema);
 			// var schema = require('../assets/2016.json');
 			args.questions = getQuestions.getQuestions(schema);
 
-			console.log(args.teamMembers);
 			// TODO: test if this works without await <21-07-18, yourname> //
 		  return await Assessment.create(args);
 		},
@@ -97,11 +83,9 @@ var resolvers = {
 		},
 
 		addTeamMember: async(root, args, context, info) => {
-			console.log("in the back");
 			let _id = make_id(args._id);
 			let assessment = await Assessment.findById(_id);
 			let newTeamMember = args._teamMember;
-			console.log(assessment.teamMembers);
 			var newTeamMembers = [...assessment.teamMembers, newTeamMember];
 			updateObject(assessment.teamMembers, newTeamMembers);
 			assessment.save();
