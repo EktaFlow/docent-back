@@ -147,9 +147,10 @@ input AnswerInput {
 	reason:							String
 	assumptionsNo:			String
 	notesNo:            String
-	
+
 
 	# NA variables ######################################
+	documentation: String
 	assumptionsNA:			String
 	notesNA:						String
 #	Files:						[File]
