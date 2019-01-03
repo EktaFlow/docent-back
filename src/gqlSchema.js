@@ -83,9 +83,7 @@ type Answer {
 	reason:							String
 	assumptionsNo:			String
 	notesNo:            String
-	technical:          Boolean
-	schedule:           Boolean
-	cost:               Boolean
+
 
 
 	# NA variables ######################################
@@ -133,6 +131,13 @@ input AnswerInput {
 	assumptionsSkipped: String
 	notesSkipped:       String
 
+	####### Risk Response
+	likelihood:         Int
+  consequence:        Int
+  greatestImpact:     String
+  riskResponse:       String
+  mmpSummary:         String
+
 	# No variables ######################################
 #	actionPeople:
 	when:								Date
@@ -142,9 +147,7 @@ input AnswerInput {
 	reason:							String
 	assumptionsNo:			String
 	notesNo:            String
-	technical:          Boolean
-	schedule:           Boolean
-	cost:               Boolean
+	
 
 	# NA variables ######################################
 	assumptionsNA:			String
