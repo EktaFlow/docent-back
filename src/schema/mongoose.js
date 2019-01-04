@@ -14,7 +14,8 @@ mongoose.connect(ConnectionString);
 var fileSchema     = new Schema({
 	answerId:         String,
 	url:								String,
-	name:								String
+	name:								String,
+  questionId:         Number
 });
 
 var personSchema   = new Schema({
