@@ -30,7 +30,7 @@ var answerSchema = new Schema({
 	consequence: 				Number,
 	riskResponse: 			String,
 	greatestImpact: 			String,
-	mmpSumary: 					String,
+	mmpSummary: 					String,
 	objectiveEvidence:	String,
   assumptionsYes:			String,
 	notesYes:           String,
