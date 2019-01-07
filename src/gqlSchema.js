@@ -186,6 +186,11 @@ type Mutation {
 		_id: String!
 	): Assessment
 
+  deleteFile(
+    assessmentId: String
+    fileId:       String
+  ): File
+
 	updateAssessment(
 		_id:               String!
 		questionId:        Int
