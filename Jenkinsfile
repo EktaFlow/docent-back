@@ -14,7 +14,7 @@ def imageName
 def containerImagePath
 
 def branchName = "${env.BRANCH_NAME}"
-def dockerSuffix = "dev"
+def dockerSuffix = "prod"
 def kubectlNamespace = "dev"
 
 podTemplate(label: 'back', 
