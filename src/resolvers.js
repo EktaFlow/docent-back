@@ -15,16 +15,6 @@ db.once("open", function() {
 /////////// the ObjectId type.
 var make_id = idString => mongoose.Types.ObjectId(idString)
 
-/*
-var sqlResolvers = {
-	Query: {
-		assessment: async(root, args, context, info) => {
-			// return SQLite.execute("SELECT * FROM assessments WHERE id = $")
-		}
-	}
-};
-*/
-
 var resolvers = {
 	Query: {
 		allThreadNames: () => getQuestions.allThreadNames(),
@@ -51,18 +41,19 @@ var resolvers = {
 	},
 	Mutation: {
 		importAssessment: async(roots, args, context, info) => {
-			var stringy = args.import
+			var stringifiedAssessment = args.import
+			var parsedAssessment      = JSON.parse(stringifiedAssessment);
+			var assessment            = parsedAssessment.assessment
+		  var importedAssessment    = await Assessment.create(assessment);
 
-			var cool = JSON.parse(stringy);
-
-			cool = cool.assessment
-		  var ok  = await Assessment.create(cool);
-			return ok;
+			return importedAssessment;
 	},
 		createAssessment: async(roots, args, context, info) => {
 			args.currentMRL = args.targetMRL;
-			args.questions = getQuestions.getQuestions(args.threads, 0);
-			console.log(args.teamMembers);
+			var schema = JSON.parse(args.schema);
+			// var schema = require('../assets/2016.json');
+			args.questions = getQuestions.getQuestions(schema);
+
 			// TODO: test if this works without await <21-07-18, yourname> //
 		  return await Assessment.create(args);
 		},
@@ -72,13 +63,66 @@ var resolvers = {
 			return assessment.save();
 		},
 		updateAssessment: async(root, args, context, info) => {
+			// console.log(args);
 			let _id = make_id(args._id)
 			let assessment = await Assessment.findById(_id);
 			let question = assessment.questions
 											         .find(question => question.questionId == args.questionId);
 
-			updateObject(question, args.updates);
+
+							/// separate out question args & answer args
+							// only need to take out currentAnswer out of 'updates' and update that on the question
+							//send the rest of the values in 'updates' to addAnswer
+
+							//currentAnswer = args.updates.currentAnswer;
+							//delete args.updates.currentAnswer;
+            //
+          console.log(args)
+					// console.log(args.questionUpdates.currentAnswer);
+      if ( args.questionUpdates ) {
+			   question.currentAnswer = args.questionUpdates.currentAnswer;
+      }
+
+			// updateObject(question, args.updates);
+			// var answerList = addAnswer(question, args.answerUpdates, assessment);
+			// console.log(question.answers);
+			question.answers.push(args.answerUpdates);
+			// console.log(question.answers);
+			var temp = assessment.questions.filter(q => q.questionId == args.questionId);
+			// console.log(temp[0].answers);
+			// console.log(temp);
+			// question.answers = answerList;
 			return assessment.save();
+		},
+
+		deleteAssessment: async(root, args, context, info) => {
+			let _id = make_id(args._id)
+			let assessment = await Assessment.findById(_id);
+			assessment.remove();
+
+		},
+
+    deleteFile: async(root, args, context, info) => {
+      var assessment = await Assessment.findById(args.assessmentId); 
+      var removedFile = assessment.files.filter(a => a._id != args.fileId);
+      assessment.files = removedFile;
+      assessment.save( (err, ass) =>{
+              return ass
+      })
+    },
+
+		addTeamMember: async(root, args, context, info) => {
+			let _id = make_id(args._id);
+			let assessment = await Assessment.findById(_id);
+			let newTeamMember = args._teamMember;
+			var newTeamMembers = [...assessment.teamMembers, newTeamMember];
+			updateObject(assessment.teamMembers, newTeamMembers);
+			assessment.save();
+
+
+			// var updatedUser = await user.set({
+			// 	jsonFiles: newFiles
+			// });
 		}
 	}
 }
@@ -90,5 +134,24 @@ function updateObject(original, newObject) {
 	}
 	return original;
 }
+
+async function addAnswer(question, newAnswers, assessment){
+	//need to only send needed answer properties, not the whole question object
+	var addedAnswer = await Answer.create(newAnswers);
+	// addedAnswer.userId = userId;
+	// addedAnswer.updatedAt = new Date();
+
+	addedAnswer.save();
+	var newAnswersList = [...question.answers, addedAnswer];
+	return newAnswersList;
+}
+
+// function getUpdatedAtTime(){
+// 	var today = new Date();
+// 	var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+// 	var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+// 	return dateTime = date+' '+time;
+//
+// }
 
 module.exports = resolvers;
