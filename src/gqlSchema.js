@@ -12,7 +12,7 @@ type Assessment{
 	scope:						String
 	targetMRL:				Int
 	currentMRL:       Int
-	teamMembers:			[String]
+	teamMembers:			[teamMember]
 	levelSwitching:		Boolean
 	targetDate:				Date
 	location:					String
@@ -26,6 +26,13 @@ type Assessment{
 type Person{
 	id:   String!
 	name: String!
+}
+
+type teamMember {
+	id: String!
+	name: String!
+	email: String!
+	role: String!
 }
 
 type Question{
@@ -202,7 +209,7 @@ type Mutation {
 
 	addTeamMember(
 		_id: String!
-		teamMembers: [String]
+		teamMembers: [teamMember]
 	): Assessment
 
 	importAssessment(import: String): Assessment
