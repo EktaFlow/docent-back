@@ -54,6 +54,7 @@ type Answer {
 	userId: 			String
 	updatedAt: 	  Date
 	answer:				String
+	revertedBy:		String
 
   ####################################################
 	# RISK -

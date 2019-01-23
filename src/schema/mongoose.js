@@ -25,6 +25,7 @@ var personSchema   = new Schema({
 var answerSchema = new Schema({
 	userId:						  String,
 	updatedAt: 			    Date,
+	revertedBy: 				String,
 	answer:							String,
 	likelihood: 					Number,
 	consequence: 				Number,
