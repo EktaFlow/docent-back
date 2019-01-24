@@ -51,9 +51,12 @@ var resolvers = {
 		createAssessment: async(roots, args, context, info) => {
 			args.currentMRL = args.targetMRL;
 			var schema = JSON.parse(args.schema);
-			console.log(args.teamMembers);
+			console.log(args.teamMembersUpdates);
+
 			// var schema = require('../assets/2016.json');
 			args.questions = getQuestions.getQuestions(schema);
+			var teamMembers = args.teamMembersUpdates;
+			args.teamMembers = args.teamMembersUpdates;
 
 			// TODO: test if this works without await <21-07-18, yourname> //
 		  return await Assessment.create(args);
@@ -104,7 +107,7 @@ var resolvers = {
 		},
 
     deleteFile: async(root, args, context, info) => {
-      var assessment = await Assessment.findById(args.assessmentId); 
+      var assessment = await Assessment.findById(args.assessmentId);
       var removedFile = assessment.files.filter(a => a._id != args.fileId);
       assessment.files = removedFile;
       assessment.save( (err, ass) =>{
