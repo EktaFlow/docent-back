@@ -51,6 +51,7 @@ var resolvers = {
 		createAssessment: async(roots, args, context, info) => {
 			args.currentMRL = args.targetMRL;
 			var schema = JSON.parse(args.schema);
+			console.log(args.teamMembers);
 			// var schema = require('../assets/2016.json');
 			args.questions = getQuestions.getQuestions(schema);
 
