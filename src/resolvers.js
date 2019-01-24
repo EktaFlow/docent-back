@@ -77,9 +77,12 @@ var resolvers = {
 
 							//currentAnswer = args.updates.currentAnswer;
 							//delete args.updates.currentAnswer;
-
-					console.log(args.questionUpdates.currentAnswer);
-			question.currentAnswer = args.questionUpdates.currentAnswer;
+            //
+          console.log(args)
+					// console.log(args.questionUpdates.currentAnswer);
+      if ( args.questionUpdates ) {
+			   question.currentAnswer = args.questionUpdates.currentAnswer;
+      }
 
 			// updateObject(question, args.updates);
 			// var answerList = addAnswer(question, args.answerUpdates, assessment);
@@ -99,6 +102,15 @@ var resolvers = {
 			assessment.remove();
 
 		},
+
+    deleteFile: async(root, args, context, info) => {
+      var assessment = await Assessment.findById(args.assessmentId); 
+      var removedFile = assessment.files.filter(a => a._id != args.fileId);
+      assessment.files = removedFile;
+      assessment.save( (err, ass) =>{
+              return ass
+      })
+    },
 
 		addTeamMember: async(root, args, context, info) => {
 			let _id = make_id(args._id);
