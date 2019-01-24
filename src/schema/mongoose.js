@@ -27,7 +27,7 @@ var teamMemberSchema = new Schema({
 	name: 					String,
 	email: 						String,
 	role: 							String
-})
+});
 
 var answerSchema = new Schema({
 	userId:						  String,

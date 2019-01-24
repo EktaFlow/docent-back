@@ -129,7 +129,7 @@ input QuestionInput {
 input TeamMemberInput {
 	name: String
 	email: String
-	role: String 
+	role: String
 }
 
 input AnswerInput {
@@ -193,7 +193,7 @@ type Mutation {
 		deskbookVersion: String
 		name:            String
 		levelSwitching: Boolean
-		teamMembersUpdates: TeamMemberInput
+		teamMembersUpdates: [TeamMemberInput]
 		schema: String
 	): Assessment
 
