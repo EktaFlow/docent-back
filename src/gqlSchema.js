@@ -222,7 +222,7 @@ type Mutation {
 
 	addTeamMember(
 		_id: String!
-		teamMembersUpdates: TeamMemberInput
+		teamMemberUpdates: TeamMemberInput
 	): Assessment
 
 	importAssessment(import: String): Assessment

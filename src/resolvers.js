@@ -118,6 +118,7 @@ var resolvers = {
 		addTeamMember: async(root, args, context, info) => {
 			let _id = make_id(args._id);
 			let assessment = await Assessment.findById(_id);
+			console.log(args);
 			let newTeamMember = args._teamMember;
 			var newTeamMembers = [...assessment.teamMembers, newTeamMember];
 			updateObject(assessment.teamMembers, newTeamMembers);
