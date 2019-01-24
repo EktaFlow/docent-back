@@ -126,6 +126,12 @@ input QuestionInput {
 	answers: 			      [AnswerInput]
 }
 
+input TeamMemberInput {
+	name: String
+	email: String
+	role: String 
+}
+
 input AnswerInput {
 	userId: String
 	updatedAt: Date
@@ -163,6 +169,8 @@ input AnswerInput {
 #	Files:						[File]
 }
 
+
+
 type Query {
   getShared(assessments: [String]): [Assessment]
 	question(questionId: Int, assessmentId: String):		Question
@@ -185,7 +193,7 @@ type Mutation {
 		deskbookVersion: String
 		name:            String
 		levelSwitching: Boolean
-		teamMembers: [String]
+		teamMembersUpdates: TeamMemberInput
 		schema: String
 	): Assessment
 
@@ -209,7 +217,7 @@ type Mutation {
 
 	addTeamMember(
 		_id: String!
-		teamMembers: [teamMember]
+		teamMembersUpdates: TeamMemberInput
 	): Assessment
 
 	importAssessment(import: String): Assessment
