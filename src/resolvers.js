@@ -116,6 +116,7 @@ var resolvers = {
     },
 
 		addTeamMember: async(root, args, context, info) => {
+			console.log('we are back here');
 			let _id = make_id(args._id);
 			let assessment = await Assessment.findById(_id);
 			console.log(args);
