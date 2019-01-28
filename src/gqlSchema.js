@@ -54,6 +54,7 @@ type Answer {
 	userId: 			String
 	updatedAt: 	  Date
 	answer:				String
+	revertedBy:		String
 
   ####################################################
 	# RISK -
@@ -122,6 +123,7 @@ input QuestionInput {
 input AnswerInput {
 	userId: String
 	updatedAt: Date
+	revertedBy: String 
 	# User's answer to main question
 	answer:							String
 	# Yes variables #####################################
