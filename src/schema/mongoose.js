@@ -23,6 +23,12 @@ var personSchema   = new Schema({
 	role:								String
 });
 
+var teamMemberSchema = new Schema({
+	name: 					String,
+	email: 						String,
+	role: 							String
+});
+
 var answerSchema = new Schema({
 	userId:						  String,
 	updatedAt: 			    Date,
@@ -79,7 +85,7 @@ var assessmentSchema = new Schema({
 	userId:             String,
 	userEmail: 			    String,
 	threads:            [String],
-	teamMembers:        [String],
+	teamMembers:        [teamMemberSchema],
 	questions:          [questionSchema],
 	files:              [fileSchema]
 });
