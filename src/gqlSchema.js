@@ -29,10 +29,10 @@ type Person{
 }
 
 type teamMember {
-	id: String!
-	name: String!
-	email: String!
-	role: String!
+	id: String
+	name: String
+	email: String
+	role: String
 }
 
 type Question{
