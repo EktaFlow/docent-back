@@ -66,6 +66,24 @@ var resolvers = {
 			assessment.files.push({name: args.name, url: args.url, questionId: args.questionId})
 			return assessment.save();
 		},
+
+    updateAssessmentMeta: async(root, args, context, info) => {
+            console.log('we here');
+            var assessment = await Assessment.findById(args._id);
+            console.log(assessment.name);
+            console.log(args);
+//            var coolness = Object.assign(assessment, ...args.assessmentUpdate)
+ //           console.log(coolness.name);
+            for (let prop in args.assessmentUpdate) {
+                    assessment[prop] = args.assessmentUpdate[prop]
+            }
+
+
+           console.log(assessment);
+           return assessment.save();
+
+    },
+
 		updateAssessment: async(root, args, context, info) => {
 			// console.log(args);
 			let _id = make_id(args._id)

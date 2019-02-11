@@ -23,6 +23,23 @@ type Assessment{
 	name:             String
 }
 
+input AssessmentInput {
+	_id:							String
+	id:								String
+	userId:           String
+	userEmail: 		    String
+	scope:						String
+	targetMRL:				Int
+	currentMRL:       Int
+	teamMembers:			[TeamMemberInput]
+	levelSwitching:		Boolean
+	targetDate:				Date
+	location:					String
+	deskbookVersion:	String
+	threads:          [String]
+	name:             String
+}
+
 type Person{
 	id:   String!
 	name: String!
@@ -214,6 +231,11 @@ type Mutation {
 		answerUpdates:           AnswerInput
 		questionUpdates: 				QuestionInput
 	): Assessment
+
+  updateAssessmentMeta(
+    _id: String
+    assessmentUpdate: AssessmentInput
+  ): Assessment
 
 	addFile(
 		assessmentId:				  String
