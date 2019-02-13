@@ -135,13 +135,14 @@ var resolvers = {
 
 		addTeamMember: async(root, args, context, info) => {
 			console.log('we are back here');
-			let _id = make_id(args._id);
+			let _id = make_id(args.assessmentId);
 			let assessment = await Assessment.findById(_id);
 			console.log(args);
-			let newTeamMember = args._teamMember;
+			let newTeamMember = args.teamMemberUpdates;
 			var newTeamMembers = [...assessment.teamMembers, newTeamMember];
 			updateObject(assessment.teamMembers, newTeamMembers);
 			assessment.save();
+			return newTeamMember;
 
 
 			// var updatedUser = await user.set({
