@@ -153,7 +153,7 @@ input TeamMemberInput {
 input AnswerInput {
 	userId: String
 	updatedAt: Date
-	revertedBy: String 
+	revertedBy: String
 	# User's answer to main question
 	answer:							String
 	# Yes variables #####################################
@@ -245,9 +245,9 @@ type Mutation {
 	): File
 
 	addTeamMember(
-		_id: String!
+		assessmentId: String
 		teamMemberUpdates: TeamMemberInput
-	): Assessment
+	): teamMember
 
 	importAssessment(import: String): Assessment
 }
