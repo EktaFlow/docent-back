@@ -225,6 +225,11 @@ type Mutation {
     fileId:       String
   ): File
 
+  removeTeamMember(
+    assessmentId: String,
+    teamMemberEmail: String
+  ): TeamMember	
+
 	updateAssessment(
 		_id:               String!
 		questionId:        Int
