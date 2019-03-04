@@ -43,7 +43,27 @@ var resolvers = {
 		importAssessment: async(roots, args, context, info) => {
 			var stringifiedAssessment = args.import
 			var parsedAssessment      = JSON.parse(stringifiedAssessment);
-			var assessment            = parsedAssessment.assessment
+			var assessment            = parsedAssessment.assessment;
+			// console.log(assessment);
+			console.log(assessment.userId);
+			console.log(assessment.userEmail);
+			console.log(assessment.id);
+
+			var currentUserEmail = args.userEmail;
+			var currentUserId = args.userId;
+			console.log(currentUserId);
+			console.log(currentUserEmail);
+			assessment.userId = currentUserId;
+			assessment.userEmail = currentUserEmail;
+
+
+			console.log(assessment);
+			//access assessment.userId
+			//change to current user
+			// NEED TO SEND BACK USERS ID ALONG WITH THE ASSESSMENT ID THEN
+			//then save assessment
+			//will also need to generate a new assessment id for the assessment
+			//and replace the old one
 		  var importedAssessment    = await Assessment.create(assessment);
 
 			return importedAssessment;
