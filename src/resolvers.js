@@ -148,14 +148,16 @@ var resolvers = {
 			// var updatedUser = await user.set({
 			// 	jsonFiles: newFiles
 			// });
-		}
-	},
-	removeTeamMember: async(root, args, context, info) => {
+		},
+removeTeamMember: async(root, args, context, info) => {
 		var assessment = await Assessment.findById(args.assessmentId);
 		assessment.teamMembers = assessment.teamMembers.filter(mem => mem.email != args.teamMemberEmail);
 		assessment.save();
 		return ({ email: args.teamMemberEmail});
 	}
+
+	}
+	
 }
 
 

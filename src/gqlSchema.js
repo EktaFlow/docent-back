@@ -228,7 +228,7 @@ type Mutation {
   removeTeamMember(
     assessmentId: String,
     teamMemberEmail: String
-  ): TeamMember	
+  ): teamMember	
 
 	updateAssessment(
 		_id:               String!
