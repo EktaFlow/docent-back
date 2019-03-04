@@ -249,7 +249,12 @@ type Mutation {
 		teamMemberUpdates: TeamMemberInput
 	): teamMember
 
-	importAssessment(import: String): Assessment
+	importAssessment(
+		import: String
+		userId: String
+		userEmail: String 
+
+	): Assessment
 }
 `;
 
