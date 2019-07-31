@@ -84,6 +84,7 @@ var assessmentSchema = new Schema({
 	deskbookVersion:    String,
 	userId:             String,
 	userEmail: 			    String,
+	levelSwitchQuestions: String,
 	threads:            [String],
 	teamMembers:        [teamMemberSchema],
 	questions:          [questionSchema],

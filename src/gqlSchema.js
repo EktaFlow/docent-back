@@ -21,6 +21,7 @@ type Assessment{
 	questions:        [Question]
 	files:            [File]
 	name:             String
+	levelSwitchQuestions: String
 }
 
 input AssessmentInput {
@@ -38,6 +39,7 @@ input AssessmentInput {
 	deskbookVersion:	String
 	threads:          [String]
 	name:             String
+	levelSwitchQuestions: String
 }
 
 type Person{

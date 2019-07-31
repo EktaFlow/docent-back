@@ -43,11 +43,11 @@ var resolvers = {
 		importAssessment: async(roots, args, context, info) => {
 			var stringifiedAssessment = args.import
 			var parsedAssessment      = JSON.parse(stringifiedAssessment);
-			var assessment            = parsedAssessment.assessment;
-			// console.log(assessment);
-			console.log(assessment.userId);
-			console.log(assessment.userEmail);
-			console.log(assessment.id);
+			var assessment            = parsedAssessment[0]
+			console.log(assessment);
+			//console.log(assessment.userId);
+			//console.log(assessment.userEmail);
+			//console.log(assessment.id);
 
 			var currentUserEmail = args.userEmail;
 			var currentUserId = args.userId;
