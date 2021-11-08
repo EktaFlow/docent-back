@@ -1,9 +1,10 @@
- const criteria2016 = require("../assets/2016");
+const criteria2016 = require("../assets/2016");
 // parsing criteria...
- var versions = criteria2016[0];
+var versions = criteria2016[0];
 //
- versions = versions.versions;
- var threadsa = versions[0].threads;
+versions = versions.versions;
+var threadsa = versions[0].threads;
+
 
 
 // filter the threads selected for the assessment
@@ -13,58 +14,59 @@
 
 // Array of Thread names to correspond with the menu to select which threads
 // a user will include on their assessment.
-var allThreadNames = () => threadsa.map(thread => thread.name)
-
+var allThreadNames = () => threadsa.map((thread) => thread.name);
 
 // turn nested assessment structure into flat questions array
 function drillQuestions(threads) {
-questions = [];
-threads.forEach(thread => {
-	var threadId	 = thread.threadId,
-		threadName = thread.name,
-		  threadHelp = thread.helpText;
+  console.log("threads questions.js", threads);
+  questions = [];
+  files = []; 
+  threads.forEach((thread) => {
+    var threadId = thread.threadId,
+      threadName = thread.name,
+      threadHelp = thread.helpText;
 
-			thread.subThreads.forEach( z => {
-				var subThreadName = z.name,
-		    subThreadId				= z.subThreadId;
+    thread.subThreads.forEach((z) => {
+      var subThreadName = z.name,
+        subThreadId = z.subThreadId;
 
-				z.subThreadLevels.forEach(b => {
-					var subThreadLevelId = b.subThreadLevelId,
-					mrLevel      = b.level,
-					criteriaText = b.criteriaText,
-					helpText     = b.helpText;
+      z.subThreadLevels.forEach((b) => {
+        var subThreadLevelId = b.subThreadLevelId,
+          mrLevel = b.level,
+          criteriaText = b.criteriaText,
+          helpText = b.helpText;
 
-					// TODO: remove this level conditional		//
-					// need all qs in assessment 17-08-18 mpf //
+        // TODO: remove this level conditional		//
+        // need all qs in assessment 17-08-18 mpf //
 
-						b.questions.forEach( c => {
-							questions.push({
-								threadId,
-								threadName,
-								threadHelp,
-								subThreadName,
-								subThreadId,
-								subThreadLevelId, // we don't use this one.
-								mrLevel,
-								criteriaText,
-								helpText,
-								questionId:		c.questionId,
-								questionText: c.questionText
-							});
-						})
-
-				});
-			})
-});
-	return questions;
+        b.questions.forEach((c) => {
+          questions.push({
+            files,
+            threadId,
+            threadName,
+            threadHelp,
+            subThreadName,
+            subThreadId,
+            subThreadLevelId, // we don't use this one.
+            mrLevel,
+            criteriaText,
+            helpText,
+            questionId: c.questionId,
+            questionText: c.questionText,
+          });
+        });
+      });
+    });
+  });
+  return questions;
 }
 
 function getQuestions(schema) {
-	console.log(typeof schema == "string")
-	// var threads = getThreads(threadsArray);
-	console.log(schema[0]);
-	var threads = schema;
-	return drillQuestions(threads);
+  console.log(typeof schema == "string");
+  // var threads = getThreads(threadsArray);
+  console.log(schema[0]);
+  var threads = schema;
+  return drillQuestions(threads);
 }
 
 module.exports = { getQuestions, allThreadNames };
