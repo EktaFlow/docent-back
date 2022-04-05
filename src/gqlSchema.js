@@ -198,6 +198,11 @@ type Mutation {
 		questionUpdates: 				QuestionInput
 	): Assessment
 
+	updateTMAssessment(
+		_id: String!
+		teamMembers: [String]
+	): Assessment
+
 	addFile(
 		assessmentId:				  String
 		questionId:		Int
