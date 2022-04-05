@@ -94,7 +94,12 @@ var resolvers = {
 			// question.answers = answerList;
 			return assessment.save();
 		},
-
+		updateTMAssessment: async(root, args, context, info) => {
+			let _id = make_id(args._id)
+			let assessment = await Assessment.findById(_id);
+			assessment.teamMembers = args.teamMembers;
+			return assessment.save()
+		},
 		deleteAssessment: async(root, args, context, info) => {
 			let _id = make_id(args._id)
 			let assessment = await Assessment.findById(_id);
@@ -103,7 +108,7 @@ var resolvers = {
 		},
 
     deleteFile: async(root, args, context, info) => {
-      var assessment = await Assessment.findById(args.assessmentId); 
+      var assessment = await Assessment.findById(args.assessmentId);
       var removedFile = assessment.files.filter(a => a._id != args.fileId);
       assessment.files = removedFile;
       assessment.save( (err, ass) =>{
@@ -112,7 +117,7 @@ var resolvers = {
     },
 
 		addTeamMember: async(root, args, context, info) => {
-			let _id = make_id(args._id);
+			let _id = make_id(args._assessmentId);
 			let assessment = await Assessment.findById(_id);
 			let newTeamMember = args._teamMember;
 			var newTeamMembers = [...assessment.teamMembers, newTeamMember];
