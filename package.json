@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "apollo-server": "^2.0.0-rc.8",
-    "async": "^2.6.1",
+    "async": "^3.2.2",
     "documentdb": "^1.14.5",
     "graphql": "^0.13.2",
     "mongoose": "^5.2.4"
